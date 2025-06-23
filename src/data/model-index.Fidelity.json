@@ -1,0 +1,59 @@
+{
+  "ABeautifulGame": {
+    "name": "ABeautifulGame",
+    "label": "A Beautiful Game",
+    "description": "Chess set using transmission and volume.",
+    "tags": [
+      "Showcase",
+      "Extension",
+      "Transmission",
+      "Volume",
+      "Draco",
+      "KTX"
+    ],
+    "variants": {
+      "glTF-Binary-KTX-ETC1S-Draco": "ABeautifulGame.glb",
+      "glTF": "ABeautifulGame.gltf"
+    },
+    "extensionsUsed": [
+      "KHR_materials_transmission",
+      "KHR_materials_volume"
+    ],
+    "screenshot": "./glTF-Sample-Assets/Models/ABeautifulGame/screenshot/screenshot.jpg"
+  },
+  "AlphaBlendModeTest": {
+    "name": "AlphaBlendModeTest",
+    "label": "Alpha Blend Mode Test",
+    "description": "Tests alpha modes and settings.",
+    "tags": [
+      "Testing",
+      "Core"
+    ],
+    "variants": {
+      "glTF-Embedded": "AlphaBlendModeTest.gltf",
+      "glTF": "AlphaBlendModeTest.gltf",
+      "glTF-Binary": "AlphaBlendModeTest.glb"
+    },
+    "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AlphaBlendModeTest/glTF-Binary/AlphaBlendModeTest.glb",
+    "screenshot": "./glTF-Sample-Assets/Models/AlphaBlendModeTest/screenshot/screenshot.png"
+  },
+  "AnimatedColorsCube": {
+    "name": "AnimatedColorsCube",
+    "label": "Animated Colors Cube",
+    "description": "This model demonstrates animating a base color with KHR_animation_pointer.",
+    "tags": [
+      "Extension",
+      "Testing",
+      "Animation"
+    ],
+    "variants": {
+      "glTF": "AnimatedColorsCube.gltf",
+      "glTF-Binary": "AnimatedColorsCube.glb"
+    },
+    "extensionsUsed": [
+      "KHR_animation_pointer"
+    ],
+    "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnimatedColorsCube/glTF-Binary/AnimatedColorsCube.glb",
+    "screenshot": "./glTF-Sample-Assets/Models/AnimatedColorsCube/screenshot/screenshot.gif"
+  }
+}
