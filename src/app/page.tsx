@@ -1,9 +1,7 @@
-import Image from "next/image";
 import type { Metadata } from 'next'
 import styles from "./page.module.css";
-import { Box, Typography } from "@mui/material";
 import LandingPage from "@/components/Pages/LandingPage";
-import ModelList from "@/data/model-index.Fidelity.json"
+import ModelList from "@/data/model-index.SampleAssets.json"
 
 export const metadata: Metadata = {
   title: 'Khronos Sample Assets',

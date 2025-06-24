@@ -27,20 +27,9 @@ const ModelMap2 = {};
 
 //const model_directory = await fetch("https://api.github.com/repos/KhronosGroup/glTF-Sample-Assets/contents/Models").then(res => res.json()).catch(e => {return []});
 const model_directory = await fs.promises.readdir("./glTF-Sample-Assets/Models", { withFileTypes: true });
+const image_directory = '/images';
 
 console.log("Dir #:", Object.keys(model_directory).length);
-
-const official_engine_names = new Map([
-  ["model-viewer",  "three.js"],
-  ["filament",      "filament.js"],
-  ["babylon",       "babylon.js"],
-  ["gltf-sample-viewer","gltf-sample-viewer"],
-  ["three-gpu-pathtracer", "three-gpu-pathtracer"],
-  ["stellar",       "Dassault STELLAR"],
-  ["vray" ,         "Chaos Group V-Ray"],
-  ["blender-cycles","Blender Cycles"],
-  //["rhodonite","rhodonite"]
-]);
 
 const keep_dict = {
   "showcase": "Showcase",
@@ -89,7 +78,7 @@ await (async () => {
     const glb_draco = model && model.variants && Object.keys(model.variants).find(variant => variant.includes('Draco'));
     const glb_meshopt = model && model.variants && model.variants['glTF-Quantized'];
     const glb_ktx = model && model.variants && Object.keys(model.variants).find(variant => variant.includes('KTX'));
-    const screenshot = model && model.screenshot && `./glTF-Sample-Assets/${folderpath}/${model.screenshot}`;
+    const screenshot = model && model.screenshot && `/glTF-Sample-Assets/${folderpath}/${model.screenshot}`;
 
     if(model && metadata && screenshot)
     {
@@ -172,7 +161,13 @@ await (async () => {
       }
 
       ModelMap2[name].downloadModel = glb? `https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/${folderpath}/glTF-Binary/${glb}` : undefined
-      ModelMap2[name].screenshot = screenshot;
+      
+      const tgt_file = image_directory + '/' + name + "/" + model.screenshot;
+      const tgt_directory = path.dirname(tgt_file);
+      const filename = path.basename(screenshot, path.extname(screenshot));
+      
+      ModelMap2[name].image = image_directory + '/' + name + "/" + model.screenshot;
+      ModelMap2[name].thumbnail = tgt_directory + '/' + filename + '.thumb' + '.webp';
     }   
   }
 })();
@@ -188,7 +183,7 @@ for (const tag in ModelTags) {
 }
 
 const jsonData = JSON.stringify(ModelMap2, null, 2); // The `null, 2` makes the output pretty-printed
-fs.writeFileSync('src/data/model-index.Fidelity.json', jsonData);
+fs.writeFileSync('src/data/model-index.SampleAssets.json', jsonData);
 
 const jsonDataTagList = JSON.stringify(TagList, null, 2); // The `null, 2` makes the output pretty-printed
 fs.writeFileSync('src/data/tags.json', jsonDataTagList);

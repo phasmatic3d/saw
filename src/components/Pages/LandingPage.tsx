@@ -12,21 +12,8 @@ import HelpIcon from '@mui/icons-material/Help';
 import Tooltip from '@mui/material/Tooltip';
 import Image from 'next/image'
 import { basePath } from '@/lib/paths';
+import { ModelType } from '@/lib/types';
 import { useTheme } from "@mui/material/styles";
-
-type EngineData = {
-  name: string,
-  image: string,
-  thumbnail: string
-}
-
-type ModelType = {
-  name: string,  
-  label: string,
-  description: string,
-  tags: Array<string>,
-  images: Array<EngineData>
-}
 
 type LandingPageProps = {
   models: Array<ModelType>
@@ -161,13 +148,7 @@ export default function LandingPage({models}: LandingPageProps) {
   return (
     <>
         <Typography className={styles.text}>
-            One goal of glTF is to standardize Physically-Based Rendering (PBR) materials such that you 
-            can be confident your model will appear as intended in any lighting environment in any renderer. 
-            This is a very ambitious goal, as real-time rendering at this level of quality is still very much 
-            an area of active research with improvements being made constantly. This site demonstrates where 
-            we are on that path to convergence and highlights areas that could still use improvement. 
-            We are comparing the most popular real-time web renderers as well as path tracers 
-            (a rendering technique that uses far fewer approximations than are required by real-time renderers).
+          This Repository is a curated collection of glTF models that illustrate one or more features or capabilities of glTF.
         </Typography>
 
         <Typography className={styles.text}>
@@ -190,7 +171,7 @@ export default function LandingPage({models}: LandingPageProps) {
 
         {/* Models */}
         <Grid container style={{padding: 0, margin: 0}} spacing={1} sx={{ justifyContent: "center"}}>
-        {result.map((e,i) => { return <ModelCard key={e.item.name} name={e.item.name} title={e.item.label} thumbnail={(e.item.images.find((m) => m.name === "gltf-sample-viewer") || e.item.images[0]).thumbnail} tags={e.item.tags} selectTagCallback={(t)=>{handleChipReplace(t)}}/>})}
+        {result.map((e,i) => { return <ModelCard key={e.item.name} name={e.item.name} title={e.item.label} thumbnail={e.item.thumbnail} tags={e.item.tags} selectTagCallback={(t)=>{handleChipReplace(t)}}/>})}
         </Grid>     
     </>
   );

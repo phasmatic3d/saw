@@ -14,21 +14,15 @@ import LaunchIcon from '@mui/icons-material/Launch';
 import { basePath } from '@/lib/paths';
 //import README from "@/data/README.md"
 
-export type RenderView = {
-  name: string,
-  thumbnail: string,
-  image: string
-}
-
 type ModelPageProps = {
   name: string,
   label: string,
   description: string,
-  renderViews: RenderView[],
+  image: string,
   downloadUrl?: string
 }
 
-export default function ModelPage({name, label, renderViews, downloadUrl, description}: ModelPageProps) {  
+export default function ModelPage({name, label, image, downloadUrl, description}: ModelPageProps) {  
   // Step 1: Set up state
   const theme = useTheme();
   const isXs = useMediaQuery(theme.breakpoints.only('xs'));
@@ -108,15 +102,6 @@ export default function ModelPage({name, label, renderViews, downloadUrl, descri
 
   return (
     <>
-      <Button
-        sx={{position:"fixed", height: "50px", zIndex:1,  right: "4vw", bottom: "15vh"}}
-        component={LinkNext}
-        role={undefined}
-        variant="contained"
-        tabIndex={-1}
-        href={`/compare/${name}?engine1=${engineA}&engine2=${engineB}`}
-        startIcon={<CompareIcon />}
-      > {(count == 0) ? "compare" : `select ${count} image(s) to compare`} </Button>
       <Grid container direction="row" className={styles.main} pt={1}>
         <Box sx={{overflow: "auto"}} className={styles.description}>
           <Box sx={{display: "flex", justifyContent: "space-between", alignItems: "center" }} pb={1}> 
@@ -131,7 +116,7 @@ export default function ModelPage({name, label, renderViews, downloadUrl, descri
           {(isXs && isVisible) && descriptionComponent}
         </Box>
         <Grid className={styles.selection} sx={{overflow: "auto"}} container justifyContent={"center"} spacing={0}>
-          {renderViews.map((e,i) => { return <ModelRenderCard key={e.name} thumbnail={e.thumbnail} name={e.name} marked={(engineA === e.name || engineB === e.name)} onSelection={toggleSelection}/>})}
+          <ModelRenderCard key={name} thumbnail={image} name={name} marked={true} onSelection={toggleSelection}/>
         </Grid>
       </Grid>
     </>

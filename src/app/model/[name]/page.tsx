@@ -1,9 +1,10 @@
 import React from 'react'
 import { Button, Typography, Box, Grid2 as Grid } from "@mui/material";
 import type { Metadata, ResolvingMetadata  } from 'next'
-import ModelPage, { RenderView } from "@/components/ModelPage";
-import models from "@/data/model-index.Fidelity.json"
+import ModelPage from "@/components/ModelPage";
+import models from "@/data/model-index.SampleAssets.json"
 import { baseUrl } from '@/lib/paths';
+import { ModelType } from '@/lib/types';
 
 export const dynamicParams = false; // models that are not included in the list, generate 404
 
@@ -11,13 +12,6 @@ export async function generateStaticParams() {
     return Object.values(models).map((model) => ({
       name: model.name
     }))
-}
-
-type ModelData = {
-  label: string
-  description: string
-  downloadModel?: string
-  images: RenderView[]
 }
 
 type Props = {
@@ -30,7 +24,7 @@ export async function generateMetadata( { params, searchParams }: Props, parent:
   // read route params
   const {name} = await params;
 
-  const model = (models as Record<string, ModelData>)[name];
+  const model = (models as Record<string, ModelType>)[name];
  
   // optionally access and extend (rather than replace) parent metadata
   const previousImages = (await parent).openGraph?.images || []
@@ -42,7 +36,7 @@ export async function generateMetadata( { params, searchParams }: Props, parent:
     openGraph: {
       title: model.label,
       description: model.description,
-      images: [model.images[0].thumbnail, ...previousImages],
+      images: [model.thumbnail, ...previousImages],
     },
     robots: {
       index: false,
@@ -63,8 +57,7 @@ export async function generateMetadata( { params, searchParams }: Props, parent:
 export default async function Page({params}: { params: Promise<{ name: string, description: string }> }) {
   const { name } = await params;
 
-  const model = (models as Record<string, ModelData>)[name];
-  const render_views = model.images;
+  const model = (models as Record<string, ModelType>)[name];
 
-  return <ModelPage name={name} label={model.label} description={model.description} renderViews={render_views} downloadUrl={model.downloadModel}/>
+  return <ModelPage name={name} label={model.label} description={model.description} image={model.image} downloadUrl={model.downloadModel}/>
 }

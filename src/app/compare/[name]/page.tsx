@@ -2,9 +2,9 @@ import React from 'react'
 import { Button, Typography, Box, Grid2 as Grid } from "@mui/material";
 import type { Metadata, ResolvingMetadata  } from 'next'
 import ComparePage from "@/components/ComparePage";
-import models from "@/data/model-index.Fidelity.json"
+import models from "@/data/model-index.SampleAssets.json"
 import { baseUrl } from '@/lib/paths';
-import { RenderView } from "@/components/ModelPage";
+import { ModelType } from '@/lib/types';
 
 export const dynamicParams = false; // models that are not included in the list, generate 404
 
@@ -20,20 +20,13 @@ type Props = {
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>
 }
 
-type ModelData = {
-  label: string
-  description: string
-  downloadModel?: string
-  images: RenderView[]
-}
-
 export async function generateMetadata( { params, searchParams }: Props, parent: ResolvingMetadata
 ): Promise<Metadata> {
   // read route params
   const {name} = await params;
  
   // fetch data
-  const model = (models as Record<string, ModelData>)[name];
+  const model = (models as Record<string, ModelType>)[name];
  
   // optionally access and extend (rather than replace) parent metadata
   const previousImages = (await parent).openGraph?.images || []
@@ -45,7 +38,7 @@ export async function generateMetadata( { params, searchParams }: Props, parent:
     openGraph: {
       title: model.label,
       description: model.description,
-      images: [model.images[0].thumbnail, ...previousImages],
+      images: [model.thumbnail, ...previousImages],
     },
     robots: {
       index: false,
@@ -66,9 +59,7 @@ export async function generateMetadata( { params, searchParams }: Props, parent:
 export default async function Page({params}: { params: Promise<{ name: string }> }) {
   const { name } = await params;
 
-  const model = (models as Record<string, ModelData>)[name];
-
-  const render_views = model.images;
+  const model = (models as Record<string, ModelType>)[name];
   
-  return <ComparePage name={name} label={model.label} description={model.description} renderViews={render_views} downloadUrl={model.downloadModel}/>
+  return <ComparePage name={name} label={model.label} description={model.description} image={model.image} downloadUrl={model.downloadModel}/>
 }

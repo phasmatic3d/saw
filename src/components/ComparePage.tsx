@@ -18,23 +18,18 @@ import EngineSelection from './EngineSelection';
 import ShareIcon from '@mui/icons-material/Share';
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import ComparisonButton from '@/components/ComparisonButton';
+import LivePreviewSampleRenderer from '@/components/ImageComparison/LivePreviewSampleRenderer'
 import { basePath } from '@/lib/paths';
-
-type RenderView = {
-  name: string,
-  thumbnail: string,
-  image: string
-}
 
 type ComparePageProps = {
   name: string,
   label: string,
   description: string,
-  renderViews: Array<RenderView>,
+  image: string,
   downloadUrl?: string
 }
 
-export default function ComparePage({name, label, renderViews, description, downloadUrl}: ComparePageProps) {  
+export default function ComparePage({name, label, image, description, downloadUrl}: ComparePageProps) {  
   const theme = useTheme();
   const isXs = useMediaQuery(theme.breakpoints.only('xs'));
   const [sliderPosition, setSliderPosition] = React.useState(50); // Initial slider position (50%)
@@ -84,11 +79,8 @@ export default function ComparePage({name, label, renderViews, description, down
     }
   };
 
-  const e1 = renderViews.find(e=> e.name === engine1);
-  let image1 = (e1 && e1.image) || "";
-  image1 = `${basePath}${image1}`;
-  let image2 = renderViews.find(e=> e.name === engine2)?.image || "";
-  image2 = `${basePath}${image2}`;
+  let image1 = `${basePath}${image}`;
+  let image2 = `${basePath}${image}`;
 
   const onShare = () => {
     const shareURL = `${basePath}/compare/${name}?engine1=${engine1}&engine2=${engine2}`;
@@ -162,12 +154,12 @@ export default function ComparePage({name, label, renderViews, description, down
                 
             <ComparisonButton handleSelection={(index:number) => {setComparisonMode(index)}}/>
           </Box>
-          {comparisonMode===0 && <SideBySideComparison imgSrc1={image1} imgSrc2={image2}/>}
+          {comparisonMode===0 && <LivePreviewSampleRenderer src={"https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/DamagedHelmet/glTF-Binary/DamagedHelmet.glb"} imgSrc1={image1} imgSrc2={image2}/>}
           {comparisonMode===1 && <ImageComparisonSlider key={isMagnified.toString()} imgSrc1={image1} imgSrc2={image2} setSliderPosition={changePosition} sliderPosition={sliderPosition}/>}
           {comparisonMode===2 && <ImageDifferenceView key={isMagnified.toString()} imgSrc1={image1} imgSrc2={image2}/>}
           <Box display={{xs: 'flex', sm:'none'}} justifyContent='space-between' width='100%' pl={1} pr={1}>
-            <Box flex={1}><EngineSelection engineName={engine1} engineList={renderViews.map(e=> e.name)} handleChange={(name) => { if(name!==engine1 && name!==engine2) {setEngine1(name)} }}/></Box>
-            <Box flex={1} display='flex' justifyContent='flex-end'><EngineSelection engineName={engine2} engineList={renderViews.map(e=> e.name)} handleChange={(name) => { if(name!==engine1 && name!==engine2) {setEngine2(name)} }}/></Box>
+            <Box flex={1}><EngineSelection engineName={engine1} engineList={["1"]} handleChange={(name) => { if(name!==engine1 && name!==engine2) {setEngine1(name)} }}/></Box>
+            <Box flex={1} display='flex' justifyContent='flex-end'><EngineSelection engineName={engine2} engineList={["1"]} handleChange={(name) => { if(name!==engine1 && name!==engine2) {setEngine2(name)} }}/></Box>
           </Box>
           <Box display={{xs: 'none', sm:'flex'}} justifyContent='space-between' width='100%' pl={1} pr={1}>
             <Box flex={1}><Typography>{engine1}</Typography></Box>
@@ -175,7 +167,7 @@ export default function ComparePage({name, label, renderViews, description, down
           </Box>
         </Box>
         {!isMagnified && <Grid className={styles.side} display={{xs:'none', sm:'flex'}} sx={{overflow: "auto"}} height={"70vh"} container spacing={2}>
-          {renderViews.map((e,i) => { return <ModelRenderCard key={e.name} name={e.name} thumbnail={e.thumbnail} marked={(engine1 === e.name || engine2 === e.name)} onSelection={toggleSelection}/>})}
+          {/*renderViews.map((e,i) => { return <ModelRenderCard key={e.name} name={e.name} thumbnail={e.thumbnail} marked={(engine1 === e.name || engine2 === e.name)} onSelection={toggleSelection}/>})*/}
         </Grid>}
       </Grid>
     </>
