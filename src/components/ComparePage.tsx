@@ -3,7 +3,6 @@ import React from 'react';
 import { Typography, Box, Grid2 as Grid, ButtonGroup, Button, Popper, Grow, Paper, ClickAwayListener, MenuItem , MenuList, IconButton, Snackbar, Link } from "@mui/material";
 import ModelRenderCard from "@/components/ModelRenderCard"
 import ImageComparisonSlider from "@/components/ImageComparison/ImageComparisonSlider";
-import SideBySideComparison from './ImageComparison/SideBySideComparison'
 import ImageDifferenceView from './ImageComparison/ImageDifferenceView';
 import { useMediaQuery } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
@@ -20,24 +19,23 @@ import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import ComparisonButton from '@/components/ComparisonButton';
 import LivePreviewSampleRenderer from '@/components/ImageComparison/LivePreviewSampleRenderer'
 import { basePath } from '@/lib/paths';
+import { ModelType } from '@/lib/types';
 
 type ComparePageProps = {
   name: string,
   label: string,
   description: string,
   image: string,
-  downloadUrl?: string
+  downloadUrl?: string,
+  showcaseModels: Array<ModelType>
+  suggestedModels: Array<ModelType>
 }
 
-export default function ComparePage({name, label, image, description, downloadUrl}: ComparePageProps) {  
+export default function ComparePage({name, label, image, description, downloadUrl, showcaseModels, suggestedModels}: ComparePageProps) {  
   const theme = useTheme();
   const isXs = useMediaQuery(theme.breakpoints.only('xs'));
-  const [sliderPosition, setSliderPosition] = React.useState(50); // Initial slider position (50%)
   const [isVisible, setIsVisible] = React.useState(!isXs); 
   const [isMagnified, setMagnified] = React.useState(false);
-  const [engine1, setEngine1] = React.useState('three.js');
-  const [engine2, setEngine2] = React.useState('filament.js');
-  const [nextEngine, setNextEngine] = React.useState(0);
   const [comparisonMode, setComparisonMode] = React.useState(0);
   const [shareSnackbarOpen, setShareSnackbarOpen] = React.useState(false);
   const zoomOffsetRef = React.useRef<HTMLDivElement>(null);
@@ -54,36 +52,11 @@ export default function ComparePage({name, label, image, description, downloadUr
     setMagnified(open);
   }
 
-  React.useEffect(() => {
-    const searchParams = new URLSearchParams(window.location.search);
-    // Access specific search parameters
-    const param1 = searchParams.get("engine1");
-    const param2 = searchParams.get("engine2");
-
-    if(param1) { setEngine1(param1) }
-    if(param2) { setEngine2(param2) }    
-
-  }, []);
-
-  const toggleSelection = (engine: string) => {
-    if (engine1 === engine || engine2 === engine) {
-      return;
-    }
-    
-    if (nextEngine === 0 ) {
-      setEngine1(engine);
-      setNextEngine(1);
-    } else  {
-      setEngine2(engine);
-      setNextEngine(0);
-    }
-  };
-
   let image1 = `${basePath}${image}`;
   let image2 = `${basePath}${image}`;
 
   const onShare = () => {
-    const shareURL = `${basePath}/compare/${name}?engine1=${engine1}&engine2=${engine2}`;
+    const shareURL = `${basePath}/compare/${name}`;
     if (navigator.share) {
       navigator.share({
         title: `Khronos Render Fidelity`,
@@ -123,10 +96,6 @@ export default function ComparePage({name, label, image, description, downloadUr
     </Box>
   </Box>;
 
-  const changePosition = (value: number) => {
-    setSliderPosition(value);
-  };
-
   return (
     <>
       <Grid container direction={{xs:"column-reverse", sm:'row'}} className={styles.main} sx={{flexWrap: "nowrap"}} spacing={2}>
@@ -148,26 +117,18 @@ export default function ComparePage({name, label, image, description, downloadUr
             {!isXs && isMagnified && <CloseFullscreenIcon onClick={() => toggleMagnified(false)} sx={{cursor: "pointer"}} /> }
             {!isXs && !isMagnified && <OpenInFullIcon onClick={() => toggleMagnified(true)} sx={{cursor: "pointer"}} /> }
             {isXs && <Box width={"24px"}/>}
-
-            {comparisonMode===1 && sliderPosition <  50 && <SwitchLeftIcon onClick={() => setSliderPosition(100)} sx={{cursor: "pointer"}} />}
-            {comparisonMode===1 && sliderPosition >= 50 && <SwitchRightIcon onClick={() => setSliderPosition(0)} sx={{cursor: "pointer"}} />}
-                
+    
             <ComparisonButton handleSelection={(index:number) => {setComparisonMode(index)}}/>
           </Box>
-          {comparisonMode===0 && <LivePreviewSampleRenderer src={"https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/DamagedHelmet/glTF-Binary/DamagedHelmet.glb"} imgSrc1={image1} imgSrc2={image2}/>}
-          {comparisonMode===1 && <ImageComparisonSlider key={isMagnified.toString()} imgSrc1={image1} imgSrc2={image2} setSliderPosition={changePosition} sliderPosition={sliderPosition}/>}
+          {comparisonMode===0 && <LivePreviewSampleRenderer src={"https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/DamagedHelmet/glTF-Binary/DamagedHelmet.glb"} imgSrc={image1}/>}
           {comparisonMode===2 && <ImageDifferenceView key={isMagnified.toString()} imgSrc1={image1} imgSrc2={image2}/>}
-          <Box display={{xs: 'flex', sm:'none'}} justifyContent='space-between' width='100%' pl={1} pr={1}>
-            <Box flex={1}><EngineSelection engineName={engine1} engineList={["1"]} handleChange={(name) => { if(name!==engine1 && name!==engine2) {setEngine1(name)} }}/></Box>
-            <Box flex={1} display='flex' justifyContent='flex-end'><EngineSelection engineName={engine2} engineList={["1"]} handleChange={(name) => { if(name!==engine1 && name!==engine2) {setEngine2(name)} }}/></Box>
-          </Box>
-          <Box display={{xs: 'none', sm:'flex'}} justifyContent='space-between' width='100%' pl={1} pr={1}>
-            <Box flex={1}><Typography>{engine1}</Typography></Box>
-            <Box flex={1} display='flex' justifyContent='flex-end'><Typography>{engine2}</Typography></Box>
-          </Box>
         </Box>
+
         {!isMagnified && <Grid className={styles.side} display={{xs:'none', sm:'flex'}} sx={{overflow: "auto"}} height={"70vh"} container spacing={2}>
-          {/*renderViews.map((e,i) => { return <ModelRenderCard key={e.name} name={e.name} thumbnail={e.thumbnail} marked={(engine1 === e.name || engine2 === e.name)} onSelection={toggleSelection}/>})*/}
+          <Box display="flex" mt={1} sx={{width: '100%'}}><Typography>{"Showcase"}</Typography></Box>
+          {showcaseModels.map((e,i) => { return <ModelRenderCard key={e.name} name={e.name} thumbnail={e.thumbnail} onSelection={ () => {}}/>})}
+          <Box display="flex" sx={{width: '100%'}}><Typography>{"Suggested"}</Typography></Box>
+          {suggestedModels.map((e,i) => { return <ModelRenderCard key={e.name} name={e.name} thumbnail={e.thumbnail} onSelection={ () => {}}/>})}
         </Grid>}
       </Grid>
     </>

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Button, Typography, Box, Grid2 as Grid } from "@mui/material";
 import type { Metadata, ResolvingMetadata  } from 'next'
 import ComparePage from "@/components/ComparePage";
 import models from "@/data/model-index.SampleAssets.json"
@@ -60,6 +59,18 @@ export default async function Page({params}: { params: Promise<{ name: string }>
   const { name } = await params;
 
   const model = (models as Record<string, ModelType>)[name];
+
+  const showcaseModels : Array<ModelType> = [
+    model,
+    model,
+    model
+  ];
+  const suggestedModels : Array<ModelType> = [
+    model,
+    model,
+    model,
+    model
+  ];
   
-  return <ComparePage name={name} label={model.label} description={model.description} image={model.image} downloadUrl={model.downloadModel}/>
+  return <ComparePage name={name} label={model.label} description={model.description} image={model.image} downloadUrl={model.downloadModel} showcaseModels={showcaseModels} suggestedModels={suggestedModels}/>
 }

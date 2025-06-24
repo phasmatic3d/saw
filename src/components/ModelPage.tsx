@@ -116,7 +116,7 @@ export default function ModelPage({name, label, image, downloadUrl, description}
           {(isXs && isVisible) && descriptionComponent}
         </Box>
         <Grid className={styles.selection} sx={{overflow: "auto"}} container justifyContent={"center"} spacing={0}>
-          <ModelRenderCard key={name} thumbnail={image} name={name} marked={true} onSelection={toggleSelection}/>
+          <ModelRenderCard key={name} thumbnail={image} name={name} onSelection={toggleSelection}/>
         </Grid>
       </Grid>
     </>
