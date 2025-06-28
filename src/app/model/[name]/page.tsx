@@ -1,7 +1,6 @@
 import React from 'react'
-import { Button, Typography, Box, Grid2 as Grid } from "@mui/material";
 import type { Metadata, ResolvingMetadata  } from 'next'
-import ModelPage from "@/components/ModelPage";
+import ComparePage from "@/components/Pages/ComparePage";
 import models from "@/data/model-index.SampleAssets.json"
 import { baseUrl } from '@/lib/paths';
 import { ModelType } from '@/lib/types';
@@ -9,6 +8,7 @@ import { ModelType } from '@/lib/types';
 export const dynamicParams = false; // models that are not included in the list, generate 404
 
 export async function generateStaticParams() {
+    
     return Object.values(models).map((model) => ({
       name: model.name
     }))
@@ -19,11 +19,11 @@ type Props = {
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>
 }
 
-
 export async function generateMetadata( { params, searchParams }: Props, parent: ResolvingMetadata): Promise<Metadata> {
   // read route params
   const {name} = await params;
-
+ 
+  // fetch data
   const model = (models as Record<string, ModelType>)[name];
  
   // optionally access and extend (rather than replace) parent metadata
@@ -54,10 +54,22 @@ export async function generateMetadata( { params, searchParams }: Props, parent:
   }
 }
 
-export default async function Page({params}: { params: Promise<{ name: string, description: string }> }) {
+export default async function Page({params}: { params: Promise<{ name: string }> }) {
   const { name } = await params;
 
   const model = (models as Record<string, ModelType>)[name];
 
-  return <ModelPage name={name} label={model.label} description={model.description} image={model.image} downloadUrl={model.downloadModel}/>
+  const showcaseModels : Array<ModelType> = [
+    model,
+    model,
+    model
+  ];
+  const suggestedModels : Array<ModelType> = [
+    model,
+    model,
+    model,
+    model
+  ];
+  
+  return <ComparePage name={name} label={model.label} description={model.description} image={model.image} downloadUrl={model.downloadModel} showcaseModels={showcaseModels} suggestedModels={suggestedModels}/>
 }
