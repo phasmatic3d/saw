@@ -19,7 +19,10 @@ type LandingPageProps = {
   models: Array<ModelType>
 }
 
-const tags = tagsFile.tags.map(t => {return {name: t, selected: false, index: 0}}).sort((a, b) => b.name.length - a.name.length);
+const tags = tagsFile.tags
+  .map(t => {return {name: t, selected: t === "Showcase", index: 0}})
+  .sort((a, b) => b.name.length - a.name.length)
+  .sort((a,b) => a.selected && b.selected? 0 : a.selected? -1 : b.selected? 1 : 0);
 
 export default function LandingPage({models}: LandingPageProps) {
 
@@ -31,10 +34,7 @@ export default function LandingPage({models}: LandingPageProps) {
   const [tagsExpanded, setTagsExpanded] = React.useState(false);
   const [isOverflown, setOverflown] = React.useState(false);
 
-  const tags2 = [tags[0], tags[1], tags[2]];
-
   const theme = useTheme();
-
 
   const handleSearchValueChange = (e:string) => {
     setSearchValue(e);
@@ -149,10 +149,14 @@ export default function LandingPage({models}: LandingPageProps) {
     <>
         <Typography className={styles.text}>
           This Repository is a curated collection of glTF models that illustrate one or more features or capabilities of glTF.
+          The glTF Sample Model Repository is a curated collection of 3D models designed to showcase and test the capabilities of the glTF 2.0 format.
+          Whether you're a developer, designer, educator, or toolmaker, this resource offers categorized access to models used in tutorials, testing tools, and public demonstrations. 
+          Each model includes a screenshot, description, license info, and live preview aimed at helping you explore, evaluate, and integrate glTF more effectively.
         </Typography>
 
         <Typography className={styles.text}>
-          Select the model you would like to compare, use the tags or search to filter the list.  Then click on any two Renders that you would like to compare and select Compare.  You can also select the view mode (Side-by-side, Slider and Difference).
+          All models are tagged to allow easier access. 
+          You can select the model you would like to view, use the tags or search to filter the list. 
         </Typography>
 
         <Box display='flex' flexDirection='column' alignItems='center' gap={2} >

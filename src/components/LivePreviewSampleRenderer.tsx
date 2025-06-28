@@ -21,14 +21,17 @@ export type ImageComparisonSliderProps = {
 export default function LivePreviewSampleRenderer({src, imgSrc}: ImageComparisonSliderProps) {
 
   const canvasRef = React.useRef<HTMLCanvasElement>(null);
+  const canvas2DRef = React.useRef<HTMLCanvasElement>(null);
   const canvasContainerRef = React.useRef<HTMLDivElement>(null);
   const canvasContainerWrapperRef = React.useRef<HTMLDivElement>(null);
 
   React.useEffect(() => {
     if(canvasRef == null || canvasRef.current == null) { return; }
     const canvas = canvasRef.current;
-    /*const webGl2Context = canvas.getContext('webgl2') as WebGL2RenderingContext;
-    const view = new Renderer.GltfView(webGl2Context);
+    const webGl2Context = canvas.getContext('webgl2') as WebGL2RenderingContext;
+    webGl2Context.clearColor(1,0,0,1);
+    webGl2Context.clear(webGl2Context.COLOR_BUFFER_BIT);
+    /*const view = new Renderer.GltfView(webGl2Context);
     const state = view.createState();
     state.sceneIndex = 0;
     state.animationIndices = [0, 1, 2];
@@ -49,10 +52,12 @@ export default function LivePreviewSampleRenderer({src, imgSrc}: ImageComparison
 
   React.useEffect(() => {
     if(canvasRef == null || canvasRef.current == null) { return; }
+    if(canvas2DRef == null || canvas2DRef.current == null) { return; }
     if(canvasContainerRef == null || canvasContainerRef.current == null) { return; }
     if(canvasContainerWrapperRef == null || canvasContainerWrapperRef.current == null) { return; }
     
     const canvas = canvasRef.current;
+    const canvas2D = canvas2DRef.current;
     const canvasContainer = canvasContainerRef.current;
     const canvasContainerWrapper = canvasContainerWrapperRef.current;
 
@@ -76,8 +81,8 @@ export default function LivePreviewSampleRenderer({src, imgSrc}: ImageComparison
           const maxHeight = canvas.height; // Set max height
           
           // Calculate new dimensions while maintaining aspect ratio
-          const width = canvasContainer.clientWidth;
-          const height = canvasContainer.clientWidth * ar;
+          let width = canvasContainer.clientWidth;
+          let height = canvasContainer.clientWidth * ar;
           if(width > maxWidth)
           {
             //width = maxWidth;
@@ -85,8 +90,8 @@ export default function LivePreviewSampleRenderer({src, imgSrc}: ImageComparison
           }
           if(height > maxHeight)
           {
-            //height = maxHeight;
-            //width = maxHeight * aspectRatio;
+            height = maxHeight;
+            width = maxHeight / ar;
           }
 
           canvasContainerWrapper.style.width = `${width}px`;
@@ -96,6 +101,18 @@ export default function LivePreviewSampleRenderer({src, imgSrc}: ImageComparison
           canvas.height = height;
           canvas.style.width = `${width}px`;
           canvas.style.height = `${height}px`;
+
+          canvas2D.width = width;
+          canvas2D.height = height;
+          canvas2D.style.width = `${width}px`;
+          canvas2D.style.height = `${height}px`;
+          
+          const webGl2Context = canvas.getContext('webgl2') as WebGL2RenderingContext;
+          webGl2Context.clearColor(1,0,0,1);
+          webGl2Context.clear(webGl2Context.COLOR_BUFFER_BIT);
+
+          const context2D = canvas2D.getContext('2d') as CanvasRenderingContext2D;
+          context2D.drawImage(img1, 0, 0, width, height);
       };
 
       const resizeObserver = new ResizeObserver(() => {
@@ -105,7 +122,6 @@ export default function LivePreviewSampleRenderer({src, imgSrc}: ImageComparison
       });
         
       // Observe the canvas
-      //resizeObserver.observe(canvasContainer);
       resizeObserver.observe(document.body);
 
       return resizeObserver;
@@ -118,8 +134,9 @@ export default function LivePreviewSampleRenderer({src, imgSrc}: ImageComparison
   
     return (
       <Box ref={canvasContainerRef}>
-        <Box ref={canvasContainerWrapperRef} sx={{textAlign: "center", margin: "auto"}}>
+        <Box ref={canvasContainerWrapperRef} sx={{textAlign: "center", margin: "auto", position: 'relative'}}>
           <canvas ref={canvasRef}/>
+          <canvas ref={canvas2DRef} style={{backgroundColor: 'transparent', position: 'absolute', left: 0, top: 0, zIndex: 10}}/>
         </Box>
       </Box>
     );

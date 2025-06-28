@@ -9,6 +9,22 @@
     "Testing",
     "Core",
     "undefined",
-    "Animation"
+    "Animation",
+    "Morphing",
+    "Meshopt",
+    "Specular",
+    "Sheen",
+    "Clearcoat",
+    "Texture Transform",
+    "Anisotropy",
+    "Iridescence",
+    "Unlit",
+    "Lights",
+    "Emissive",
+    "Variants",
+    "IOR",
+    "WebP",
+    "pbrSpecularGlossiness",
+    "XMP"
   ]
 }

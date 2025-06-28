@@ -17,7 +17,8 @@ async function* getFiles(dir) {
   }
 }
 
-const ModelList = await fetch("https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/model-index.json").then(res => res.json()).catch(e => {return []});
+//const ModelList = await fetch("https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/model-index.json").then(res => res.json()).catch(e => {return []});
+const ModelList = JSON.parse(await fs.promises.readFile(`./glTF-Sample-Assets/Models/model-index.json`, 'utf-8'));
 const ModelTags = {};
 const ModelMap = {};
 ModelList.forEach(item => {
@@ -57,7 +58,7 @@ const ext_to_label = {
 };
 
 await (async () => {
-  for await (const dir of model_directory.filter((e,i) => i<3)) {
+  for await (const dir of model_directory.filter((e,i) => i<99999)) {
     if(!dir.isDirectory()) continue;
 
     const name = dir.name;
@@ -71,9 +72,19 @@ await (async () => {
       continue;
     }
     
-    const metadata = JSON.parse(await fs.promises.readFile(`./glTF-Sample-Assets/${folderpath}/metadata.json`, 'utf-8'));
-    //const gltf = await fetch(`https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/${folderpath}/glTF/${name}.gltf`).then(res => res.json()).catch(e => null);
-    const gltf = JSON.parse(await fs.promises.readFile(`./glTF-Sample-Assets/${folderpath}/glTF/${name}.gltf`, 'utf-8'));
+    let metadata = null;
+    let gltf = null;
+    try {
+      metadata = JSON.parse(await fs.promises.readFile(`./glTF-Sample-Assets/${folderpath}/metadata.json`, 'utf-8'));
+      gltf = JSON.parse(await fs.promises.readFile(`./glTF-Sample-Assets/${folderpath}/glTF/${name}.gltf`, 'utf-8'));
+    }
+    catch(e)
+    {
+      console.log(e);
+      continue;
+    }
+    //const metadata = JSON.parse(await fs.promises.readFile(`./glTF-Sample-Assets/${folderpath}/metadata.json`, 'utf-8'));
+    //const gltf = JSON.parse(await fs.promises.readFile(`./glTF-Sample-Assets/${folderpath}/glTF/${name}.gltf`, 'utf-8'));
     const glb = model && model.variants && model.variants['glTF-Binary'];
     const glb_draco = model && model.variants && Object.keys(model.variants).find(variant => variant.includes('Draco'));
     const glb_meshopt = model && model.variants && model.variants['glTF-Quantized'];
@@ -168,13 +179,11 @@ await (async () => {
       
       ModelMap2[name].image = image_directory + '/' + name + "/" + model.screenshot;
       ModelMap2[name].thumbnail = tgt_directory + '/' + filename + '.thumb' + '.webp';
+      //ModelMap2[name].thumbnail = `${tgt_directory}/${filename}.thumb.webp`;
     }   
   }
 })();
 
-//console.log('ModelList', ModelList.length);
-//console.log('ModelMap', Object.keys(ModelMap).length);
-//console.log('ModelMap2', Object.keys(ModelMap2).length);
 console.log('ModelTags', ModelTags);
 
 const TagList = {tags: []};

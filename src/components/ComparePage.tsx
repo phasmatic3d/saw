@@ -17,7 +17,7 @@ import EngineSelection from './EngineSelection';
 import ShareIcon from '@mui/icons-material/Share';
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import ComparisonButton from '@/components/ComparisonButton';
-import LivePreviewSampleRenderer from '@/components/ImageComparison/LivePreviewSampleRenderer'
+import LivePreviewSampleRenderer from '@/components/LivePreviewSampleRenderer'
 import { basePath } from '@/lib/paths';
 import { ModelType } from '@/lib/types';
 
