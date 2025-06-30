@@ -109,15 +109,18 @@ export default function ComparePage({name, label, image, description, downloadUr
         </Box>
         {/* Actions */}
         <Box display='flex' flexDirection='row' width='100%' justifyContent='flex-start' mt={2}>
-          {downloadUrl && <IconButton component="a" href={downloadUrl} download><FileDownloadIcon sx={{color: 'grey.100'}}/></IconButton>}
+          {false && downloadUrl && <IconButton component="a" href={downloadUrl} download><FileDownloadIcon sx={{color: 'grey.100'}}/></IconButton>}
+          <Box mr={3}>
+            <Link href={downloadUrl} color="inherit" underline='hover' rel="noopener" sx={{fontWeight:'bold', display:'flex', alignItems:'center'}}>Download GLB<FileDownloadIcon fontSize='small' sx={{color: 'grey.100', ml: 0.5}}/></Link>
+          </Box>
           <Box mr={3}>
             <Link onClick={onShare} href="#" color="inherit" underline='hover' target="_blank" rel="noopener" sx={{fontWeight:'bold', display:'flex', alignItems:'center'}}>Share <ShareIcon fontSize='small' sx={{color: 'grey.100', ml: 0.5}}/></Link>
           </Box>
           <Box mr={3}>
-            <ExternalLink url={`https://github.com/KhronosGroup/glTF-Sample-Assets/blob/main/Models/${name}/README.md`}>See on sample viewer</ExternalLink>
+            <ExternalLink url={`https://github.khronos.org/glTF-Sample-Viewer-Release/?model=${downloadUrl}`}>See on sample viewer</ExternalLink>
           </Box>
           <Box mr={3}>
-            <ExternalLink url={`https://github.com/KhronosGroup/glTF-Sample-Assets/blob/main/Models/${name}/README.md`}>Compare</ExternalLink>
+            <ExternalLink url={`https://github.khronos.org/glTF-Compressor-Release/`}>Compare</ExternalLink>
           </Box>
         </Box>
         <Divider />
@@ -144,9 +147,9 @@ export default function ComparePage({name, label, image, description, downloadUr
       <Box sx={{flex: 1}}>
         {!isMagnified && <Grid className={styles.side} display={{xs:'none', sm:'flex'}} sx={{overflow: "auto", width:'100%'}} height={"70vh"} container spacing={2}>
           <Box display="flex" mt={1} sx={{width: '100%'}}><Typography variant='h6'>{"Showcase"}</Typography></Box>
-          {showcaseModels.map((e,i) => { return <ModelRenderCard key={e.name} name={e.name} thumbnail={e.thumbnail} onSelection={ () => {}}/>})}
+          {showcaseModels.map((e,i) => { return <ModelRenderCard key={e.name+""+i} name={e.name} thumbnail={e.thumbnail} onSelection={ () => {}}/>})}
           <Box display="flex" mt={1} sx={{width: '100%'}}><Typography variant='h6'>{"Suggested"}</Typography></Box>
-          {suggestedModels.map((e,i) => { return <ModelRenderCard key={e.name} name={e.name} thumbnail={e.thumbnail} onSelection={ () => {}}/>})}
+          {suggestedModels.map((e,i) => { return <ModelRenderCard key={e.name+""+i} name={e.name} thumbnail={e.thumbnail} onSelection={ () => {}}/>})}
         </Grid>}
       </Box>
     </Box>);
