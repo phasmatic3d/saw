@@ -13,6 +13,11 @@ Then install the node packages using
 npm install
 ``` 
 
+generate thumbnails
+```bash 
+npm run thumbnail
+``` 
+
 and run the development server using 
 ```bash
 npm run dev
