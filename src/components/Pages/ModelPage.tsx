@@ -5,7 +5,7 @@ import ModelRenderCard from "@/components/ModelRenderCard"
 import ImageDifferenceView from '@/components/ImageComparison/ImageDifferenceView';
 import { useMediaQuery } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
-import styles from "./ComparePage.module.css";
+import styles from "./ModelPage.module.css";
 import LaunchIcon from '@mui/icons-material/Launch';
 import ShareIcon from '@mui/icons-material/Share';
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
@@ -22,7 +22,7 @@ function ExternalLink( {url, children} : React.PropsWithChildren<ExternalLinkPro
   return (<Link href={url} color="inherit" underline='hover' target="_blank" rel="noopener" sx={{fontWeight:'bold', display:'flex', alignItems:'center'}}>{children} <LaunchIcon fontSize='small' sx={{ml:0.5}}/></Link>)
 }
 
-type ComparePageProps = {
+type ModelPageProps = {
   name: string,
   label: string,
   description: string,
@@ -32,7 +32,7 @@ type ComparePageProps = {
   suggestedModels: Array<ModelType>
 }
 
-export default function ComparePage({name, label, image, description, downloadUrl, showcaseModels, suggestedModels}: ComparePageProps) {  
+export default function ComparePage({name, label, image, description, downloadUrl, showcaseModels, suggestedModels}: ModelPageProps) {  
   const theme = useTheme();
   const isXs = useMediaQuery(theme.breakpoints.only('xs'));
   const [isVisible, setIsVisible] = React.useState(!isXs); 

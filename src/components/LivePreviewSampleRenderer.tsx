@@ -49,7 +49,6 @@ const orbit = {
 
 const handleMouseDown = (ev: React.MouseEvent<HTMLCanvasElement>) => {
 
-  console.log("Down");
   if(ev.buttons === 1 && ev.shiftKey === false)
   {
     orbit.prev_mouse[0] = ev.pageX;
@@ -70,7 +69,6 @@ const handleMouseDown = (ev: React.MouseEvent<HTMLCanvasElement>) => {
 
 const handleMouseMove = (ev: React.MouseEvent<HTMLCanvasElement>) => {
 
-  console.log("Move");
   if(ev.buttons === 1)
   {
     orbit.curr_mouse[0] = ev.pageX;
@@ -205,13 +203,9 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback}: 
             }
           }
         }
-        for(let accessor of uniqueAccessors)
+        for(const accessor of uniqueAccessors)
         {
           numberOfVertices += state.gltf.accessors[accessor].count;
-        }
-
-        interface ViewerStats {
-          faceCount: number;
         }
         
         return {
@@ -308,10 +302,6 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback}: 
           canvas2D.height = height;
           canvas2D.style.width = `${width}px`;
           canvas2D.style.height = `${height}px`;
-          
-          //const webGl2Context = canvas.getContext('webgl2') as WebGL2RenderingContext;
-          //webGl2Context.clearColor(1,0,0,1);
-          //webGl2Context.clear(webGl2Context.COLOR_BUFFER_BIT);
 
           const context2D = canvas2D.getContext('2d') as CanvasRenderingContext2D;
           context2D.drawImage(img1, 0, 0, width, height);

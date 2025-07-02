@@ -1,6 +1,6 @@
 import React from 'react'
 import type { Metadata, ResolvingMetadata  } from 'next'
-import ComparePage from "@/components/Pages/ComparePage";
+import ModelPage from "@/components/Pages/ModelPage";
 import models from "@/data/model-index.SampleAssets.json"
 import { baseUrl } from '@/lib/paths';
 import { ModelType } from '@/lib/types';
@@ -71,5 +71,5 @@ export default async function Page({params}: { params: Promise<{ name: string }>
     model
   ];
   
-  return <ComparePage name={name} label={model.label} description={model.description} image={model.image} downloadUrl={model.downloadModel} showcaseModels={showcaseModels} suggestedModels={suggestedModels}/>
+  return <ModelPage name={name} label={model.label} description={model.description} image={model.image} downloadUrl={model.downloadModel} showcaseModels={showcaseModels} suggestedModels={suggestedModels}/>
 }
