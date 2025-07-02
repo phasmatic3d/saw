@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "thumbnail": "node src/scripts/create_thumbnails.mjs",
-    "metadata": "node src/scripts/extract_model_metadata.mjs"
+    "metadata": "node src/scripts/extract_model_metadata.mjs",
+    "preinstall": "cd ./glTF-Sample-Renderer && npm install && npm run build"
   },
   "dependencies": {
     "@emotion/cache": "^11.14.0",
