@@ -118,7 +118,7 @@ export default function ComparePage({name, label, image, description, downloadUr
     
             <ComparisonButton handleSelection={(index:number) => {setComparisonMode(index)}}/>
           </Box>
-          {comparisonMode===0 && <LivePreviewSampleRenderer src={"https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/DamagedHelmet/glTF-Binary/DamagedHelmet.glb"} imgSrc={image1}/>}
+          {comparisonMode===0 && <LivePreviewSampleRenderer src={"https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/DamagedHelmet/glTF-Binary/DamagedHelmet.glb"} imgSrc={image1} statsCallback={() => {}}/>}
           {comparisonMode===2 && <ImageDifferenceView key={isMagnified.toString()} imgSrc1={image1} imgSrc2={image2}/>}
         </Box>
 
