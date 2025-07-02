@@ -12,6 +12,8 @@ import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import LivePreviewSampleRenderer from '@/components/LivePreviewSampleRenderer'
 import { basePath } from '@/lib/paths';
 import { ModelType } from '@/lib/types';
+import { Stats } from "@/components/LivePreviewSampleRenderer";
+import { toReadableBytes, toReadableNumber } from '@/lib/conversions';
 
 type ExternalLinkProps = {
   url: string,
@@ -39,6 +41,13 @@ export default function ComparePage({name, label, image, description, downloadUr
   const [shareSnackbarOpen, setShareSnackbarOpen] = React.useState(false);
   const zoomOffsetRef = React.useRef<HTMLDivElement>(null);
 
+  const [meshStats, setMeshStats] = React.useState<Stats>({
+    totalImagesFileSize: 0,
+    numberOfVertices: 0,
+    numberOfFaces: 0,
+    totalFileSize: 0
+  });
+
   const toggleDiv = () => {
     setIsVisible(!isVisible);
   };
@@ -51,8 +60,8 @@ export default function ComparePage({name, label, image, description, downloadUr
     setMagnified(open);
   }
 
-  let image1 = `${basePath}${image}`;
-  let image2 = `${basePath}${image}`;
+  const image1 = `${basePath}${image}`;
+  const image2 = `${basePath}${image}`;
 
   const onShare = () => {
     const shareURL = `${basePath}/compare/${name}`;
@@ -100,7 +109,7 @@ export default function ComparePage({name, label, image, description, downloadUr
     <Box display="flex" sx={{width: '100%'}}>
       {/* Main Content */}
       <Box flex={4} p={2}>
-        {comparisonMode===0 && <LivePreviewSampleRenderer src={"https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/DamagedHelmet/glTF-Binary/DamagedHelmet.glb"} imgSrc={image1}/>}
+        {comparisonMode===0 && <LivePreviewSampleRenderer src={"https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/DamagedHelmet/glTF-Binary/DamagedHelmet.glb"} imgSrc={image1} statsCallback={(stats => { setMeshStats(stats)}) }/>}
         {comparisonMode===1 && <ImageDifferenceView key={isMagnified.toString()} imgSrc1={image1} imgSrc2={image2}/>}
         <Typography variant='h5' component="h1" sx={{paddingTop: 2, paddingBottom: 2}}>{label}</Typography>
         {/* Tags */}
@@ -127,10 +136,16 @@ export default function ComparePage({name, label, image, description, downloadUr
         {/* Quck Info */}
         <Box display='flex' flexDirection='row' mt={2}>
           <Box mr={1}>
-            <Typography component="span">{"Trianges:"}</Typography> <Typography component="span" sx={{fontWeight:'bold'}}>{"23"}</Typography>
+            <Typography component="span">{"Trianges:"}</Typography> <Typography component="span" sx={{fontWeight:'bold'}}>{toReadableNumber(meshStats.numberOfFaces)}</Typography>
           </Box>
           <Box mr={1}>
-            <Typography component="span">{"Vertices:"}</Typography> <Typography component="span" sx={{fontWeight:'bold'}}>{"23"}</Typography>
+            <Typography component="span">{"Vertices:"}</Typography> <Typography component="span" sx={{fontWeight:'bold'}}>{toReadableNumber(meshStats.numberOfVertices)}</Typography>
+          </Box>
+          <Box mr={1}>
+            <Typography component="span">{"FileSize:"}</Typography> <Typography component="span" sx={{fontWeight:'bold'}}>{toReadableBytes(meshStats.totalFileSize)}</Typography>
+          </Box>
+          <Box mr={1}>
+            <Typography component="span">{"ImagesSize:"}</Typography> <Typography component="span" sx={{fontWeight:'bold'}}>{toReadableBytes(meshStats.totalImagesFileSize)}</Typography>
           </Box>
           <Box mr={1}>
             <Link href={`https://github.com/KhronosGroup/glTF-Sample-Assets/blob/main/Models/${name}/README.md`} color="inherit" underline='hover' target="_blank" rel="noopener" sx={{fontWeight:'bold', display:'flex', alignItems:'center'}}>More info <LaunchIcon fontSize='small' sx={{ml:0.5}}/></Link>

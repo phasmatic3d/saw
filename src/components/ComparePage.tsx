@@ -2,7 +2,6 @@
 import React from 'react';
 import { Typography, Box, Grid2 as Grid, ButtonGroup, Button, Popper, Grow, Paper, ClickAwayListener, MenuItem , MenuList, IconButton, Snackbar, Link } from "@mui/material";
 import ModelRenderCard from "@/components/ModelRenderCard"
-import ImageComparisonSlider from "@/components/ImageComparison/ImageComparisonSlider";
 import ImageDifferenceView from './ImageComparison/ImageDifferenceView';
 import { useMediaQuery } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
@@ -13,7 +12,6 @@ import SwitchLeftIcon from '@mui/icons-material/SwitchLeft';
 import SwitchRightIcon from '@mui/icons-material/SwitchRight';
 import CloseFullscreenIcon from '@mui/icons-material/CloseFullscreen';
 import OpenInFullIcon from '@mui/icons-material/OpenInFull';
-import EngineSelection from './EngineSelection';
 import ShareIcon from '@mui/icons-material/Share';
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import ComparisonButton from '@/components/ComparisonButton';
@@ -52,8 +50,8 @@ export default function ComparePage({name, label, image, description, downloadUr
     setMagnified(open);
   }
 
-  let image1 = `${basePath}${image}`;
-  let image2 = `${basePath}${image}`;
+  const image1 = `${basePath}${image}`;
+  const image2 = `${basePath}${image}`;
 
   const onShare = () => {
     const shareURL = `${basePath}/compare/${name}`;
