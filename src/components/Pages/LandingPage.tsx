@@ -150,7 +150,7 @@ export default function LandingPage({models}: LandingPageProps) {
         <Typography className={styles.text}>
           This Repository is a curated collection of glTF models that illustrate one or more features or capabilities of glTF.
           The glTF Sample Model Repository is a curated collection of 3D models designed to showcase and test the capabilities of the glTF 2.0 format.
-          Whether you're a developer, designer, educator, or toolmaker, this resource offers categorized access to models used in tutorials, testing tools, and public demonstrations. 
+          Whether you&apos;re a developer, designer, educator, or toolmaker, this resource offers categorized access to models used in tutorials, testing tools, and public demonstrations. 
           Each model includes a screenshot, description, license info, and live preview aimed at helping you explore, evaluate, and integrate glTF more effectively.
         </Typography>
 
