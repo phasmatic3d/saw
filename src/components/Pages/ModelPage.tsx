@@ -131,6 +131,9 @@ export default function ComparePage({name, label, image, description, downloadUr
           <Box mr={3}>
             <ExternalLink url={`https://github.khronos.org/glTF-Compressor-Release/`}>Compare</ExternalLink>
           </Box>
+          <Box mr={1}>
+            <Link href={`https://github.com/KhronosGroup/glTF-Sample-Assets/blob/main/Models/${name}/README.md`} color="inherit" underline='hover' target="_blank" rel="noopener" sx={{fontWeight:'bold', display:'flex', alignItems:'center'}}>More info <LaunchIcon fontSize='small' sx={{ml:0.5}}/></Link>
+          </Box>
         </Box>
         <Divider />
         {/* Quck Info */}
@@ -147,9 +150,7 @@ export default function ComparePage({name, label, image, description, downloadUr
           <Box mr={1}>
             <Typography component="span">{"ImagesSize:"}</Typography> <Typography component="span" sx={{fontWeight:'bold'}}>{toReadableBytes(meshStats.totalImagesFileSize)}</Typography>
           </Box>
-          <Box mr={1}>
-            <Link href={`https://github.com/KhronosGroup/glTF-Sample-Assets/blob/main/Models/${name}/README.md`} color="inherit" underline='hover' target="_blank" rel="noopener" sx={{fontWeight:'bold', display:'flex', alignItems:'center'}}>More info <LaunchIcon fontSize='small' sx={{ml:0.5}}/></Link>
-          </Box>
+          
         </Box>
         {/* Description */}
         <Box display='flex' mt={2}>

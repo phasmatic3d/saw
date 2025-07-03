@@ -273,10 +273,6 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback}: 
       
       const [img1] = await Promise.all([loadImage(imgSrc)]) as HTMLImageElement[];
 
-      const width = img1.width;
-      const height = img1.height;
-      //const ar = height / width;
-      const ar = 9 / 16;
       
       const toolReisze = () => {
         if (canvasContainer.clientWidth == 0 || canvasContainer.clientHeight == 0) return;
@@ -288,7 +284,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback}: 
           
           // Calculate new dimensions while maintaining aspect ratio
           let width = canvasContainer.clientWidth;
-          let height = canvasContainer.clientWidth * ar;
+          let height = canvasContainer.clientHeight;
           if(width > maxWidth)
           {
             //width = maxWidth;
@@ -296,8 +292,8 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback}: 
           }
           if(height > maxHeight)
           {
-            height = maxHeight;
-            width = maxHeight / ar;
+            //height = maxHeight;
+            //width = maxHeight / ar;
           }
 
           canvasContainerWrapper.style.width = `${width}px`;
@@ -308,6 +304,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback}: 
           canvas.style.width = `${width}px`;
           canvas.style.height = `${height}px`;
 
+          // canvas2D
           canvas2D.width = width;
           canvas2D.height = height;
           canvas2D.style.width = `${width}px`;
@@ -335,7 +332,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback}: 
   }, [imgSrc]);
   
     return (
-      <Box ref={canvasContainerRef}>
+      <Box ref={canvasContainerRef} pl={2} pr={2}>
         <Script src="https://www.gstatic.com/draco/v1/decoders/draco_decoder_gltf.js" strategy="lazyOnload" onLoad={() => { console.log("LOADEDDDDDDDD Draco"); setDracoLoaded(true);}} />
         <Script src="/libs/libktx.js" strategy="lazyOnload" onLoad={() => { console.log("LOADEDDDDDDDD KTX"); setKTXLoaded(true); }}/>
         <Box ref={canvasContainerWrapperRef} sx={{textAlign: "center", margin: "auto", position: 'relative', minHeight: '40vh'}}>
