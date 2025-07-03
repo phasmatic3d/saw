@@ -1,17 +1,9 @@
 "use client"
 import React from 'react'
 import Script from 'next/script'
-import { Box } from "@mui/material";
-//import { GltfView } from "@khronosgroup/gltf-viewer";
-//import { GltfView } from '@khronosgroup/gltf-viewer/dist/gltf-viewer.module.js';
+import { Box, Button, IconButton, Paper, Checkbox, FormControlLabel, Switch, Typography, ButtonGroup, Select, FormControl, InputLabel, MenuItem  } from "@mui/material";
+import MenuIcon from '@mui/icons-material/Menu';
 import normalizeWheel from 'normalize-wheel';
-import { GltfState } from '@khronosgroup/gltf-viewer/dist/gltf-viewer.module.js';
-
-/*let GltfView: any;
-if (typeof window !== 'undefined') {
-  const mod = await import('@khronosgroup/gltf-viewer/dist/gltf-viewer.module.js');
-  GltfView = mod.GltfView;
-}*/
 
 // Load the images
 const loadImage = (src: string) =>
@@ -111,15 +103,29 @@ const handleMouseWheel = (ev: React.WheelEvent<HTMLCanvasElement>) => {
   orbit.deltaZoom = normalizeWheel(ev).spinY;//ev.deltaY;
 }
 
+const extensions = {'KTX': true, 'Draco': true, 'Quantization': true, 'KHR_materials_clearcoat': true, 'KHR_materials_sheen':true, 'KHR_materials_transmission':true};
+const debugOptions = ['None', 'Occlusion', 'Shading Normal', "Base Color", "Metallic", "Roughness"];
+const animations = ['Idle', 'Walk', 'Jump'];
+
+let debugOutput2 = "None";
+
 export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback}: ImageComparisonSliderProps) {
 
   const [ktxLoaded, setKTXLoaded] = React.useState(false);
   const [dracoLoaded, setDracoLoaded] = React.useState(false);
+  const [showOptions, setShowOptions] = React.useState(true);
+  const [debugOutput, setDebugOutput] = React.useState("None");
 
   const canvasRef = React.useRef<HTMLCanvasElement>(null);
   const canvas2DRef = React.useRef<HTMLCanvasElement>(null);
   const canvasContainerRef = React.useRef<HTMLDivElement>(null);
   const canvasContainerWrapperRef = React.useRef<HTMLDivElement>(null);
+
+  React.useEffect(() => {
+      console.log("Effect", debugOutput)
+      debugOutput2 = debugOutput;
+
+    }, [debugOutput])
 
   React.useEffect(() => {
     if((ktxLoaded && dracoLoaded) == false)
@@ -132,22 +138,17 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback}: 
 
     const load = async () => {
 
-      const {GltfView} = await import('@khronosgroup/gltf-viewer/dist/gltf-viewer.module.js');
+      const {GltfView, GltfState} = await import('@khronosgroup/gltf-viewer/dist/gltf-viewer.module.js');
       const view = new GltfView(webGl2Context);
       const state = view.createState();
       state.sceneIndex = 0;
       state.animationIndices = [0, 1, 2];
       state.animationTimer.start();
 
-      const resourceLoader = view.createResourceLoader(
-        undefined,
-        undefined        
-      );
+      const resourceLoader = view.createResourceLoader();
       state.gltf = await resourceLoader.loadGltf("/DamagedHelmet.glb");
       
-      const stats = view.gatherStatistics(state);
-      console.log(state.gltf)
-      const customGatherStatistics = async (state: GltfState) : Promise<Stats> => {
+      const customGatherStatistics = async (state: InstanceType<typeof GltfState>) : Promise<Stats> => {
 
         const viewerStats = view.gatherStatistics(state);
 
@@ -170,12 +171,11 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback}: 
           .catch(err => { return 0; });
         }
 
-        let imagesFileSizes = [];
+        const imagesFileSizes = [];
         for(let i = 0; i < state.gltf.images.length; i++)
           imagesFileSizes.push(loadBlob(state.gltf.images[i].image.src));
         const imagesFileSize = (await Promise.all(imagesFileSizes)).reduce((acc: number, curr: number) => acc + curr, 0);
         const totalFileSize = await loadBlob(src);
-
 
         // Face and Triangle count. Copied code from gltf-sample-renderer
         let numberOfVertices = 0;
@@ -226,8 +226,17 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback}: 
       })
       state.userCamera.perspective.aspectRatio = canvas.width / canvas.height;
       state.userCamera.fitViewToScene(state.gltf, state.sceneIndex);
+
+      state.renderingParameters.debugOutput = GltfState.DebugOutput.generic.OCCLUSION;
+      //state.renderingParameters.debugOutput = GltfState.DebugOutput.generic.NORMAL;
+      state.renderingParameters.debugOutput = GltfState.DebugOutput.mr.BASECOLOR;
+      state.renderingParameters.debugOutput = GltfState.DebugOutput.mr.ROUGHNESS;
+      state.renderingParameters.debugOutput = GltfState.DebugOutput.mr.METALLIC;
+      state.renderingParameters.debugOutput = debugOutput;
       const update = () =>
       { 
+        console.log(debugOutput2);
+        state.renderingParameters.debugOutput = debugOutput2;
         state.userCamera.orbit(orbit.deltaPhi, orbit.deltaTheta);
         if(orbit.deltaZoom)
           state.userCamera.zoomBy(orbit.deltaZoom);
@@ -266,7 +275,8 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback}: 
 
       const width = img1.width;
       const height = img1.height;
-      const ar = height / width;
+      //const ar = height / width;
+      const ar = 9 / 16;
       
       const toolReisze = () => {
         if (canvasContainer.clientWidth == 0 || canvasContainer.clientHeight == 0) return;
@@ -331,6 +341,85 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback}: 
         <Box ref={canvasContainerWrapperRef} sx={{textAlign: "center", margin: "auto", position: 'relative', minHeight: '40vh'}}>
           <canvas ref={canvasRef} onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp} onWheel={handleMouseWheel}/>
           <canvas ref={canvas2DRef} style={{display: 'none', backgroundColor: 'transparent', position: 'absolute', left: 0, top: 0, zIndex: 10}}/>
+
+          {/* Button in bottom left */}
+          <Box position="absolute" bottom={20} left={20} zIndex={10}>
+            <IconButton color="default" onClick={() => setShowOptions(!showOptions)} sx={{ backgroundColor: 'black', color: 'white', '&:hover': { backgroundColor: 'gray', }, width: 32, height: 32, borderRadius: '50%', }}>
+              <MenuIcon />
+            </IconButton>
+          </Box>
+          {/* Floating options window */}
+          {showOptions && (
+            <Paper
+              elevation={4}
+              sx={{
+                position: 'absolute',
+                bottom: 70,
+                left: 10,
+                zIndex: 9,
+                p: 1,
+                width: 200,
+                borderRadius: 2,
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'flex-start', // ← This is key
+              }}
+              
+            >
+              <Typography variant="h6">Inspection</Typography>
+              <Box display='flex' flexDirection='column' alignItems='flex-start' width='100%' overflow='hidden'>
+                <Typography variant="subtitle2" gutterBottom>
+                  Extensions
+                </Typography>
+                {Object.keys(extensions).map((extKey) => (
+                  <FormControlLabel
+                    key={extKey}
+                    control={
+                      <Switch
+                        //checked={extensions[extKey]}
+                        //onChange={() => toggleExtension(extKey)}
+                      />
+                    }
+                    label={extKey}
+                  />
+                ))}
+              </Box>
+
+              <Box display='flex' flexDirection='column' alignItems='flex-start' mb={1}>
+                <Typography variant="subtitle2" gutterBottom>
+                  Animation
+                </Typography>
+                
+                  {animations.map((anim) => (
+                    <Button
+                      key={anim}
+                      //onClick={() => setSelectedAnimation(anim)}
+                      //variant={selectedAnimation === anim ? 'contained' : 'outlined'}
+                    >
+                      {anim}
+                    </Button>
+                  ))}
+                
+              </Box>
+              <Box width='100%'>
+                <FormControl fullWidth size="small">
+                  <InputLabel id="debug-output-label">Debug Output</InputLabel>
+                  <Select
+                    labelId="debug-output-label"
+                    value={debugOutput}
+                    label="Debug Output"
+                    onChange={(e) => { setDebugOutput(e.target.value)}}
+                  >
+                    {debugOptions.map((opt) => (
+                      <MenuItem key={opt} value={opt}>
+                        {opt}
+                      </MenuItem>
+                    ))}
+                  </Select>
+                </FormControl>
+              </Box>
+            </Paper>
+          )}
         </Box>
       </Box>
     );
