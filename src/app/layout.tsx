@@ -9,6 +9,7 @@ import theme from '../theme'
 import { Typography, Box, Container, Grid2 as Grid } from "@mui/material";
 import CssBaseline from '@mui/material/CssBaseline';
 import "./globals.css";
+import BugReportButton from "@/components/BugReportButton";
 
 // Khronos currently uses: OpenSans-Semibold, Helvetica, Arial, sans-serif;
 const openSans = Open_Sans({
@@ -49,6 +50,7 @@ export default function RootLayout({
               <Header />
               <Container sx={{flexGrow: 1, overflow: "auto", flex: 1 }} maxWidth={false}>
                 {children}
+                <BugReportButton />
               </Container>
               <Footer />
             </Box>

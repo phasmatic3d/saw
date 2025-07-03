@@ -78,7 +78,6 @@ export default function Header() {
                 <MyButton variant="text" component={Link} href="/">Home</MyButton>
                 <MyButton variant="text" component={Link} href="/about">About</MyButton>
                 <MyButton variant="text" component={Link} href="/faq">FAQ</MyButton>
-                <MyButton variant="text" component={Link} href="/contribute">Contribute</MyButton>
             </Box>
             <Box flex={1} display={{ xs: 'flex', sm: 'none' }} justifyContent='flex-end'>
                 <LightDarkButton />
@@ -104,7 +103,6 @@ export default function Header() {
                     <MenuItem onClick={handleBurgerClose} component={Link} href="/">Home</MenuItem>
                     <MenuItem onClick={handleBurgerClose} component={Link} href="/about">About</MenuItem>
                     <MenuItem onClick={handleBurgerClose} component={Link} href="/faq">FAQ</MenuItem>
-                    <MenuItem onClick={handleBurgerClose} component={Link} href="/contribute">Contribute</MenuItem>
                 </Menu>
                 <IconButton
                     size="large"
