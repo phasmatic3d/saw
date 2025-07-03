@@ -129,7 +129,7 @@ export default function ComparePage({name, label, image, description, downloadUr
             <ExternalLink url={`https://github.khronos.org/glTF-Sample-Viewer-Release/?model=${downloadUrl}`}>See on sample viewer</ExternalLink>
           </Box>
           <Box mr={3}>
-            <ExternalLink url={`https://github.khronos.org/glTF-Compressor-Release/`}>Compare</ExternalLink>
+            <ExternalLink url={`https://github.khronos.org/glTF-Compressor-Release/?model=${downloadUrl}`}>Compare</ExternalLink>
           </Box>
           <Box mr={1}>
             <Link href={`https://github.com/KhronosGroup/glTF-Sample-Assets/blob/main/Models/${name}/README.md`} color="inherit" underline='hover' target="_blank" rel="noopener" sx={{fontWeight:'bold', display:'flex', alignItems:'center'}}>More info <LaunchIcon fontSize='small' sx={{ml:0.5}}/></Link>
