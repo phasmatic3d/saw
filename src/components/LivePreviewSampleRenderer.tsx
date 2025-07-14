@@ -332,7 +332,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback}: 
   }, [imgSrc]);
   
     return (
-      <Box ref={canvasContainerRef} pl={2} pr={2}>
+      <Box ref={canvasContainerRef}>
         <Script src="https://www.gstatic.com/draco/v1/decoders/draco_decoder_gltf.js" strategy="lazyOnload" onLoad={() => { console.log("LOADEDDDDDDDD Draco"); setDracoLoaded(true);}} />
         <Script src="/libs/libktx.js" strategy="lazyOnload" onLoad={() => { console.log("LOADEDDDDDDDD KTX"); setKTXLoaded(true); }}/>
         <Box ref={canvasContainerWrapperRef} sx={{textAlign: "center", margin: "auto", position: 'relative', minHeight: '40vh'}}>
