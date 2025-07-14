@@ -117,7 +117,7 @@ export default function ComparePage({name, label, image, description, downloadUr
           {tags.map((e,i) => {return <Chip key={e} label={e} sx={{ml : i==0? 0 : 1, fontWeight: 'bold'}} color={"success"} />})}
         </Box>
         {/* Actions */}
-        <Box display='flex' flexDirection='row' width='100%' justifyContent='flex-start' mt={2}>
+        <Box display='flex' flexDirection={{xs:'column', sm:'row'}} width='100%' justifyContent='flex-start' mt={2}>
           {false && downloadUrl && <IconButton component="a" href={downloadUrl} download><FileDownloadIcon sx={{color: 'grey.100'}}/></IconButton>}
           <Box mr={3}>
             <Link href={downloadUrl} color="inherit" underline='hover' rel="noopener" sx={{fontWeight:'bold', display:'flex', alignItems:'center'}}>Download GLB<FileDownloadIcon fontSize='small' sx={{color: 'grey.100', ml: 0.5}}/></Link>
@@ -137,9 +137,9 @@ export default function ComparePage({name, label, image, description, downloadUr
         </Box>
         <Divider />
         {/* Quck Info */}
-        <Box display='flex' flexDirection='row' mt={2}>
+        <Box display='flex' flexDirection={{xs:'column', sm:'row'}} mt={2}>
           <Box mr={2}>
-            <Typography component="span">{"Trianges:"}</Typography> <Typography component="span" sx={{fontWeight:'bold'}}>{toReadableNumber(meshStats.numberOfFaces)}</Typography>
+            <Typography component="span">{"Triangles:"}</Typography> <Typography component="span" sx={{fontWeight:'bold'}}>{toReadableNumber(meshStats.numberOfFaces)}</Typography>
           </Box>
           <Box mr={2}>
             <Typography component="span">{"Vertices:"}</Typography> <Typography component="span" sx={{fontWeight:'bold'}}>{toReadableNumber(meshStats.numberOfVertices)}</Typography>

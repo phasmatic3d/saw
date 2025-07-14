@@ -33,6 +33,8 @@ export default function ModelRenderCard({name, thumbnail, onSelection}: ModelCar
                 style={{ 
                     width: "100%",
                     height: "auto",
+                    aspectRatio: '4/3',
+                    objectFit: 'cover',
                     textAlign: "center", 
                     cursor: 'pointer', 
                     borderRadius: '16px',

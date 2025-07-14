@@ -103,7 +103,9 @@ const handleMouseWheel = (ev: React.WheelEvent<HTMLCanvasElement>) => {
   orbit.deltaZoom = normalizeWheel(ev).spinY;//ev.deltaY;
 }
 
-const extensions = {'KTX': true, 'Draco': true, 'Quantization': true, 'KHR_materials_clearcoat': true, 'KHR_materials_sheen':true, 'KHR_materials_transmission':true};
+//const extensions = {'KTX': true, 'Draco': true, 'Quantization': true, 'Clearcoat': true, 'Sheen':true, 'Transmission':true};
+const loaded_extensions = {'Clearcoat': false, 'Sheen':true, 'Transmission':true};
+type ExtensionKey = keyof typeof loaded_extensions;
 const debugOptions = ['None', 'Occlusion', 'Shading Normal', "Base Color", "Metallic", "Roughness"];
 const animations = ['Idle', 'Walk', 'Jump'];
 
@@ -113,8 +115,9 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback}: 
 
   const [ktxLoaded, setKTXLoaded] = React.useState(false);
   const [dracoLoaded, setDracoLoaded] = React.useState(false);
-  const [showOptions, setShowOptions] = React.useState(true);
+  const [showOptions, setShowOptions] = React.useState(false);
   const [debugOutput, setDebugOutput] = React.useState("None");
+  const [extensions, setExtensions] = React.useState(loaded_extensions);
 
   const canvasRef = React.useRef<HTMLCanvasElement>(null);
   const canvas2DRef = React.useRef<HTMLCanvasElement>(null);
@@ -373,7 +376,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback}: 
                     key={extKey}
                     control={
                       <Switch
-                        //checked={extensions[extKey]}
+                        checked={extensions[extKey as ExtensionKey]}
                         //onChange={() => toggleExtension(extKey)}
                       />
                     }
@@ -382,7 +385,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback}: 
                 ))}
               </Box>
 
-              <Box display='flex' flexDirection='column' alignItems='flex-start' mb={1}>
+              <Box display='flex' flexDirection='column' alignItems='flex-start' mb={1} mt={2}>
                 <Typography variant="subtitle2" gutterBottom>
                   Animation
                 </Typography>
@@ -390,6 +393,8 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback}: 
                   {animations.map((anim) => (
                     <Button
                       key={anim}
+                      sx={{ justifyContent: 'flex-start', textAlign: 'left' }}
+                      color="inherit"
                       //onClick={() => setSelectedAnimation(anim)}
                       //variant={selectedAnimation === anim ? 'contained' : 'outlined'}
                     >
