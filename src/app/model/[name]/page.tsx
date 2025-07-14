@@ -59,15 +59,19 @@ export default async function Page({params}: { params: Promise<{ name: string }>
 
   const model = (models as Record<string, ModelType>)[name];
 
+  const model1 = (models as Record<string, ModelType>)["ABeautifulGame"];
+  const model2 = (models as Record<string, ModelType>)["ChronographWatch"];
+  const model3 = (models as Record<string, ModelType>)["CommercialRefrigerator"];
+
   const showcaseModels : Array<ModelType> = [
-    model,
-    model,
-    model
+    model1,
+    model2,
+    model3
   ];
   const suggestedModels : Array<ModelType> = [
-    model,
-    model,
-    model,
+    model1,
+    model2,
+    model3,
     model
   ];
   
