@@ -138,17 +138,17 @@ export default function ComparePage({name, label, image, description, downloadUr
         <Divider />
         {/* Quck Info */}
         <Box display='flex' flexDirection='row' mt={2}>
-          <Box mr={1}>
+          <Box mr={2}>
             <Typography component="span">{"Trianges:"}</Typography> <Typography component="span" sx={{fontWeight:'bold'}}>{toReadableNumber(meshStats.numberOfFaces)}</Typography>
           </Box>
-          <Box mr={1}>
+          <Box mr={2}>
             <Typography component="span">{"Vertices:"}</Typography> <Typography component="span" sx={{fontWeight:'bold'}}>{toReadableNumber(meshStats.numberOfVertices)}</Typography>
           </Box>
-          <Box mr={1}>
-            <Typography component="span">{"FileSize:"}</Typography> <Typography component="span" sx={{fontWeight:'bold'}}>{toReadableBytes(meshStats.totalFileSize)}</Typography>
+          <Box mr={2}>
+            <Typography component="span">{"File Size:"}</Typography> <Typography component="span" sx={{fontWeight:'bold'}}>{toReadableBytes(meshStats.totalFileSize)}</Typography>
           </Box>
-          <Box mr={1}>
-            <Typography component="span">{"ImagesSize:"}</Typography> <Typography component="span" sx={{fontWeight:'bold'}}>{toReadableBytes(meshStats.totalImagesFileSize)}</Typography>
+          <Box mr={2}>
+            <Typography component="span">{"Images Size:"}</Typography> <Typography component="span" sx={{fontWeight:'bold'}}>{toReadableBytes(meshStats.totalImagesFileSize)}</Typography>
           </Box>
           
         </Box>
