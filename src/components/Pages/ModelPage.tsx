@@ -163,9 +163,9 @@ export default function ComparePage({name, label, image, description, downloadUr
       <Box sx={{flex: 1}}>
         {!isMagnified && <Grid className={styles.side} display={{xs:'none', sm:'flex'}} sx={{overflow: "auto", width:'100%'}} height={"70vh"} container spacing={2}>
           <Box display="flex" mt={1} sx={{width: '100%'}}><Typography variant='h6'>{"Showcase"}</Typography></Box>
-          {showcaseModels.map((e,i) => { return <ModelRenderCard key={e.name+""+i} name={e.name} thumbnail={e.thumbnail} onSelection={ () => {}}/>})}
+          {showcaseModels.map((e,i) => { return <ModelRenderCard key={e.name+""+i} name={e.label} thumbnail={e.thumbnail} onSelection={ () => {}}/>})}
           <Box display="flex" mt={1} sx={{width: '100%'}}><Typography variant='h6'>{"Suggested"}</Typography></Box>
-          {suggestedModels.map((e,i) => { return <ModelRenderCard key={e.name+""+i} name={e.name} thumbnail={e.thumbnail} onSelection={ () => {}}/>})}
+          {suggestedModels.map((e,i) => { return <ModelRenderCard key={e.name+""+i} name={e.label} thumbnail={e.thumbnail} onSelection={ () => {}}/>})}
         </Grid>}
       </Box>
     </Box>);
