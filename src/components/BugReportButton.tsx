@@ -2,12 +2,14 @@
 
 import { Fab, Tooltip } from '@mui/material';
 import BugReportIcon from '@mui/icons-material/BugReport';
+import { useTheme } from "@mui/material/styles";
 
 const BugReportButton = () => {
+  const theme = useTheme();
 
   return (
     <>
-      <Tooltip title="Report a bug">
+      <Tooltip title="Report an issue" slotProps={{tooltip: { sx: {color: `${theme.palette.text.primary}`, }}}}>
         <Fab 
           color="primary" 
           href="https://github.com/phasmatic3d/saw/issues"
