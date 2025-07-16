@@ -131,7 +131,7 @@ const supported_extensions = new Map([
 ]);
 const debugOptions = ['None', 'Occlusion', 'Shading Normal', "Base Color", "Metallic", "Roughness"];
 
-let debugOutput2 = "None";
+let active_debugOutput = "None";
 let active_animations = [] as number[];
 let active_extensions = new Map<string, boolean>(supported_extensions);
 
@@ -164,9 +164,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback}: 
   }
 
   React.useEffect(() => {
-      console.log("Effect", debugOutput)
-      debugOutput2 = debugOutput;
-
+      active_debugOutput = debugOutput;
     }, [debugOutput])
 
   React.useEffect(() => {
@@ -283,7 +281,9 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback}: 
         state.environment = environment;
       })
       state.userCamera.perspective.aspectRatio = canvas.width / canvas.height;
+      state.userCamera.resetView(state.gltf, state.sceneIndex);
       state.userCamera.fitViewToScene(state.gltf, state.sceneIndex);
+      state.userCamera.orbitSpeed = Math.max(10.0 / canvas.width, 10.0 / canvas.height);
 
       state.renderingParameters.debugOutput = GltfState.DebugOutput.generic.OCCLUSION;
       //state.renderingParameters.debugOutput = GltfState.DebugOutput.generic.NORMAL;
@@ -294,7 +294,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback}: 
       const update = () =>
       { 
         // Rendering Properties
-        state.renderingParameters.debugOutput = debugOutput2;
+        state.renderingParameters.debugOutput = active_debugOutput;
         state.animationIndices = active_animations;
         active_extensions.forEach((value, key) => {
           if (key in state.renderingParameters.enabledExtensions) {
