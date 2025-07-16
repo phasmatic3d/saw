@@ -3,6 +3,10 @@ export type ModelType = {
   label: string,
   description: string,
   tags: Array<string>,
+  gltfModel: string,
+  dracoModel?: string,
+  ktxModel?: string,
+  quantizedModel?: string,
   downloadModel?: string,
   image: string,
   thumbnail: string
