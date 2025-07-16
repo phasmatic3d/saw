@@ -75,5 +75,5 @@ export default async function Page({params}: { params: Promise<{ name: string }>
     model
   ];
   
-  return <ModelPage name={name} label={model.label} description={model.description} image={model.image} downloadUrl={model.downloadModel} showcaseModels={showcaseModels} suggestedModels={suggestedModels}/>
+  return <ModelPage name={name} label={model.label} description={model.description} tags={model.tags} image={model.image} downloadUrl={model.downloadModel} showcaseModels={showcaseModels} suggestedModels={suggestedModels}/>
 }
