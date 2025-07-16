@@ -103,7 +103,6 @@ const handleMouseWheel = (ev: React.WheelEvent<HTMLCanvasElement>) => {
   orbit.deltaZoom = normalizeWheel(ev).spinY;//ev.deltaY;
 }
 
-//const extensions = {'KTX': true, 'Draco': true, 'Quantization': true, 'Clearcoat': true, 'Sheen':true, 'Transmission':true};
 const available_extensions = { 
   KHR_materials_anisotropy: true, 
   KHR_materials_clearcoat: true, 
@@ -117,11 +116,24 @@ const available_extensions = {
   KHR_materials_transmission: true, 
   KHR_materials_volume: true
 };
-const loaded_extensions = {'Clearcoat': false, 'Sheen':true, 'Transmission':true};
-type ExtensionKey = keyof typeof loaded_extensions;
+const supported_extensions = new Map([ 
+  ["KHR_materials_anisotropy", true], 
+  ["KHR_materials_clearcoat", true],
+  ["KHR_materials_diffuse_transmission", true],
+  ["KHR_materials_dispersion", true],
+  ["KHR_materials_emissive_strength", true],
+  ["KHR_materials_ior", true],
+  ["KHR_materials_iridescence", true],
+  ["KHR_materials_sheen", true],
+  ["KHR_materials_specular", true],
+  ["KHR_materials_transmission", true],
+  ["KHR_materials_volume", true]
+]);
 const debugOptions = ['None', 'Occlusion', 'Shading Normal', "Base Color", "Metallic", "Roughness"];
 
 let debugOutput2 = "None";
+let active_animations = [] as number[];
+let active_extensions = new Map<string, boolean>(supported_extensions);
 
 export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback}: ImageComparisonSliderProps) {
 
@@ -129,13 +141,27 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback}: 
   const [dracoLoaded, setDracoLoaded] = React.useState(false);
   const [showOptions, setShowOptions] = React.useState(false);
   const [debugOutput, setDebugOutput] = React.useState("None");
-  const [extensions, setExtensions] = React.useState(loaded_extensions);
+  const [extensions, setExtensions] = React.useState(new Map<string, boolean>());
   const [animations, setAnimations] = React.useState<Array<string>>([]);
 
   const canvasRef = React.useRef<HTMLCanvasElement>(null);
   const canvas2DRef = React.useRef<HTMLCanvasElement>(null);
   const canvasContainerRef = React.useRef<HTMLDivElement>(null);
   const canvasContainerWrapperRef = React.useRef<HTMLDivElement>(null);
+
+  const toggleExtension = (extension: string, value: boolean) => {
+    setExtensions(prev => {const ext = new Map(prev); ext.set(extension, value); return ext; })
+    active_extensions.set(extension, value);
+  }
+
+  const toggleAnimation = (animation_name: string) =>
+  {
+    const index = animations.indexOf(animation_name)
+    if(index >= 0)
+      active_animations = [index];
+    else
+      console.warn("Error", animation_name);
+  }
 
   React.useEffect(() => {
       console.log("Effect", debugOutput)
@@ -162,12 +188,23 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback}: 
       state.animationTimer.start();
 
       const resourceLoader = view.createResourceLoader();
+      state.gltf = await resourceLoader.loadGltf("/AnisotropyBarnLamp.glb");
+
       const animation_names = [] as string[];
       for(const animation of state.gltf.animations)
       {
         animation_names.push(animation.name);
       }
       setAnimations(animation_names);
+      const extension_names = new Map<string, boolean>();
+      for(const extension of state.gltf.extensionsUsed)
+      {
+        if(supported_extensions.has(extension))
+        {
+          extension_names.set(extension as string, true);
+        }
+      }
+      setExtensions(extension_names);
       
       const customGatherStatistics = async (state: InstanceType<typeof GltfState>) : Promise<Stats> => {
 
@@ -256,8 +293,16 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback}: 
       state.renderingParameters.debugOutput = debugOutput;
       const update = () =>
       { 
-        console.log(debugOutput2);
+        // Rendering Properties
         state.renderingParameters.debugOutput = debugOutput2;
+        state.animationIndices = active_animations;
+        active_extensions.forEach((value, key) => {
+          if (key in state.renderingParameters.enabledExtensions) {
+            state.renderingParameters.enabledExtensions[key as keyof typeof state.renderingParameters.enabledExtensions] = value;
+          }
+        });
+
+        // Camera Properties
         state.userCamera.orbit(orbit.deltaPhi, orbit.deltaTheta);
         if(orbit.deltaZoom)
           state.userCamera.zoomBy(orbit.deltaZoom);
@@ -384,25 +429,25 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback}: 
               
             >
               <Typography variant="h6">Inspection</Typography>
-              <Box display='flex' flexDirection='column' alignItems='flex-start' width='100%' overflow='hidden'>
+              <Box display={extensions.size>0? 'flex':'none'} flexDirection='column' alignItems='flex-start' width='100%' overflow='hidden'>
                 <Typography variant="subtitle2" gutterBottom>
                   Extensions
                 </Typography>
-                {Object.keys(extensions).map((extKey) => (
+                { Array.from(extensions).map(([extName, extValue]) => (
                   <FormControlLabel
-                    key={extKey}
+                    key={extName}
                     control={
                       <Switch
-                        checked={extensions[extKey as ExtensionKey]}
-                        //onChange={() => toggleExtension(extKey)}
+                        checked={extValue}
+                        onChange={(ev, checked) => toggleExtension(extName, checked)}
                       />
                     }
-                    label={extKey}
+                    label={extName.replace("KHR_materials_", "")}
                   />
                 ))}
               </Box>
 
-              <Box display='flex' flexDirection='column' alignItems='flex-start' mb={1} mt={2}>
+              <Box display={animations.length>0? 'flex':'none'} flexDirection='column' alignItems='flex-start' mb={1} mt={2}>
                 <Typography variant="subtitle2" gutterBottom>
                   Animation
                 </Typography>
@@ -412,15 +457,14 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback}: 
                       key={anim}
                       sx={{ justifyContent: 'flex-start', textAlign: 'left' }}
                       color="inherit"
-                      //onClick={() => setSelectedAnimation(anim)}
-                      //variant={selectedAnimation === anim ? 'contained' : 'outlined'}
+                      onClick={() => toggleAnimation(anim)}
                     >
                       {anim}
                     </Button>
                   ))}
                 
               </Box>
-              <Box width='100%'>
+              <Box width='100%' mt={2}>
                 <FormControl fullWidth size="small">
                   <InputLabel id="debug-output-label">Debug Output</InputLabel>
                   <Select
