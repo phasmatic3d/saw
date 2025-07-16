@@ -27,19 +27,17 @@ type ModelPageProps = {
   label: string,
   description: string,
   image: string,
+  tags: string[],
   downloadUrl?: string,
   showcaseModels: Array<ModelType>
   suggestedModels: Array<ModelType>
 }
 
-export default function ComparePage({name, label, image, description, downloadUrl, showcaseModels, suggestedModels}: ModelPageProps) {  
+export default function ComparePage({name, label, image, tags, description, downloadUrl, showcaseModels, suggestedModels}: ModelPageProps) {  
   const theme = useTheme();
   const isXs = useMediaQuery(theme.breakpoints.only('xs'));
-  const [isVisible, setIsVisible] = React.useState(!isXs); 
   const [isMagnified, setMagnified] = React.useState(false);
-  const [comparisonMode, setComparisonMode] = React.useState(0);
   const [shareSnackbarOpen, setShareSnackbarOpen] = React.useState(false);
-  const zoomOffsetRef = React.useRef<HTMLDivElement>(null);
 
   const [meshStats, setMeshStats] = React.useState<Stats>({
     totalImagesFileSize: 0,
@@ -48,20 +46,7 @@ export default function ComparePage({name, label, image, description, downloadUr
     totalFileSize: 0
   });
 
-  const toggleDiv = () => {
-    setIsVisible(!isVisible);
-  };
-
-  const toggleMagnified = (open: boolean) => {
-    
-    const off = zoomOffsetRef && zoomOffsetRef.current;
-    if(off && open)
-      setTimeout(() => {window.scrollTo({top: off.offsetTop, behavior: 'smooth'});}, 20)
-    setMagnified(open);
-  }
-
   const image1 = `${basePath}${image}`;
-  const image2 = `${basePath}${image}`;
 
   const onShare = () => {
     const shareURL = `${basePath}/compare/${name}`;
@@ -80,14 +65,11 @@ export default function ComparePage({name, label, image, description, downloadUr
     }
   }
 
-  const tags = ["Showcase", "KTX", "Furniture", "Draco", "Sheen"];
-
   return (
     <Box display="flex" sx={{width: '100%'}}>
       {/* Main Content */}
       <Box flex={4} p={2}>
-        {comparisonMode===0 && <LivePreviewSampleRenderer src={"https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/DamagedHelmet/glTF-Binary/DamagedHelmet.glb"} imgSrc={image1} statsCallback={(stats => { setMeshStats(stats)}) }/>}
-        {comparisonMode===1 && <ImageDifferenceView key={isMagnified.toString()} imgSrc1={image1} imgSrc2={image2}/>}
+        <LivePreviewSampleRenderer src={downloadUrl || ""} imgSrc={image1} statsCallback={(stats => { setMeshStats(stats)}) }/>
         <Typography variant='h5' component="h1" sx={{paddingTop: 2, paddingBottom: 2}}>{label}</Typography>
         {/* Tags */}
         <Box display='flex' flexDirection='row'>
