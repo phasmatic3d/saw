@@ -85,9 +85,10 @@ await (async () => {
     }
     //const metadata = JSON.parse(await fs.promises.readFile(`./glTF-Sample-Assets/${folderpath}/metadata.json`, 'utf-8'));
     //const gltf = JSON.parse(await fs.promises.readFile(`./glTF-Sample-Assets/${folderpath}/glTF/${name}.gltf`, 'utf-8'));
+    const gltf_file = model && model.variants && model.variants['glTF'];
     const glb = model && model.variants && model.variants['glTF-Binary'];
     const glb_draco = model && model.variants && Object.keys(model.variants).find(variant => variant.includes('Draco'));
-    const glb_meshopt = model && model.variants && model.variants['glTF-Quantized'];
+    const glb_quantized = model && model.variants && Object.keys(model.variants).find(variant => variant.includes('Quantized'));
     const glb_ktx = model && model.variants && Object.keys(model.variants).find(variant => variant.includes('KTX'));
     const screenshot = model && model.screenshot && `/glTF-Sample-Assets/${folderpath}/${model.screenshot}`;
 
@@ -151,7 +152,7 @@ await (async () => {
         addTag(ModelTags, tag);
         ModelMap2[name].tags.push(tag);
       }
-      if(glb_meshopt) {
+      if(glb_quantized) {
         const tag = "Meshopt";
         addTag(ModelTags, tag);
         console.log("Hello");
@@ -164,7 +165,7 @@ await (async () => {
       }
       if(!(gltf && gltf.extensionsUsed) &&
          !glb_ktx &&
-         !glb_meshopt &&
+         !glb_quantized &&
          !glb_draco) {
         const tag = "Core"; 
         addTag(ModelTags, tag);
@@ -172,6 +173,10 @@ await (async () => {
       }
 
       ModelMap2[name].downloadModel = glb? `https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/${folderpath}/glTF-Binary/${glb}` : undefined
+      ModelMap2[name].gltfModel = gltf_file? `https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/${folderpath}/glTF/${gltf_file}` : undefined
+      ModelMap2[name].dracoModel = glb_draco? `https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/${folderpath}/${glb_draco}/${model.variants[`${glb_draco}`]}` : undefined
+      ModelMap2[name].ktxModel = glb_ktx? `https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/${folderpath}/${glb_ktx}/${model.variants[`${glb_ktx}`]}` : undefined
+      ModelMap2[name].quantizedModel = glb_quantized? `https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/${folderpath}/${glb_quantized}/${model.variants[`${glb_quantized}`]}` : undefined
       
       const tgt_file = image_directory + '/' + name + "/" + model.screenshot;
       const tgt_directory = path.dirname(tgt_file);

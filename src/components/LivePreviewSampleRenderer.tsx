@@ -146,9 +146,9 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback, o
   const [animations, setAnimations] = React.useState<Array<string>>([]);
 
   const canvasRef = React.useRef<HTMLCanvasElement>(null);
-  const canvas2DRef = React.useRef<HTMLCanvasElement>(null);
   const canvasContainerRef = React.useRef<HTMLDivElement>(null);
   const canvasContainerWrapperRef = React.useRef<HTMLDivElement>(null);
+  const imgRef = React.useRef<HTMLImageElement>(null);
 
   const toggleExtension = (extension: string, value: boolean) => {
     setExtensions(prev => {const ext = new Map(prev); ext.set(extension, value); return ext; })
@@ -327,43 +327,24 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback, o
 
   React.useEffect(() => {
     if(canvasRef == null || canvasRef.current == null) { return; }
-    if(canvas2DRef == null || canvas2DRef.current == null) { return; }
     if(canvasContainerRef == null || canvasContainerRef.current == null) { return; }
     if(canvasContainerWrapperRef == null || canvasContainerWrapperRef.current == null) { return; }
     
     const canvas = canvasRef.current;
-    const canvas2D = canvas2DRef.current;
     const canvasContainer = canvasContainerRef.current;
     const canvasContainerWrapper = canvasContainerWrapperRef.current;
 
-    const vhToPixels = (vh: number) => (vh * window.innerHeight) / 100;
-    const vwToPixels = (vw: number) => (vw * window.innerWidth) / 100;
-
     const processImages = async () => {
       
-      const [img1] = await Promise.all([loadImage(imgSrc)]) as HTMLImageElement[];
-      
-      const toolReisze = () => {
+      const toolResize = () => {
         if (canvasContainer.clientWidth == 0 || canvasContainer.clientHeight == 0) return;
           canvas.width = canvasContainer.clientWidth; // Update the actual width
           canvas.height = canvasContainer.clientHeight; // Update the actual height
-          
-          const maxWidth = 1920;  // Set max width
-          const maxHeight = canvas.height; // Set max height
+          console.log("Resize", canvas.width, canvas.height)
           
           // Calculate new dimensions while maintaining aspect ratio
           let width = canvasContainer.clientWidth;
           let height = canvasContainer.clientHeight;
-          if(width > maxWidth)
-          {
-            //width = maxWidth;
-            //height = maxWidth * ar;
-          }
-          if(height > maxHeight)
-          {
-            //height = maxHeight;
-            //width = maxHeight / ar;
-          }
 
           canvasContainerWrapper.style.width = `${width}px`;
           canvasContainerWrapper.style.height = `${height}px`;
@@ -372,20 +353,11 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback, o
           canvas.height = height;
           canvas.style.width = `${width}px`;
           canvas.style.height = `${height}px`;
-
-          // canvas2D
-          canvas2D.width = width;
-          canvas2D.height = height;
-          canvas2D.style.width = `${width}px`;
-          canvas2D.style.height = `${height}px`;
-
-          const context2D = canvas2D.getContext('2d') as CanvasRenderingContext2D;
-          context2D.drawImage(img1, 0, 0, width, height);
       };
 
       const resizeObserver = new ResizeObserver(() => {
         requestAnimationFrame(() => {
-          toolReisze();
+          toolResize();
         });
       });
         
@@ -399,6 +371,16 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback, o
 
     return () => {resizeObserverPromise.then(res => {res.disconnect()})}
   }, [imgSrc]);
+
+  React.useEffect(() => {
+    console.warn("MOUNT");
+    const isDracoLoaded = !!document.querySelector('script[src="https://www.gstatic.com/draco/v1/decoders/draco_decoder_gltf.js"]')
+    const isKTXLoaded = !!document.querySelector('script[src="/libs/libktx.js"]')
+    setKTXLoaded(isKTXLoaded);
+    setDracoLoaded(isDracoLoaded);
+
+    return () => { console.warn("Unmount")};
+  }, [])
   
     return (
       <Box ref={canvasContainerRef}>
@@ -406,7 +388,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback, o
         <Script src="/libs/libktx.js" strategy="lazyOnload" onLoad={() => { console.log("LOADEDDDDDDDD KTX"); setKTXLoaded(true); }}/>
         <Box ref={canvasContainerWrapperRef} sx={{textAlign: "center", margin: "auto", position: 'relative', minHeight: '40vh'}}>
           <canvas ref={canvasRef} onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp} onWheel={handleMouseWheel}/>
-          <canvas ref={canvas2DRef} style={{display: 'none', backgroundColor: 'transparent', position: 'absolute', left: 0, top: 0, zIndex: 10}}/>
+          <img ref={imgRef} src={imgSrc} style={{display: 'none', backgroundColor: 'transparent', position: 'absolute', left: 0, top: 0, zIndex: 10, objectFit: 'contain', width:"inherit", height:'inherit'}}/>
 
           {/* Button in bottom left */}
           <Box position="absolute" bottom={20} left={20} zIndex={10}>
