@@ -104,10 +104,22 @@ const handleMouseWheel = (ev: React.WheelEvent<HTMLCanvasElement>) => {
 }
 
 //const extensions = {'KTX': true, 'Draco': true, 'Quantization': true, 'Clearcoat': true, 'Sheen':true, 'Transmission':true};
+const available_extensions = { 
+  KHR_materials_anisotropy: true, 
+  KHR_materials_clearcoat: true, 
+  KHR_materials_diffuse_transmission: true, 
+  KHR_materials_dispersion: true, 
+  KHR_materials_emissive_strength: true, 
+  KHR_materials_ior: true, 
+  KHR_materials_iridescence: true,
+  KHR_materials_sheen: true,
+  KHR_materials_specular: true, 
+  KHR_materials_transmission: true, 
+  KHR_materials_volume: true
+};
 const loaded_extensions = {'Clearcoat': false, 'Sheen':true, 'Transmission':true};
 type ExtensionKey = keyof typeof loaded_extensions;
 const debugOptions = ['None', 'Occlusion', 'Shading Normal', "Base Color", "Metallic", "Roughness"];
-const animations = ['Idle', 'Walk', 'Jump'];
 
 let debugOutput2 = "None";
 
@@ -118,6 +130,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback}: 
   const [showOptions, setShowOptions] = React.useState(false);
   const [debugOutput, setDebugOutput] = React.useState("None");
   const [extensions, setExtensions] = React.useState(loaded_extensions);
+  const [animations, setAnimations] = React.useState<Array<string>>([]);
 
   const canvasRef = React.useRef<HTMLCanvasElement>(null);
   const canvas2DRef = React.useRef<HTMLCanvasElement>(null);
@@ -149,7 +162,12 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback}: 
       state.animationTimer.start();
 
       const resourceLoader = view.createResourceLoader();
-      state.gltf = await resourceLoader.loadGltf("/DamagedHelmet.glb");
+      const animation_names = [] as string[];
+      for(const animation of state.gltf.animations)
+      {
+        animation_names.push(animation.name);
+      }
+      setAnimations(animation_names);
       
       const customGatherStatistics = async (state: InstanceType<typeof GltfState>) : Promise<Stats> => {
 
@@ -275,7 +293,6 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback}: 
     const processImages = async () => {
       
       const [img1] = await Promise.all([loadImage(imgSrc)]) as HTMLImageElement[];
-
       
       const toolReisze = () => {
         if (canvasContainer.clientWidth == 0 || canvasContainer.clientHeight == 0) return;
