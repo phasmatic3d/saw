@@ -80,29 +80,6 @@ export default function ComparePage({name, label, image, description, downloadUr
     }
   }
 
-  const descriptionComponent = <Box>
-    <Box display='flex' justifyContent='space-between'>
-      <Typography variant='h6'>Description</Typography>
-      <Box>
-        <Snackbar
-          open={shareSnackbarOpen}
-          onClose={() => {setShareSnackbarOpen(false)}}
-          message="Model Copied"
-          key={"Share"}
-          autoHideDuration={1200}
-        />
-        {downloadUrl && <IconButton component="a" href={downloadUrl} download><FileDownloadIcon sx={{color: 'grey.100'}}/></IconButton>}
-      </Box>
-    </Box>
-    <Typography textAlign='left'>{description}</Typography>
-    <Box mt={2}>
-      <ExternalLink url={`https://github.com/KhronosGroup/glTF-Sample-Assets/blob/main/Models/${name}/README.md`} />
-    </Box>
-    <Box display='flex' alignItems='center' mt={1}>
-      <Link onClick={onShare} href="#" color="inherit" underline='hover' target="_blank" rel="noopener" sx={{fontWeight:'bold', display:'flex', alignItems:'center'}}>Share <ShareIcon fontSize='small' sx={{color: 'grey.100', ml: 0.5}}/></Link>
-    </Box>
-  </Box>;
-
   const tags = ["Showcase", "KTX", "Furniture", "Draco", "Sheen"];
 
   return (
@@ -146,9 +123,9 @@ export default function ComparePage({name, label, image, description, downloadUr
           <Box mr={2}>
             <Typography component="span">{"File Size:"}</Typography> <Typography component="span" sx={{fontWeight:'bold'}}>{toReadableBytes(meshStats.totalFileSize)}</Typography>
           </Box>
-          <Box mr={2}>
+          {meshStats.totalImagesFileSize > 0 && <Box mr={2}>
             <Typography component="span">{"Images Size:"}</Typography> <Typography component="span" sx={{fontWeight:'bold'}}>{toReadableBytes(meshStats.totalImagesFileSize)}</Typography>
-          </Box>
+          </Box>}
           
         </Box>
         {/* Description */}

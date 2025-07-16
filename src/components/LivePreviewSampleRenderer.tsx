@@ -186,7 +186,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback}: 
       state.animationTimer.start();
 
       const resourceLoader = view.createResourceLoader();
-      state.gltf = await resourceLoader.loadGltf("/AnisotropyBarnLamp.glb");
+      state.gltf = await resourceLoader.loadGltf(src);
 
       const animation_names = [] as string[];
       for(const animation of state.gltf.animations)
@@ -194,15 +194,18 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback}: 
         animation_names.push(animation.name);
       }
       setAnimations(animation_names);
-      const extension_names = new Map<string, boolean>();
-      for(const extension of state.gltf.extensionsUsed)
+      if(state.gltf.extensionsUsed)
       {
-        if(supported_extensions.has(extension))
+        const extension_names = new Map<string, boolean>();
+        for(const extension of state.gltf.extensionsUsed)
         {
-          extension_names.set(extension as string, true);
+          if(supported_extensions.has(extension))
+          {
+            extension_names.set(extension as string, true);
+          }
         }
+        setExtensions(extension_names);
       }
-      setExtensions(extension_names);
       
       const customGatherStatistics = async (state: InstanceType<typeof GltfState>) : Promise<Stats> => {
 
