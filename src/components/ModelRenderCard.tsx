@@ -1,17 +1,19 @@
 "use client"
 import React from 'react'
 import Image from 'next/image'
-import { Box, Typography } from "@mui/material";
+import NextLink from 'next/link';
+import { Box, Typography, Link } from "@mui/material";
 import { useTheme } from '@mui/material/styles';
 import { basePath } from '@/lib/paths';
 
 export type ModelCardProps = {
     name: string,
+    label: string,
     thumbnail: string,
     onSelection: (arg0: string) => void
 }
 
-export default function ModelRenderCard({name, thumbnail, onSelection}: ModelCardProps) {
+export default function ModelRenderCard({name, label, thumbnail, onSelection}: ModelCardProps) {
 
   return (
       <Box onClick={() => {}} width={'100%'} maxWidth={{xs: '100%', sm: '400px' }} 
@@ -26,6 +28,7 @@ export default function ModelRenderCard({name, thumbnail, onSelection}: ModelCar
             }}>
           <Box position="relative">
             <Box width={"100%"} style={{width: "100%"}}>
+              <Link component={NextLink} href={encodeURI(`/model/${name}`)}>
                 <Image
                 width={512}
                 height={512}
@@ -42,13 +45,14 @@ export default function ModelRenderCard({name, thumbnail, onSelection}: ModelCar
                     transition: 'transform 0.3s ease, border-radius 0.3s ease',
                 }}
                 src={`${basePath}${thumbnail}`}
-                alt={name}  
+                alt={label}  
                 loading="lazy"
                 />
+              </Link>
             </Box>
           </Box>
           <Box display="flex" flexDirection="column" p={1} justifyContent='center'>
-            <Typography fontSize={18} fontWeight={'bold'} textAlign='center' sx={{overflowWrap: "anywhere"}}>{name}</Typography>
+            <Typography fontSize={18} fontWeight={'bold'} textAlign='center' sx={{overflowWrap: "anywhere"}}>{label}</Typography>
           </Box>          
       </Box>
   );

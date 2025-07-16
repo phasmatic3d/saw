@@ -38,6 +38,7 @@ export default function ComparePage({name, label, image, tags, description, down
   const isXs = useMediaQuery(theme.breakpoints.only('xs'));
   const [isMagnified, setMagnified] = React.useState(false);
   const [shareSnackbarOpen, setShareSnackbarOpen] = React.useState(false);
+  const [isPreviewReady, setPreviewReady] = React.useState(false);
 
   const [meshStats, setMeshStats] = React.useState<Stats>({
     totalImagesFileSize: 0,
@@ -69,7 +70,7 @@ export default function ComparePage({name, label, image, tags, description, down
     <Box display="flex" sx={{width: '100%'}}>
       {/* Main Content */}
       <Box flex={4} p={2}>
-        <LivePreviewSampleRenderer src={downloadUrl || ""} imgSrc={image1} statsCallback={(stats => { setMeshStats(stats)}) }/>
+        <LivePreviewSampleRenderer src={downloadUrl || ""} imgSrc={image1} statsCallback={(stats => { setMeshStats(stats)})} onReady={() => setPreviewReady(true)}/>
         <Typography variant='h5' component="h1" sx={{paddingTop: 2, paddingBottom: 2}}>{label}</Typography>
         {/* Tags */}
         <Box display='flex' flexDirection='row'>
@@ -121,9 +122,9 @@ export default function ComparePage({name, label, image, tags, description, down
       <Box sx={{flex: 1}}>
         {!isMagnified && <Grid className={styles.side} display={{xs:'none', sm:'flex'}} sx={{overflow: "auto", width:'100%'}} height={"70vh"} container spacing={2}>
           <Box display="flex" mt={1} sx={{width: '100%'}}><Typography variant='h6'>{"Showcase"}</Typography></Box>
-          {showcaseModels.map((e,i) => { return <ModelRenderCard key={e.name+""+i} name={e.label} thumbnail={e.thumbnail} onSelection={ () => {}}/>})}
+          {showcaseModels.map((e,i) => { return <ModelRenderCard key={e.name+""+i} name={e.name} label={e.label} thumbnail={e.thumbnail} onSelection={ () => {}}/>})}
           <Box display="flex" mt={1} sx={{width: '100%'}}><Typography variant='h6'>{"Suggested"}</Typography></Box>
-          {suggestedModels.map((e,i) => { return <ModelRenderCard key={e.name+""+i} name={e.label} thumbnail={e.thumbnail} onSelection={ () => {}}/>})}
+          {suggestedModels.map((e,i) => { return <ModelRenderCard key={e.name+""+i} name={e.name} label={e.label} thumbnail={e.thumbnail} onSelection={ () => {}}/>})}
         </Grid>}
       </Box>
     </Box>);

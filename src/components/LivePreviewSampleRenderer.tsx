@@ -22,10 +22,11 @@ export type Stats = {
   totalFileSize: number
 }
 
-export type ImageComparisonSliderProps = {
+export type LivePreviewSampleRendererProps = {
   src: string,
   imgSrc: string,
-  statsCallback: (stats: Stats) => void
+  statsCallback: (stats: Stats) => void,
+  onReady: () => void
 }
 
 const orbit = {
@@ -135,7 +136,7 @@ let active_debugOutput = "None";
 let active_animations = [] as number[];
 let active_extensions = new Map<string, boolean>(supported_extensions);
 
-export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback}: ImageComparisonSliderProps) {
+export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback, onReady}: LivePreviewSampleRendererProps) {
 
   const [ktxLoaded, setKTXLoaded] = React.useState(false);
   const [dracoLoaded, setDracoLoaded] = React.useState(false);
@@ -173,8 +174,8 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback}: 
     if(canvasRef == null || canvasRef.current == null) { return; }
     const canvas = canvasRef.current;
     const webGl2Context = canvas.getContext('webgl2') as WebGL2RenderingContext;
-    webGl2Context.clearColor(1,0,0,1);
-    webGl2Context.clear(webGl2Context.COLOR_BUFFER_BIT);
+    //webGl2Context.clearColor(1,0,0,1);
+    //webGl2Context.clear(webGl2Context.COLOR_BUFFER_BIT);
 
     const load = async () => {
 
