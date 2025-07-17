@@ -4,6 +4,7 @@ import ModelPage from "@/components/Pages/ModelPage";
 import models from "@/data/model-index.SampleAssets.json"
 import { baseUrl } from '@/lib/paths';
 import { ModelType } from '@/lib/types';
+import styles from "../../page.module.css";
 
 export const dynamicParams = false; // models that are not included in the list, generate 404
 
@@ -75,5 +76,10 @@ export default async function Page({params}: { params: Promise<{ name: string }>
     model
   ];
   
-  return <ModelPage name={name} label={model.label} description={model.description} tags={model.tags} image={model.image} modelURL={model.downloadModel || model.gltfModel} downloadUrl={model.downloadModel} showcaseModels={showcaseModels} suggestedModels={suggestedModels}/>
+  return (
+    <div className={styles.page}>
+      <main className={styles.main}>
+        <ModelPage name={name} label={model.label} description={model.description} tags={model.tags} image={model.image} modelURL={model.downloadModel || model.gltfModel} downloadUrl={model.downloadModel} showcaseModels={showcaseModels} suggestedModels={suggestedModels}/>
+      </main>
+    </div>)
 }
