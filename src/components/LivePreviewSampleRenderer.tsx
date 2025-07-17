@@ -458,6 +458,9 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback, o
                     value={debugOutput}
                     label="Debug Output"
                     onChange={(e) => { setDebugOutput(e.target.value)}}
+                    MenuProps={{
+                      disableScrollLock: true, // disables body padding-right
+                    }}
                   >
                     {debugOptions.map((opt) => (
                       <MenuItem key={opt} value={opt}>
