@@ -244,22 +244,25 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback, o
         for(const node of nodes)
         {
           const activeMesh = node.mesh !== undefined && state.gltf.meshes[node.mesh];
-          for(const primitive of activeMesh.primitives)
+          if(activeMesh)
           {
-            if(primitive !== undefined)
+            for(const primitive of activeMesh.primitives)
             {
-              let vertexCount = 0;
-              if (primitive.indices !== undefined) {
-                  vertexCount = state.gltf.accessors[primitive.indices].count;
-                  uniqueAccessors.add(primitive.indices);
+              if(primitive !== undefined)
+              {
+                let vertexCount = 0;
+                if (primitive.indices !== undefined) {
+                    vertexCount = state.gltf.accessors[primitive.indices].count;
+                    uniqueAccessors.add(primitive.indices);
+                }
+                else {
+                    vertexCount = state.gltf.accessors[primitive.attributes["POSITION"]].count;
+                    uniqueAccessors.add(primitive.attributes["POSITION"]);
+                }
+                if (vertexCount === 0) {
+                    continue;
+                }            
               }
-              else {
-                  vertexCount = state.gltf.accessors[primitive.attributes["POSITION"]].count;
-                  uniqueAccessors.add(primitive.attributes["POSITION"]);
-              }
-              if (vertexCount === 0) {
-                  continue;
-              }            
             }
           }
         }
@@ -284,6 +287,9 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback, o
       }).then((environment) => {
         state.environment = environment;
       })
+      state.sceneIndex = state.gltf.scene === undefined ? 0 : state.gltf.scene;
+      const scene = state.gltf.scenes[state.sceneIndex];
+      scene.applyTransformHierarchy(state.gltf);
       state.userCamera.perspective.aspectRatio = canvas.width / canvas.height;
       state.userCamera.resetView(state.gltf, state.sceneIndex);
       state.userCamera.fitViewToScene(state.gltf, state.sceneIndex);
