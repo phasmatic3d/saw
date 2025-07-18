@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>GLTF Viewer</title>
+  <style>html, body, canvas { margin: 0; height: 100%; width: 100%; }</style>
+  <script src="https://www.gstatic.com/draco/v1/decoders/draco_decoder_gltf.js"></script>
+  <script src="./libs/libktx.js"></script>
+  <script type="module" src="./libs/mikktspace.js"></script>
+</head>
+<body>
+  <canvas id="canvas" width="1920px" height="1080px"></canvas>
+  <script type="module">
+    import { GltfView, GltfState } from './dist/gltf-viewer.module.js'
+    //window.renderStarted = true;    
+
+    // Load model passed via query param (e.g., ?model=model.glb)
+    const params = new URLSearchParams(window.location.search);
+    const modelUrl = params.get('model') || 'model.glb';
+
+    const canvas = document.getElementById("canvas");
+    const webGl2Context = canvas.getContext('webgl2');
+    webGl2Context.clearColor(1,0,0,1);
+    webGl2Context.clear(webGl2Context.COLOR_BUFFER_BIT);
+
+    const view = new GltfView(webGl2Context);
+    const state = view.createState();
+    state.sceneIndex = 0;
+    state.animationIndices = [0, 1, 2];
+    state.animationTimer.start();
+    //let animationStarted = false;
+
+    const resourceLoader = view.createResourceLoader();
+    state.gltf = await resourceLoader.loadGltf(modelUrl);
+
+    state.sceneIndex = state.gltf.scene === undefined ? 0 : state.gltf.scene;
+
+    await resourceLoader.loadEnvironment("./Cannon_Exterior.hdr", {
+         lut_ggx_file: "./assets/lut_ggx.png", 
+         lut_charlie_file: "./assets/lut_charlie.png",
+         lut_sheen_E_file: "./assets/lut_sheen_E.png"
+    }).then((environment) => {
+        state.environment = environment;
+    })
+    //state.renderingParameters.iblIntensity = Math.pow(10, 1/*intensity*/);
+    const scene = state.gltf.scenes[state.sceneIndex];
+    scene.applyTransformHierarchy(state.gltf);
+    state.userCamera.perspective.aspectRatio = canvas.width / canvas.height;
+    state.userCamera.resetView(state.gltf, state.sceneIndex);
+    state.userCamera.fitViewToScene(state.gltf, state.sceneIndex);
+    // rotate to the corner for a better pov
+    let yaw = params.get("yaw") ?? 0;
+    yaw = yaw * (Math.PI / 180) / state.userCamera.orbitSpeed;
+    let pitch = params.get("pitch") ?? 0;
+    pitch = pitch * (Math.PI / 180) / state.userCamera.orbitSpeed;
+    state.userCamera.orbit(yaw, pitch);
+    const distance = params.get("distance") ?? 0;
+    state.userCamera.zoomBy(distance);
+
+    state.animationTimer.reset();
+
+    const update = () =>
+    { 
+      window.renderStarted = true;
+      /*if(animationStarted == false);
+        state.animationTimer.reset();*/
+      //animationStarted = true;
+      view.renderFrame(state, canvas.width, canvas.height);
+      window.requestAnimationFrame(update);
+    };
+    window.requestAnimationFrame(update);
+  </script>
+</body>
+</html>
