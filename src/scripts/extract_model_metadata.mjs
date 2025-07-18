@@ -19,6 +19,7 @@ async function* getFiles(dir) {
 
 //const ModelList = await fetch("https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/model-index.json").then(res => res.json()).catch(e => {return []});
 const ModelList = JSON.parse(await fs.promises.readFile(`./glTF-Sample-Assets/Models/model-index.json`, 'utf-8'));
+const CameraProperties = JSON.parse(await fs.promises.readFile(`./src/data/camera-props.SampleAssets.json`, 'utf-8'));
 const ModelTags = {};
 const ModelMap = {};
 ModelList.forEach(item => {
@@ -185,6 +186,12 @@ await (async () => {
       ModelMap2[name].image = image_directory + '/' + name + "/" + model.screenshot;
       ModelMap2[name].thumbnail = tgt_directory + '/' + filename + '.thumb' + '.webp';
       //ModelMap2[name].thumbnail = `${tgt_directory}/${filename}.thumb.webp`;
+
+      ModelMap2[name].camera = {
+        yaw: (CameraProperties[name] && CameraProperties[name].yaw) ?? 0,
+        pitch: (CameraProperties[name] && CameraProperties[name].pitch) ?? 0,
+        distance: (CameraProperties[name] && CameraProperties[name].distance) ?? 0,
+      }
     }   
   }
 })();
