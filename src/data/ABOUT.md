@@ -23,7 +23,7 @@
 ## Overview 
 <br>
 
-The Render Fidelity web site provides users a means to compare the rendering of 3D models from the Khronos glTF Sample Asset Repository using different renderers in glTF viewers. The viewers include real-time ones such as Babylon.js and &lt;model-viewer&gt; and path tracing glTF viewers such as Blender Cycles and Dassault’s STELLAR.
+The glTF Sample Asset web site provides a curated collection of glTF models that illustrate one or more features or capabilities of glTF. Each model is previewed using the Khronos [glTF-Sample-Renderer](https://github.com/KhronosGroup/glTF-Sample-Renderer) using [WebGL 2.0](https://www.khronos.org/webgl/). 
 <br>
 <br>
 
