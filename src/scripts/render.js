@@ -45,8 +45,9 @@ const ModelMap = require('../data/model-index.SampleAssets.json'); // Adjust the
     // Set viewport and take screenshot
     //await page.setViewport({ width: 1920, height: 1080 });
 
-    const totalFrames = 50;
-    const frameDelay = 100; // ms between frames (10 fps)
+    // Total: 5 sec
+    const totalFrames = 100;
+    const frameDelay = 50; // ms between frames (10 fps)
 
     //const startedValue = await page.evaluate(() => window.renderStarted);
     //console.log('window.renderStarted =', startedValue);
@@ -62,7 +63,7 @@ const ModelMap = require('../data/model-index.SampleAssets.json'); // Adjust the
       //console.log(`Captured frame ${i + 1}/${totalFrames}`);
       await new Promise(resolve => setTimeout(resolve, frameDelay));  
     }
-    await sharp(screenshotBuffers, { join: { animated: true }})
+    await sharp(screenshotBuffers, { join: { animated: true }}).webp({loop: 0})
     .toFile(path.join(imagesDir, `${model_name}.webp`), (err, info) => {
       if (err) {
         console.error('Error saving image:', err);
