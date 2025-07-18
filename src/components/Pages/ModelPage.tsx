@@ -123,10 +123,10 @@ export default function ComparePage({name, label, image, tags, description, mode
       </Box>
       {/* Right Content - Suggested */}
       <Box sx={{flex: 1}}>
-        {!isMagnified && <Grid className={styles.side} display={{xs:'none', sm:'flex'}} sx={{overflow: "auto", width:'100%'}} height={"70vh"} container spacing={2}>
+        {!isMagnified && <Grid className={styles.side} display={{xs:'none', sm:'flex'}} sx={{overflow: "auto", width:'100%'}} height={"80vh"} container spacing={2}>
           <Box display="flex" mt={1} sx={{width: '100%'}}><Typography variant='h6'>{"Top picks"}</Typography></Box>
           {showcaseModels.map((e,i) => { return <ModelRenderCard key={e.name+""+i} name={e.name} label={e.label} thumbnail={e.thumbnail} onSelection={ () => {}}/>})}
-          <Box display="flex" mt={1} sx={{width: '100%'}}><Typography variant='h6'>{"Relevant"}</Typography></Box>
+          <Box display="flex" mt={1} sx={{width: '100%'}}><Typography variant='h6'>{"Similar Assets"}</Typography></Box>
           {suggestedModels.map((e,i) => { return <ModelRenderCard key={e.name+""+i} name={e.name} label={e.label} thumbnail={e.thumbnail} onSelection={ () => {}}/>})}
         </Grid>}
       </Box>
