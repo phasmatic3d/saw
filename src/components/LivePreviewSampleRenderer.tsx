@@ -280,13 +280,14 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback, o
       };
       customGatherStatistics(state).then(res => { statsCallback(res); });
       
-      resourceLoader.loadEnvironment("/footprint_court.hdr", {
+      resourceLoader.loadEnvironment("/Cannon_Exterior.hdr", {
          lut_ggx_file: "/assets/lut_ggx.png", 
          lut_charlie_file: "/assets/lut_charlie.png",
          lut_sheen_E_file: "/assets/lut_sheen_E.png"
       }).then((environment) => {
         state.environment = environment;
       })
+      //state.renderingParameters.iblIntensity = Math.pow(10, 0.1/*intensity*/);
       state.sceneIndex = state.gltf.scene === undefined ? 0 : state.gltf.scene;
       const scene = state.gltf.scenes[state.sceneIndex];
       scene.applyTransformHierarchy(state.gltf);
