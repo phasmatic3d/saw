@@ -434,7 +434,8 @@
     
   },
   "TwoSidedPlane": {
-    
+    "yaw": 45,
+    "pitch": 20    
   },
   "Unicode%E2%9D%A4%E2%99%BBTest": {
     

@@ -22,8 +22,13 @@
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/ABeautifulGame/glTF/ABeautifulGame.gltf",
     "dracoModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/ABeautifulGame/glTF-Binary-KTX-ETC1S-Draco/ABeautifulGame.glb",
     "ktxModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/ABeautifulGame/glTF-Binary-KTX-ETC1S-Draco/ABeautifulGame.glb",
-    "image": "/images/ABeautifulGame/screenshot/screenshot.jpg",
-    "thumbnail": "/images/ABeautifulGame/screenshot/screenshot.thumb.webp"
+    "image": "/images/ABeautifulGame.webp",
+    "thumbnail": "/images/ABeautifulGame.webp",
+    "camera": {
+      "yaw": 45,
+      "pitch": 20,
+      "distance": 0
+    }
   },
   "AlphaBlendModeTest": {
     "name": "AlphaBlendModeTest",
@@ -40,8 +45,13 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AlphaBlendModeTest/glTF-Binary/AlphaBlendModeTest.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AlphaBlendModeTest/glTF/AlphaBlendModeTest.gltf",
-    "image": "/images/AlphaBlendModeTest/screenshot/screenshot.png",
-    "thumbnail": "/images/AlphaBlendModeTest/screenshot/screenshot.thumb.webp"
+    "image": "/images/AlphaBlendModeTest.webp",
+    "thumbnail": "/images/AlphaBlendModeTest.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "AnimatedColorsCube": {
     "name": "AnimatedColorsCube",
@@ -61,8 +71,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnimatedColorsCube/glTF-Binary/AnimatedColorsCube.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnimatedColorsCube/glTF/AnimatedColorsCube.gltf",
-    "image": "/images/AnimatedColorsCube/screenshot/screenshot.gif",
-    "thumbnail": "/images/AnimatedColorsCube/screenshot/screenshot.thumb.webp"
+    "image": "/images/AnimatedColorsCube.webp",
+    "thumbnail": "/images/AnimatedColorsCube.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "AnimatedCube": {
     "name": "AnimatedCube",
@@ -77,8 +92,13 @@
       "glTF": "AnimatedCube.gltf"
     },
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnimatedCube/glTF/AnimatedCube.gltf",
-    "image": "/images/AnimatedCube/screenshot/screenshot.gif",
-    "thumbnail": "/images/AnimatedCube/screenshot/screenshot.thumb.webp"
+    "image": "/images/AnimatedCube.webp",
+    "thumbnail": "/images/AnimatedCube.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "AnimatedMorphCube": {
     "name": "AnimatedMorphCube",
@@ -98,8 +118,13 @@
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnimatedMorphCube/glTF-Binary/AnimatedMorphCube.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnimatedMorphCube/glTF/AnimatedMorphCube.gltf",
     "quantizedModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnimatedMorphCube/glTF-Quantized/AnimatedMorphCube.gltf",
-    "image": "/images/AnimatedMorphCube/screenshot/screenshot.gif",
-    "thumbnail": "/images/AnimatedMorphCube/screenshot/screenshot.thumb.webp"
+    "image": "/images/AnimatedMorphCube.webp",
+    "thumbnail": "/images/AnimatedMorphCube.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "AnimatedTriangle": {
     "name": "AnimatedTriangle",
@@ -115,8 +140,13 @@
       "glTF": "AnimatedTriangle.gltf"
     },
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnimatedTriangle/glTF/AnimatedTriangle.gltf",
-    "image": "/images/AnimatedTriangle/screenshot/screenshot.gif",
-    "thumbnail": "/images/AnimatedTriangle/screenshot/screenshot.thumb.webp"
+    "image": "/images/AnimatedTriangle.webp",
+    "thumbnail": "/images/AnimatedTriangle.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "AnimationPointerUVs": {
     "name": "AnimationPointerUVs",
@@ -157,8 +187,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnimationPointerUVs/glTF-Binary/AnimationPointerUVs.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnimationPointerUVs/glTF/AnimationPointerUVs.gltf",
-    "image": "/images/AnimationPointerUVs/screenshot/screenshot.jpg",
-    "thumbnail": "/images/AnimationPointerUVs/screenshot/screenshot.thumb.webp"
+    "image": "/images/AnimationPointerUVs.webp",
+    "thumbnail": "/images/AnimationPointerUVs.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "AnisotropyBarnLamp": {
     "name": "AnisotropyBarnLamp",
@@ -189,8 +224,13 @@
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnisotropyBarnLamp/glTF-Binary/AnisotropyBarnLamp.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnisotropyBarnLamp/glTF/AnisotropyBarnLamp.gltf",
     "ktxModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnisotropyBarnLamp/glTF-KTX-BasisU/AnisotropyBarnLamp.gltf",
-    "image": "/images/AnisotropyBarnLamp/screenshot/screenshot.jpg",
-    "thumbnail": "/images/AnisotropyBarnLamp/screenshot/screenshot.thumb.webp"
+    "image": "/images/AnisotropyBarnLamp.webp",
+    "thumbnail": "/images/AnisotropyBarnLamp.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "AnisotropyDiscTest": {
     "name": "AnisotropyDiscTest",
@@ -210,8 +250,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnisotropyDiscTest/glTF-Binary/AnisotropyDiscTest.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnisotropyDiscTest/glTF/AnisotropyDiscTest.gltf",
-    "image": "/images/AnisotropyDiscTest/screenshot/screenshot.jpg",
-    "thumbnail": "/images/AnisotropyDiscTest/screenshot/screenshot.thumb.webp"
+    "image": "/images/AnisotropyDiscTest.webp",
+    "thumbnail": "/images/AnisotropyDiscTest.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "AnisotropyRotationTest": {
     "name": "AnisotropyRotationTest",
@@ -231,8 +276,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnisotropyRotationTest/glTF-Binary/AnisotropyRotationTest.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnisotropyRotationTest/glTF/AnisotropyRotationTest.gltf",
-    "image": "/images/AnisotropyRotationTest/screenshot/screenshot.png",
-    "thumbnail": "/images/AnisotropyRotationTest/screenshot/screenshot.thumb.webp"
+    "image": "/images/AnisotropyRotationTest.webp",
+    "thumbnail": "/images/AnisotropyRotationTest.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "AnisotropyStrengthTest": {
     "name": "AnisotropyStrengthTest",
@@ -252,8 +302,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnisotropyStrengthTest/glTF-Binary/AnisotropyStrengthTest.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnisotropyStrengthTest/glTF/AnisotropyStrengthTest.gltf",
-    "image": "/images/AnisotropyStrengthTest/screenshot/screenshot.png",
-    "thumbnail": "/images/AnisotropyStrengthTest/screenshot/screenshot.thumb.webp"
+    "image": "/images/AnisotropyStrengthTest.webp",
+    "thumbnail": "/images/AnisotropyStrengthTest.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "AntiqueCamera": {
     "name": "AntiqueCamera",
@@ -269,8 +324,13 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AntiqueCamera/glTF-Binary/AntiqueCamera.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AntiqueCamera/glTF/AntiqueCamera.gltf",
-    "image": "/images/AntiqueCamera/screenshot/screenshot.jpg",
-    "thumbnail": "/images/AntiqueCamera/screenshot/screenshot.thumb.webp"
+    "image": "/images/AntiqueCamera.webp",
+    "thumbnail": "/images/AntiqueCamera.webp",
+    "camera": {
+      "yaw": 45,
+      "pitch": 20,
+      "distance": 0
+    }
   },
   "AttenuationTest": {
     "name": "AttenuationTest",
@@ -292,8 +352,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AttenuationTest/glTF-Binary/AttenuationTest.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AttenuationTest/glTF/AttenuationTest.gltf",
-    "image": "/images/AttenuationTest/screenshot/screenshot.jpg",
-    "thumbnail": "/images/AttenuationTest/screenshot/screenshot.thumb.webp"
+    "image": "/images/AttenuationTest.webp",
+    "thumbnail": "/images/AttenuationTest.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "Avocado": {
     "name": "Avocado",
@@ -314,8 +379,13 @@
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Avocado/glTF/Avocado.gltf",
     "dracoModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Avocado/glTF-Draco/Avocado.gltf",
     "quantizedModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Avocado/glTF-Quantized/Avocado.gltf",
-    "image": "/images/Avocado/screenshot/screenshot.jpg",
-    "thumbnail": "/images/Avocado/screenshot/screenshot.thumb.webp"
+    "image": "/images/Avocado.webp",
+    "thumbnail": "/images/Avocado.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "BarramundiFish": {
     "name": "BarramundiFish",
@@ -333,8 +403,13 @@
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BarramundiFish/glTF-Binary/BarramundiFish.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BarramundiFish/glTF/BarramundiFish.gltf",
     "dracoModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BarramundiFish/glTF-Draco/BarramundiFish.gltf",
-    "image": "/images/BarramundiFish/screenshot/screenshot.jpg",
-    "thumbnail": "/images/BarramundiFish/screenshot/screenshot.thumb.webp"
+    "image": "/images/BarramundiFish.webp",
+    "thumbnail": "/images/BarramundiFish.webp",
+    "camera": {
+      "yaw": 45,
+      "pitch": 20,
+      "distance": 0
+    }
   },
   "BoomBox": {
     "name": "BoomBox",
@@ -352,8 +427,13 @@
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoomBox/glTF-Binary/BoomBox.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoomBox/glTF/BoomBox.gltf",
     "dracoModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoomBox/glTF-Draco/BoomBox.gltf",
-    "image": "/images/BoomBox/screenshot/screenshot.jpg",
-    "thumbnail": "/images/BoomBox/screenshot/screenshot.thumb.webp"
+    "image": "/images/BoomBox.webp",
+    "thumbnail": "/images/BoomBox.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "BoomBoxwithAxes": {
     "name": "BoomBoxwithAxes",
@@ -367,8 +447,13 @@
       "glTF": "BoomBoxWithAxes.gltf"
     },
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoomBoxWithAxes/glTF/BoomBoxWithAxes.gltf",
-    "image": "/images/BoomBoxwithAxes/screenshot/screenshot.jpg",
-    "thumbnail": "/images/BoomBoxwithAxes/screenshot/screenshot.thumb.webp"
+    "image": "/images/BoomBoxwithAxes.webp",
+    "thumbnail": "/images/BoomBoxwithAxes.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "Box": {
     "name": "Box",
@@ -387,8 +472,13 @@
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Box/glTF-Binary/Box.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Box/glTF/Box.gltf",
     "dracoModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Box/glTF-Draco/Box.gltf",
-    "image": "/images/Box/screenshot/screenshot.png",
-    "thumbnail": "/images/Box/screenshot/screenshot.thumb.webp"
+    "image": "/images/Box.webp",
+    "thumbnail": "/images/Box.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "BoxWithSpaces": {
     "name": "BoxWithSpaces",
@@ -402,8 +492,13 @@
       "glTF": "Box With Spaces.gltf"
     },
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Box With Spaces/glTF/Box With Spaces.gltf",
-    "image": "/images/BoxWithSpaces/screenshot/screenshot.png",
-    "thumbnail": "/images/BoxWithSpaces/screenshot/screenshot.thumb.webp"
+    "image": "/images/BoxWithSpaces.webp",
+    "thumbnail": "/images/BoxWithSpaces.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "BoxAnimated": {
     "name": "BoxAnimated",
@@ -421,8 +516,13 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxAnimated/glTF-Binary/BoxAnimated.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxAnimated/glTF/BoxAnimated.gltf",
-    "image": "/images/BoxAnimated/screenshot/screenshot.gif",
-    "thumbnail": "/images/BoxAnimated/screenshot/screenshot.thumb.webp"
+    "image": "/images/BoxAnimated.webp",
+    "thumbnail": "/images/BoxAnimated.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "Boxwithinterleavedpositionandnormalattributes": {
     "name": "Boxwithinterleavedpositionandnormalattributes",
@@ -439,8 +539,13 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxInterleaved/glTF-Binary/BoxInterleaved.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxInterleaved/glTF/BoxInterleaved.gltf",
-    "image": "/images/Boxwithinterleavedpositionandnormalattributes/screenshot/screenshot.png",
-    "thumbnail": "/images/Boxwithinterleavedpositionandnormalattributes/screenshot/screenshot.thumb.webp"
+    "image": "/images/Boxwithinterleavedpositionandnormalattributes.webp",
+    "thumbnail": "/images/Boxwithinterleavedpositionandnormalattributes.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "BoxTextured": {
     "name": "BoxTextured",
@@ -457,8 +562,13 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxTextured/glTF-Binary/BoxTextured.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxTextured/glTF/BoxTextured.gltf",
-    "image": "/images/BoxTextured/screenshot/screenshot.png",
-    "thumbnail": "/images/BoxTextured/screenshot/screenshot.thumb.webp"
+    "image": "/images/BoxTextured.webp",
+    "thumbnail": "/images/BoxTextured.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "BoxTexturednot2%5EN": {
     "name": "BoxTexturednot2^N",
@@ -475,8 +585,13 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxTexturedNonPowerOfTwo/glTF-Binary/BoxTexturedNonPowerOfTwo.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxTexturedNonPowerOfTwo/glTF/BoxTexturedNonPowerOfTwo.gltf",
-    "image": "/images/BoxTexturednot2%5EN/screenshot/screenshot.png",
-    "thumbnail": "/images/BoxTexturednot2%5EN/screenshot/screenshot.thumb.webp"
+    "image": "/images/BoxTexturednot2%5EN.webp",
+    "thumbnail": "/images/BoxTexturednot2%5EN.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "BoxVertexColors": {
     "name": "BoxVertexColors",
@@ -493,8 +608,13 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxVertexColors/glTF-Binary/BoxVertexColors.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxVertexColors/glTF/BoxVertexColors.gltf",
-    "image": "/images/BoxVertexColors/screenshot/screenshot.png",
-    "thumbnail": "/images/BoxVertexColors/screenshot/screenshot.thumb.webp"
+    "image": "/images/BoxVertexColors.webp",
+    "thumbnail": "/images/BoxVertexColors.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "BrainStem": {
     "name": "BrainStem",
@@ -515,8 +635,13 @@
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BrainStem/glTF-Binary/BrainStem.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BrainStem/glTF/BrainStem.gltf",
     "dracoModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BrainStem/glTF-Draco/BrainStem.gltf",
-    "image": "/images/BrainStem/screenshot/screenshot.gif",
-    "thumbnail": "/images/BrainStem/screenshot/screenshot.thumb.webp"
+    "image": "/images/BrainStem.webp",
+    "thumbnail": "/images/BrainStem.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "Cameras": {
     "name": "Cameras",
@@ -531,8 +656,13 @@
       "glTF": "Cameras.gltf"
     },
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Cameras/glTF/Cameras.gltf",
-    "image": "/images/Cameras/screenshot/screenshot.png",
-    "thumbnail": "/images/Cameras/screenshot/screenshot.thumb.webp"
+    "image": "/images/Cameras.webp",
+    "thumbnail": "/images/Cameras.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "CarbonFibreBall": {
     "name": "CarbonFibreBall",
@@ -551,8 +681,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CarbonFibre/glTF-Binary/CarbonFibre.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CarbonFibre/glTF/CarbonFibre.gltf",
-    "image": "/images/CarbonFibreBall/screenshot/screenshot.jpg",
-    "thumbnail": "/images/CarbonFibreBall/screenshot/screenshot.thumb.webp"
+    "image": "/images/CarbonFibreBall.webp",
+    "thumbnail": "/images/CarbonFibreBall.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "CarConcept": {
     "name": "CarConcept",
@@ -587,8 +722,13 @@
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CarConcept/glTF/CarConcept.gltf",
     "dracoModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CarConcept/glTF-KTX-BasisU-Draco/CarConcept.gltf",
     "ktxModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CarConcept/glTF-KTX-BasisU-Draco/CarConcept.gltf",
-    "image": "/images/CarConcept/screenshot/screenshot.jpg",
-    "thumbnail": "/images/CarConcept/screenshot/screenshot.thumb.webp"
+    "image": "/images/CarConcept.webp",
+    "thumbnail": "/images/CarConcept.webp",
+    "camera": {
+      "yaw": 45,
+      "pitch": 20,
+      "distance": 0
+    }
   },
   "CesiumMan": {
     "name": "CesiumMan",
@@ -608,8 +748,13 @@
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CesiumMan/glTF-Binary/CesiumMan.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CesiumMan/glTF/CesiumMan.gltf",
     "dracoModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CesiumMan/glTF-Draco/CesiumMan.gltf",
-    "image": "/images/CesiumMan/screenshot/screenshot.gif",
-    "thumbnail": "/images/CesiumMan/screenshot/screenshot.thumb.webp"
+    "image": "/images/CesiumMan.webp",
+    "thumbnail": "/images/CesiumMan.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "CesiumMilkTruck": {
     "name": "CesiumMilkTruck",
@@ -629,8 +774,13 @@
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CesiumMilkTruck/glTF-Binary/CesiumMilkTruck.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CesiumMilkTruck/glTF/CesiumMilkTruck.gltf",
     "dracoModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CesiumMilkTruck/glTF-Draco/CesiumMilkTruck.gltf",
-    "image": "/images/CesiumMilkTruck/screenshot/screenshot.gif",
-    "thumbnail": "/images/CesiumMilkTruck/screenshot/screenshot.thumb.webp"
+    "image": "/images/CesiumMilkTruck.webp",
+    "thumbnail": "/images/CesiumMilkTruck.webp",
+    "camera": {
+      "yaw": 45,
+      "pitch": 20,
+      "distance": 0
+    }
   },
   "ChairDamaskPurplegold": {
     "name": "ChairDamaskPurplegold",
@@ -653,8 +803,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/ChairDamaskPurplegold/glTF-Binary/ChairDamaskPurplegold.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/ChairDamaskPurplegold/glTF/ChairDamaskPurplegold.gltf",
-    "image": "/images/ChairDamaskPurplegold/screenshot/screenshot.jpg",
-    "thumbnail": "/images/ChairDamaskPurplegold/screenshot/screenshot.thumb.webp"
+    "image": "/images/ChairDamaskPurplegold.webp",
+    "thumbnail": "/images/ChairDamaskPurplegold.webp",
+    "camera": {
+      "yaw": 45,
+      "pitch": 20,
+      "distance": 0
+    }
   },
   "ChronographWatch": {
     "name": "ChronographWatch",
@@ -683,8 +838,13 @@
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/ChronographWatch/glTF-Binary/ChronographWatch.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/ChronographWatch/glTF/ChronographWatch.gltf",
     "ktxModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/ChronographWatch/glTF-KTX-BasisU/ChronographWatch.gltf",
-    "image": "/images/ChronographWatch/screenshot/screenshot.jpg",
-    "thumbnail": "/images/ChronographWatch/screenshot/screenshot.thumb.webp"
+    "image": "/images/ChronographWatch.webp",
+    "thumbnail": "/images/ChronographWatch.webp",
+    "camera": {
+      "yaw": 45,
+      "pitch": 20,
+      "distance": 0
+    }
   },
   "ClearCoatCarPaint": {
     "name": "ClearCoatCarPaint",
@@ -706,8 +866,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/ClearCoatCarPaint/glTF-Binary/ClearCoatCarPaint.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/ClearCoatCarPaint/glTF/ClearCoatCarPaint.gltf",
-    "image": "/images/ClearCoatCarPaint/screenshot/screenshot.jpg",
-    "thumbnail": "/images/ClearCoatCarPaint/screenshot/screenshot.thumb.webp"
+    "image": "/images/ClearCoatCarPaint.webp",
+    "thumbnail": "/images/ClearCoatCarPaint.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "KHR_materials_clearcoatTest": {
     "name": "KHR_materials_clearcoatTest",
@@ -727,8 +892,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/ClearCoatTest/glTF-Binary/ClearCoatTest.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/ClearCoatTest/glTF/ClearCoatTest.gltf",
-    "image": "/images/KHR_materials_clearcoatTest/screenshot/screenshot.jpg",
-    "thumbnail": "/images/KHR_materials_clearcoatTest/screenshot/screenshot.thumb.webp"
+    "image": "/images/KHR_materials_clearcoatTest.webp",
+    "thumbnail": "/images/KHR_materials_clearcoatTest.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "ClearcoatWicker": {
     "name": "ClearcoatWicker",
@@ -748,8 +918,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/ClearcoatWicker/glTF-Binary/ClearcoatWicker.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/ClearcoatWicker/glTF/ClearcoatWicker.gltf",
-    "image": "/images/ClearcoatWicker/screenshot/screenshot.jpg",
-    "thumbnail": "/images/ClearcoatWicker/screenshot/screenshot.thumb.webp"
+    "image": "/images/ClearcoatWicker.webp",
+    "thumbnail": "/images/ClearcoatWicker.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "CommercialRefrigerator": {
     "name": "CommercialRefrigerator",
@@ -772,8 +947,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CommercialRefrigerator/glTF-Binary/CommercialRefrigerator.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CommercialRefrigerator/glTF/CommercialRefrigerator.gltf",
-    "image": "/images/CommercialRefrigerator/screenshot/screenshot.jpg",
-    "thumbnail": "/images/CommercialRefrigerator/screenshot/screenshot.thumb.webp"
+    "image": "/images/CommercialRefrigerator.webp",
+    "thumbnail": "/images/CommercialRefrigerator.webp",
+    "camera": {
+      "yaw": 45,
+      "pitch": 20,
+      "distance": 0
+    }
   },
   "CompareAlphaCoverage": {
     "name": "CompareAlphaCoverage",
@@ -789,8 +969,13 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareAlphaCoverage/glTF-Binary/CompareAlphaCoverage.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareAlphaCoverage/glTF/CompareAlphaCoverage.gltf",
-    "image": "/images/CompareAlphaCoverage/screenshot/screenshot.jpg",
-    "thumbnail": "/images/CompareAlphaCoverage/screenshot/screenshot.thumb.webp"
+    "image": "/images/CompareAlphaCoverage.webp",
+    "thumbnail": "/images/CompareAlphaCoverage.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "CompareAmbientOcclusion": {
     "name": "CompareAmbientOcclusion",
@@ -806,8 +991,13 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareAmbientOcclusion/glTF-Binary/CompareAmbientOcclusion.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareAmbientOcclusion/glTF/CompareAmbientOcclusion.gltf",
-    "image": "/images/CompareAmbientOcclusion/screenshot/screenshot.jpg",
-    "thumbnail": "/images/CompareAmbientOcclusion/screenshot/screenshot.thumb.webp"
+    "image": "/images/CompareAmbientOcclusion.webp",
+    "thumbnail": "/images/CompareAmbientOcclusion.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "CompareAnisotropy": {
     "name": "CompareAnisotropy",
@@ -829,8 +1019,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareAnisotropy/glTF-Binary/CompareAnisotropy.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareAnisotropy/glTF/CompareAnisotropy.gltf",
-    "image": "/images/CompareAnisotropy/screenshot/screenshot.jpg",
-    "thumbnail": "/images/CompareAnisotropy/screenshot/screenshot.thumb.webp"
+    "image": "/images/CompareAnisotropy.webp",
+    "thumbnail": "/images/CompareAnisotropy.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "CompareBaseColor": {
     "name": "CompareBaseColor",
@@ -849,8 +1044,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareBaseColor/glTF-Binary/CompareBaseColor.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareBaseColor/glTF/CompareBaseColor.gltf",
-    "image": "/images/CompareBaseColor/screenshot/screenshot.jpg",
-    "thumbnail": "/images/CompareBaseColor/screenshot/screenshot.thumb.webp"
+    "image": "/images/CompareBaseColor.webp",
+    "thumbnail": "/images/CompareBaseColor.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "CompareClearcoat": {
     "name": "CompareClearcoat",
@@ -872,8 +1072,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareClearcoat/glTF-Binary/CompareClearcoat.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareClearcoat/glTF/CompareClearcoat.gltf",
-    "image": "/images/CompareClearcoat/screenshot/screenshot.jpg",
-    "thumbnail": "/images/CompareClearcoat/screenshot/screenshot.thumb.webp"
+    "image": "/images/CompareClearcoat.webp",
+    "thumbnail": "/images/CompareClearcoat.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "CompareDispersion": {
     "name": "CompareDispersion",
@@ -898,8 +1103,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareDispersion/glTF-Binary/CompareDispersion.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareDispersion/glTF/CompareDispersion.gltf",
-    "image": "/images/CompareDispersion/screenshot/screenshot.jpg",
-    "thumbnail": "/images/CompareDispersion/screenshot/screenshot.thumb.webp"
+    "image": "/images/CompareDispersion.webp",
+    "thumbnail": "/images/CompareDispersion.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "CompareEmissiveStrength": {
     "name": "CompareEmissiveStrength",
@@ -919,8 +1129,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareEmissiveStrength/glTF-Binary/CompareEmissiveStrength.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareEmissiveStrength/glTF/CompareEmissiveStrength.gltf",
-    "image": "/images/CompareEmissiveStrength/screenshot/screenshot.jpg",
-    "thumbnail": "/images/CompareEmissiveStrength/screenshot/screenshot.thumb.webp"
+    "image": "/images/CompareEmissiveStrength.webp",
+    "thumbnail": "/images/CompareEmissiveStrength.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "CompareIOR": {
     "name": "CompareIOR",
@@ -944,8 +1159,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareIor/glTF-Binary/CompareIor.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareIor/glTF/CompareIor.gltf",
-    "image": "/images/CompareIOR/screenshot/screenshot.jpg",
-    "thumbnail": "/images/CompareIOR/screenshot/screenshot.thumb.webp"
+    "image": "/images/CompareIOR.webp",
+    "thumbnail": "/images/CompareIOR.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "CompareIridescence": {
     "name": "CompareIridescence",
@@ -965,8 +1185,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareIridescence/glTF-Binary/CompareIridescence.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareIridescence/glTF/CompareIridescence.gltf",
-    "image": "/images/CompareIridescence/screenshot/screenshot.jpg",
-    "thumbnail": "/images/CompareIridescence/screenshot/screenshot.thumb.webp"
+    "image": "/images/CompareIridescence.webp",
+    "thumbnail": "/images/CompareIridescence.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "CompareMetallic": {
     "name": "CompareMetallic",
@@ -982,8 +1207,13 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareMetallic/glTF-Binary/CompareMetallic.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareMetallic/glTF/CompareMetallic.gltf",
-    "image": "/images/CompareMetallic/screenshot/screenshot.jpg",
-    "thumbnail": "/images/CompareMetallic/screenshot/screenshot.thumb.webp"
+    "image": "/images/CompareMetallic.webp",
+    "thumbnail": "/images/CompareMetallic.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "CompareNormal": {
     "name": "CompareNormal",
@@ -999,8 +1229,13 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareNormal/glTF-Binary/CompareNormal.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareNormal/glTF/CompareNormal.gltf",
-    "image": "/images/CompareNormal/screenshot/screenshot.jpg",
-    "thumbnail": "/images/CompareNormal/screenshot/screenshot.thumb.webp"
+    "image": "/images/CompareNormal.webp",
+    "thumbnail": "/images/CompareNormal.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "CompareRoughness": {
     "name": "CompareRoughness",
@@ -1016,8 +1251,13 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareRoughness/glTF-Binary/CompareRoughness.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareRoughness/glTF/CompareRoughness.gltf",
-    "image": "/images/CompareRoughness/screenshot/screenshot.jpg",
-    "thumbnail": "/images/CompareRoughness/screenshot/screenshot.thumb.webp"
+    "image": "/images/CompareRoughness.webp",
+    "thumbnail": "/images/CompareRoughness.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "CompareSheen": {
     "name": "CompareSheen",
@@ -1037,8 +1277,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareSheen/glTF-Binary/CompareSheen.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareSheen/glTF/CompareSheen.gltf",
-    "image": "/images/CompareSheen/screenshot/screenshot.jpg",
-    "thumbnail": "/images/CompareSheen/screenshot/screenshot.thumb.webp"
+    "image": "/images/CompareSheen.webp",
+    "thumbnail": "/images/CompareSheen.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "CompareSpecular": {
     "name": "CompareSpecular",
@@ -1058,8 +1303,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareSpecular/glTF-Binary/CompareSpecular.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareSpecular/glTF/CompareSpecular.gltf",
-    "image": "/images/CompareSpecular/screenshot/screenshot.jpg",
-    "thumbnail": "/images/CompareSpecular/screenshot/screenshot.thumb.webp"
+    "image": "/images/CompareSpecular.webp",
+    "thumbnail": "/images/CompareSpecular.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "CompareTransmission": {
     "name": "CompareTransmission",
@@ -1079,8 +1329,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareTransmission/glTF-Binary/CompareTransmission.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareTransmission/glTF/CompareTransmission.gltf",
-    "image": "/images/CompareTransmission/screenshot/screenshot.jpg",
-    "thumbnail": "/images/CompareTransmission/screenshot/screenshot.thumb.webp"
+    "image": "/images/CompareTransmission.webp",
+    "thumbnail": "/images/CompareTransmission.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "CompareVolume": {
     "name": "CompareVolume",
@@ -1102,8 +1357,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareVolume/glTF-Binary/CompareVolume.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareVolume/glTF/CompareVolume.gltf",
-    "image": "/images/CompareVolume/screenshot/screenshot.jpg",
-    "thumbnail": "/images/CompareVolume/screenshot/screenshot.thumb.webp"
+    "image": "/images/CompareVolume.webp",
+    "thumbnail": "/images/CompareVolume.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "Corset": {
     "name": "Corset",
@@ -1121,8 +1381,13 @@
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Corset/glTF-Binary/Corset.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Corset/glTF/Corset.gltf",
     "dracoModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Corset/glTF-Draco/Corset.gltf",
-    "image": "/images/Corset/screenshot/screenshot.jpg",
-    "thumbnail": "/images/Corset/screenshot/screenshot.thumb.webp"
+    "image": "/images/Corset.webp",
+    "thumbnail": "/images/Corset.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "Cube": {
     "name": "Cube",
@@ -1136,8 +1401,13 @@
       "glTF": "Cube.gltf"
     },
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Cube/glTF/Cube.gltf",
-    "image": "/images/Cube/screenshot/screenshot.jpg",
-    "thumbnail": "/images/Cube/screenshot/screenshot.thumb.webp"
+    "image": "/images/Cube.webp",
+    "thumbnail": "/images/Cube.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "DamagedHelmet": {
     "name": "DamagedHelmet",
@@ -1155,8 +1425,13 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/DamagedHelmet/glTF-Binary/DamagedHelmet.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/DamagedHelmet/glTF/DamagedHelmet.gltf",
-    "image": "/images/DamagedHelmet/screenshot/screenshot.png",
-    "thumbnail": "/images/DamagedHelmet/screenshot/screenshot.thumb.webp"
+    "image": "/images/DamagedHelmet.webp",
+    "thumbnail": "/images/DamagedHelmet.webp",
+    "camera": {
+      "yaw": 45,
+      "pitch": 20,
+      "distance": 0
+    }
   },
   "DiffuseTransmissionPlant": {
     "name": "DiffuseTransmissionPlant",
@@ -1178,8 +1453,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/DiffuseTransmissionPlant/glTF-Binary/DiffuseTransmissionPlant.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/DiffuseTransmissionPlant/glTF/DiffuseTransmissionPlant.gltf",
-    "image": "/images/DiffuseTransmissionPlant/screenshot/screenshot.jpg",
-    "thumbnail": "/images/DiffuseTransmissionPlant/screenshot/screenshot.thumb.webp"
+    "image": "/images/DiffuseTransmissionPlant.webp",
+    "thumbnail": "/images/DiffuseTransmissionPlant.webp",
+    "camera": {
+      "yaw": 45,
+      "pitch": 20,
+      "distance": 0
+    }
   },
   "DiffuseTransmissionTeacup": {
     "name": "DiffuseTransmissionTeacup",
@@ -1198,8 +1478,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/DiffuseTransmissionTeacup/glTF-Binary/DiffuseTransmissionTeacup.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/DiffuseTransmissionTeacup/glTF/DiffuseTransmissionTeacup.gltf",
-    "image": "/images/DiffuseTransmissionTeacup/screenshot/screenshot.jpg",
-    "thumbnail": "/images/DiffuseTransmissionTeacup/screenshot/screenshot.thumb.webp"
+    "image": "/images/DiffuseTransmissionTeacup.webp",
+    "thumbnail": "/images/DiffuseTransmissionTeacup.webp",
+    "camera": {
+      "yaw": 45,
+      "pitch": 20,
+      "distance": 0
+    }
   },
   "DiffuseTransmissionTest": {
     "name": "DiffuseTransmissionTest",
@@ -1222,8 +1507,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/DiffuseTransmissionTest/glTF-Binary/DiffuseTransmissionTest.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/DiffuseTransmissionTest/glTF/DiffuseTransmissionTest.gltf",
-    "image": "/images/DiffuseTransmissionTest/screenshot/screenshot.jpg",
-    "thumbnail": "/images/DiffuseTransmissionTest/screenshot/screenshot.thumb.webp"
+    "image": "/images/DiffuseTransmissionTest.webp",
+    "thumbnail": "/images/DiffuseTransmissionTest.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "DirectionalLight": {
     "name": "DirectionalLight",
@@ -1242,8 +1532,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/DirectionalLight/glTF-Binary/DirectionalLight.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/DirectionalLight/glTF/DirectionalLight.gltf",
-    "image": "/images/DirectionalLight/screenshot/screenshot.png",
-    "thumbnail": "/images/DirectionalLight/screenshot/screenshot.thumb.webp"
+    "image": "/images/DirectionalLight.webp",
+    "thumbnail": "/images/DirectionalLight.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "DispersionTest": {
     "name": "DispersionTest",
@@ -1268,8 +1563,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/DispersionTest/glTF-Binary/DispersionTest.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/DispersionTest/glTF/DispersionTest.gltf",
-    "image": "/images/DispersionTest/screenshot/screenshot.png",
-    "thumbnail": "/images/DispersionTest/screenshot/screenshot.thumb.webp"
+    "image": "/images/DispersionTest.webp",
+    "thumbnail": "/images/DispersionTest.webp",
+    "camera": {
+      "yaw": 45,
+      "pitch": 20,
+      "distance": 0
+    }
   },
   "DragonAttenuation": {
     "name": "DragonAttenuation",
@@ -1294,8 +1594,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/DragonAttenuation/glTF-Binary/DragonAttenuation.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/DragonAttenuation/glTF/DragonAttenuation.gltf",
-    "image": "/images/DragonAttenuation/screenshot/screenshot.jpg",
-    "thumbnail": "/images/DragonAttenuation/screenshot/screenshot.thumb.webp"
+    "image": "/images/DragonAttenuation.webp",
+    "thumbnail": "/images/DragonAttenuation.webp",
+    "camera": {
+      "yaw": 45,
+      "pitch": 20,
+      "distance": 0
+    }
   },
   "DragonDispersion": {
     "name": "DragonDispersion",
@@ -1320,8 +1625,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/DragonDispersion/glTF-Binary/DragonDispersion.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/DragonDispersion/glTF/DragonDispersion.gltf",
-    "image": "/images/DragonDispersion/screenshot/screenshot.jpg",
-    "thumbnail": "/images/DragonDispersion/screenshot/screenshot.thumb.webp"
+    "image": "/images/DragonDispersion.webp",
+    "thumbnail": "/images/DragonDispersion.webp",
+    "camera": {
+      "yaw": 45,
+      "pitch": 20,
+      "distance": 0
+    }
   },
   "Duck": {
     "name": "Duck",
@@ -1343,8 +1653,13 @@
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Duck/glTF/Duck.gltf",
     "dracoModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Duck/glTF-Draco/Duck.gltf",
     "quantizedModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Duck/glTF-Quantized/Duck.gltf",
-    "image": "/images/Duck/screenshot/screenshot.png",
-    "thumbnail": "/images/Duck/screenshot/screenshot.thumb.webp"
+    "image": "/images/Duck.webp",
+    "thumbnail": "/images/Duck.webp",
+    "camera": {
+      "yaw": 45,
+      "pitch": 20,
+      "distance": 0
+    }
   },
   "EmissiveStrengthTest": {
     "name": "EmissiveStrengthTest",
@@ -1364,8 +1679,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/EmissiveStrengthTest/glTF-Binary/EmissiveStrengthTest.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/EmissiveStrengthTest/glTF/EmissiveStrengthTest.gltf",
-    "image": "/images/EmissiveStrengthTest/screenshot/screenshot.jpg",
-    "thumbnail": "/images/EmissiveStrengthTest/screenshot/screenshot.thumb.webp"
+    "image": "/images/EmissiveStrengthTest.webp",
+    "thumbnail": "/images/EmissiveStrengthTest.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "EnvironmentTest": {
     "name": "EnvironmentTest",
@@ -1381,8 +1701,13 @@
       "glTF-IBL": "EnvironmentTest.gltf"
     },
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/EnvironmentTest/glTF/EnvironmentTest.gltf",
-    "image": "/images/EnvironmentTest/screenshot/screenshot.jpg",
-    "thumbnail": "/images/EnvironmentTest/screenshot/screenshot.thumb.webp"
+    "image": "/images/EnvironmentTest.webp",
+    "thumbnail": "/images/EnvironmentTest.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "FlightHelmet": {
     "name": "FlightHelmet",
@@ -1400,8 +1725,13 @@
       "KHR_materials_transmission"
     ],
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/FlightHelmet/glTF/FlightHelmet.gltf",
-    "image": "/images/FlightHelmet/screenshot/screenshot.jpg",
-    "thumbnail": "/images/FlightHelmet/screenshot/screenshot.thumb.webp"
+    "image": "/images/FlightHelmet.webp",
+    "thumbnail": "/images/FlightHelmet.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "Fox": {
     "name": "Fox",
@@ -1418,8 +1748,13 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Fox/glTF-Binary/Fox.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Fox/glTF/Fox.gltf",
-    "image": "/images/Fox/screenshot/screenshot.jpg",
-    "thumbnail": "/images/Fox/screenshot/screenshot.thumb.webp"
+    "image": "/images/Fox.webp",
+    "thumbnail": "/images/Fox.webp",
+    "camera": {
+      "yaw": 45,
+      "pitch": 20,
+      "distance": 0
+    }
   },
   "GlamVelvetSofa": {
     "name": "GlamVelvetSofa",
@@ -1446,8 +1781,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/GlamVelvetSofa/glTF-Binary/GlamVelvetSofa.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/GlamVelvetSofa/glTF/GlamVelvetSofa.gltf",
-    "image": "/images/GlamVelvetSofa/screenshot/screenshot.jpg",
-    "thumbnail": "/images/GlamVelvetSofa/screenshot/screenshot.thumb.webp"
+    "image": "/images/GlamVelvetSofa.webp",
+    "thumbnail": "/images/GlamVelvetSofa.webp",
+    "camera": {
+      "yaw": 45,
+      "pitch": 20,
+      "distance": 0
+    }
   },
   "GlassBrokenWindow": {
     "name": "GlassBrokenWindow",
@@ -1466,8 +1806,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/GlassBrokenWindow/glTF-Binary/GlassBrokenWindow.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/GlassBrokenWindow/glTF/GlassBrokenWindow.gltf",
-    "image": "/images/GlassBrokenWindow/screenshot/screenshot.jpg",
-    "thumbnail": "/images/GlassBrokenWindow/screenshot/screenshot.thumb.webp"
+    "image": "/images/GlassBrokenWindow.webp",
+    "thumbnail": "/images/GlassBrokenWindow.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "GlassHurricaneCandleHolder": {
     "name": "GlassHurricaneCandleHolder",
@@ -1489,8 +1834,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/GlassHurricaneCandleHolder/glTF-Binary/GlassHurricaneCandleHolder.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/GlassHurricaneCandleHolder/glTF/GlassHurricaneCandleHolder.gltf",
-    "image": "/images/GlassHurricaneCandleHolder/screenshot/screenshot.jpg",
-    "thumbnail": "/images/GlassHurricaneCandleHolder/screenshot/screenshot.thumb.webp"
+    "image": "/images/GlassHurricaneCandleHolder.webp",
+    "thumbnail": "/images/GlassHurricaneCandleHolder.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "GlassVasewithFlowers": {
     "name": "GlassVasewithFlowers",
@@ -1511,8 +1861,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/GlassVaseFlowers/glTF-Binary/GlassVaseFlowers.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/GlassVaseFlowers/glTF/GlassVaseFlowers.gltf",
-    "image": "/images/GlassVasewithFlowers/screenshot/screenshot.jpg",
-    "thumbnail": "/images/GlassVasewithFlowers/screenshot/screenshot.thumb.webp"
+    "image": "/images/GlassVasewithFlowers.webp",
+    "thumbnail": "/images/GlassVasewithFlowers.webp",
+    "camera": {
+      "yaw": 45,
+      "pitch": 20,
+      "distance": 0
+    }
   },
   "InterpolationTest": {
     "name": "InterpolationTest",
@@ -1529,8 +1884,13 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/InterpolationTest/glTF-Binary/InterpolationTest.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/InterpolationTest/glTF/InterpolationTest.gltf",
-    "image": "/images/InterpolationTest/screenshot/screenshot.gif",
-    "thumbnail": "/images/InterpolationTest/screenshot/screenshot.thumb.webp"
+    "image": "/images/InterpolationTest.webp",
+    "thumbnail": "/images/InterpolationTest.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "IORTestGrid": {
     "name": "IORTestGrid",
@@ -1556,8 +1916,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/IORTestGrid/glTF-Binary/IORTestGrid.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/IORTestGrid/glTF/IORTestGrid.gltf",
-    "image": "/images/IORTestGrid/screenshot/screenshot.jpg",
-    "thumbnail": "/images/IORTestGrid/screenshot/screenshot.thumb.webp"
+    "image": "/images/IORTestGrid.webp",
+    "thumbnail": "/images/IORTestGrid.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "IridescenceAbalone": {
     "name": "IridescenceAbalone",
@@ -1576,8 +1941,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/IridescenceAbalone/glTF-Binary/IridescenceAbalone.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/IridescenceAbalone/glTF/IridescenceAbalone.gltf",
-    "image": "/images/IridescenceAbalone/screenshot/screenshot.jpg",
-    "thumbnail": "/images/IridescenceAbalone/screenshot/screenshot.thumb.webp"
+    "image": "/images/IridescenceAbalone.webp",
+    "thumbnail": "/images/IridescenceAbalone.webp",
+    "camera": {
+      "yaw": 45,
+      "pitch": 20,
+      "distance": 0
+    }
   },
   "IridescenceDielectricSpheres": {
     "name": "IridescenceDielectricSpheres",
@@ -1597,8 +1967,13 @@
       "KHR_materials_iridescence"
     ],
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/IridescenceDielectricSpheres/glTF/IridescenceDielectricSpheres.gltf",
-    "image": "/images/IridescenceDielectricSpheres/screenshot/screenshot.jpg",
-    "thumbnail": "/images/IridescenceDielectricSpheres/screenshot/screenshot.thumb.webp"
+    "image": "/images/IridescenceDielectricSpheres.webp",
+    "thumbnail": "/images/IridescenceDielectricSpheres.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "IridescenceLamp": {
     "name": "IridescenceLamp",
@@ -1624,8 +1999,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/IridescenceLamp/glTF-Binary/IridescenceLamp.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/IridescenceLamp/glTF/IridescenceLamp.gltf",
-    "image": "/images/IridescenceLamp/screenshot/screenshot.jpg",
-    "thumbnail": "/images/IridescenceLamp/screenshot/screenshot.thumb.webp"
+    "image": "/images/IridescenceLamp.webp",
+    "thumbnail": "/images/IridescenceLamp.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "IridescenceMetallicSpheres": {
     "name": "IridescenceMetallicSpheres",
@@ -1645,8 +2025,13 @@
       "KHR_materials_iridescence"
     ],
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/IridescenceMetallicSpheres/glTF/IridescenceMetallicSpheres.gltf",
-    "image": "/images/IridescenceMetallicSpheres/screenshot/screenshot.jpg",
-    "thumbnail": "/images/IridescenceMetallicSpheres/screenshot/screenshot.thumb.webp"
+    "image": "/images/IridescenceMetallicSpheres.webp",
+    "thumbnail": "/images/IridescenceMetallicSpheres.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "IridescenceSuzanne": {
     "name": "IridescenceSuzanne",
@@ -1674,8 +2059,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/IridescenceSuzanne/glTF-Binary/IridescenceSuzanne.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/IridescenceSuzanne/glTF/IridescenceSuzanne.gltf",
-    "image": "/images/IridescenceSuzanne/screenshot/screenshot.jpg",
-    "thumbnail": "/images/IridescenceSuzanne/screenshot/screenshot.thumb.webp"
+    "image": "/images/IridescenceSuzanne.webp",
+    "thumbnail": "/images/IridescenceSuzanne.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 1
+    }
   },
   "IridescentDishwithOlives": {
     "name": "IridescentDishwithOlives",
@@ -1702,8 +2092,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/IridescentDishWithOlives/glTF-Binary/IridescentDishWithOlives.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/IridescentDishWithOlives/glTF/IridescentDishWithOlives.gltf",
-    "image": "/images/IridescentDishwithOlives/screenshot/screenshot.jpg",
-    "thumbnail": "/images/IridescentDishwithOlives/screenshot/screenshot.thumb.webp"
+    "image": "/images/IridescentDishwithOlives.webp",
+    "thumbnail": "/images/IridescentDishwithOlives.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 1
+    }
   },
   "Lantern": {
     "name": "Lantern",
@@ -1724,8 +2119,13 @@
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Lantern/glTF/Lantern.gltf",
     "dracoModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Lantern/glTF-Draco/Lantern.gltf",
     "quantizedModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Lantern/glTF-Quantized/Lantern.gltf",
-    "image": "/images/Lantern/screenshot/screenshot.jpg",
-    "thumbnail": "/images/Lantern/screenshot/screenshot.thumb.webp"
+    "image": "/images/Lantern.webp",
+    "thumbnail": "/images/Lantern.webp",
+    "camera": {
+      "yaw": 45,
+      "pitch": 20,
+      "distance": 0
+    }
   },
   "LampwithPunctualLights": {
     "name": "LampwithPunctualLights",
@@ -1747,8 +2147,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/LightsPunctualLamp/glTF-Binary/LightsPunctualLamp.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/LightsPunctualLamp/glTF/LightsPunctualLamp.gltf",
-    "image": "/images/LampwithPunctualLights/screenshot/screenshot.png",
-    "thumbnail": "/images/LampwithPunctualLights/screenshot/screenshot.thumb.webp"
+    "image": "/images/LampwithPunctualLights.webp",
+    "thumbnail": "/images/LampwithPunctualLights.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "MandarinOrange": {
     "name": "MandarinOrange",
@@ -1765,8 +2170,13 @@
       "KHR_materials_diffuse_transmission"
     ],
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MandarinOrange/glTF/MandarinOrange.gltf",
-    "image": "/images/MandarinOrange/screenshot/screenshot.jpg",
-    "thumbnail": "/images/MandarinOrange/screenshot/screenshot.thumb.webp"
+    "image": "/images/MandarinOrange.webp",
+    "thumbnail": "/images/MandarinOrange.webp",
+    "camera": {
+      "yaw": 45,
+      "pitch": 20,
+      "distance": 0
+    }
   },
   "MaterialsVariantsShoe": {
     "name": "MaterialsVariantsShoe",
@@ -1786,8 +2196,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MaterialsVariantsShoe/glTF-Binary/MaterialsVariantsShoe.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MaterialsVariantsShoe/glTF/MaterialsVariantsShoe.gltf",
-    "image": "/images/MaterialsVariantsShoe/screenshot/screenshot.jpg",
-    "thumbnail": "/images/MaterialsVariantsShoe/screenshot/screenshot.thumb.webp"
+    "image": "/images/MaterialsVariantsShoe.webp",
+    "thumbnail": "/images/MaterialsVariantsShoe.webp",
+    "camera": {
+      "yaw": 45,
+      "pitch": 20,
+      "distance": 0
+    }
   },
   "MeshPrimitiveModes": {
     "name": "MeshPrimitiveModes",
@@ -1802,8 +2217,13 @@
       "glTF": "MeshPrimitiveModes.gltf"
     },
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MeshPrimitiveModes/glTF/MeshPrimitiveModes.gltf",
-    "image": "/images/MeshPrimitiveModes/screenshot/screenshot.png",
-    "thumbnail": "/images/MeshPrimitiveModes/screenshot/screenshot.thumb.webp"
+    "image": "/images/MeshPrimitiveModes.webp",
+    "thumbnail": "/images/MeshPrimitiveModes.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "Metal-RoughSpheres": {
     "name": "Metal-RoughSpheres",
@@ -1820,8 +2240,13 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MetalRoughSpheres/glTF-Binary/MetalRoughSpheres.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MetalRoughSpheres/glTF/MetalRoughSpheres.gltf",
-    "image": "/images/Metal-RoughSpheres/screenshot/screenshot.png",
-    "thumbnail": "/images/Metal-RoughSpheres/screenshot/screenshot.thumb.webp"
+    "image": "/images/Metal-RoughSpheres.webp",
+    "thumbnail": "/images/Metal-RoughSpheres.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "Metal-RoughSpheres(textureless)": {
     "name": "Metal-RoughSpheres(textureless)",
@@ -1837,8 +2262,13 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MetalRoughSpheresNoTextures/glTF-Binary/MetalRoughSpheresNoTextures.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MetalRoughSpheresNoTextures/glTF/MetalRoughSpheresNoTextures.gltf",
-    "image": "/images/Metal-RoughSpheres(textureless)/screenshot/screenshot.png",
-    "thumbnail": "/images/Metal-RoughSpheres(textureless)/screenshot/screenshot.thumb.webp"
+    "image": "/images/Metal-RoughSpheres(textureless).webp",
+    "thumbnail": "/images/Metal-RoughSpheres(textureless).webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "Morph-PrimitivesTest": {
     "name": "Morph-PrimitivesTest",
@@ -1858,8 +2288,13 @@
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MorphPrimitivesTest/glTF-Binary/MorphPrimitivesTest.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MorphPrimitivesTest/glTF/MorphPrimitivesTest.gltf",
     "dracoModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MorphPrimitivesTest/glTF-Draco/MorphPrimitivesTest.gltf",
-    "image": "/images/Morph-PrimitivesTest/screenshot/screenshot.jpg",
-    "thumbnail": "/images/Morph-PrimitivesTest/screenshot/screenshot.thumb.webp"
+    "image": "/images/Morph-PrimitivesTest.webp",
+    "thumbnail": "/images/Morph-PrimitivesTest.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "MorphStressTest": {
     "name": "MorphStressTest",
@@ -1877,8 +2312,13 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MorphStressTest/glTF-Binary/MorphStressTest.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MorphStressTest/glTF/MorphStressTest.gltf",
-    "image": "/images/MorphStressTest/screenshot/screenshot.jpg",
-    "thumbnail": "/images/MorphStressTest/screenshot/screenshot.thumb.webp"
+    "image": "/images/MorphStressTest.webp",
+    "thumbnail": "/images/MorphStressTest.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "MosquitoInAmber": {
     "name": "MosquitoInAmber",
@@ -1902,8 +2342,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MosquitoInAmber/glTF-Binary/MosquitoInAmber.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MosquitoInAmber/glTF/MosquitoInAmber.gltf",
-    "image": "/images/MosquitoInAmber/screenshot/screenshot.jpg",
-    "thumbnail": "/images/MosquitoInAmber/screenshot/screenshot.thumb.webp"
+    "image": "/images/MosquitoInAmber.webp",
+    "thumbnail": "/images/MosquitoInAmber.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "MultipleScenes": {
     "name": "MultipleScenes",
@@ -1918,8 +2363,13 @@
       "glTF": "MultipleScenes.gltf"
     },
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MultipleScenes/glTF/MultipleScenes.gltf",
-    "image": "/images/MultipleScenes/screenshot/screenshot.png",
-    "thumbnail": "/images/MultipleScenes/screenshot/screenshot.thumb.webp"
+    "image": "/images/MultipleScenes.webp",
+    "thumbnail": "/images/MultipleScenes.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "MultiUVTest": {
     "name": "MultiUVTest",
@@ -1936,8 +2386,13 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MultiUVTest/glTF-Binary/MultiUVTest.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MultiUVTest/glTF/MultiUVTest.gltf",
-    "image": "/images/MultiUVTest/screenshot/screenshot.jpg",
-    "thumbnail": "/images/MultiUVTest/screenshot/screenshot.thumb.webp"
+    "image": "/images/MultiUVTest.webp",
+    "thumbnail": "/images/MultiUVTest.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "NegativeScaleTest": {
     "name": "NegativeScaleTest",
@@ -1953,8 +2408,13 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/NegativeScaleTest/glTF-Binary/NegativeScaleTest.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/NegativeScaleTest/glTF/NegativeScaleTest.gltf",
-    "image": "/images/NegativeScaleTest/screenshot/screenshot.jpg",
-    "thumbnail": "/images/NegativeScaleTest/screenshot/screenshot.thumb.webp"
+    "image": "/images/NegativeScaleTest.webp",
+    "thumbnail": "/images/NegativeScaleTest.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "Normal-TangentMirrorTest": {
     "name": "Normal-TangentMirrorTest",
@@ -1970,8 +2430,13 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/NormalTangentMirrorTest/glTF-Binary/NormalTangentMirrorTest.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/NormalTangentMirrorTest/glTF/NormalTangentMirrorTest.gltf",
-    "image": "/images/Normal-TangentMirrorTest/screenshot/screenshot.png",
-    "thumbnail": "/images/Normal-TangentMirrorTest/screenshot/screenshot.thumb.webp"
+    "image": "/images/Normal-TangentMirrorTest.webp",
+    "thumbnail": "/images/Normal-TangentMirrorTest.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "Normal-TangentTest": {
     "name": "Normal-TangentTest",
@@ -1987,8 +2452,13 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/NormalTangentTest/glTF-Binary/NormalTangentTest.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/NormalTangentTest/glTF/NormalTangentTest.gltf",
-    "image": "/images/Normal-TangentTest/screenshot/screenshot.png",
-    "thumbnail": "/images/Normal-TangentTest/screenshot/screenshot.thumb.webp"
+    "image": "/images/Normal-TangentTest.webp",
+    "thumbnail": "/images/Normal-TangentTest.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "OrientationTest": {
     "name": "OrientationTest",
@@ -2005,8 +2475,13 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/OrientationTest/glTF-Binary/OrientationTest.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/OrientationTest/glTF/OrientationTest.gltf",
-    "image": "/images/OrientationTest/screenshot/screenshot.png",
-    "thumbnail": "/images/OrientationTest/screenshot/screenshot.thumb.webp"
+    "image": "/images/OrientationTest.webp",
+    "thumbnail": "/images/OrientationTest.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "PointLightIntensityTest": {
     "name": "PointLightIntensityTest",
@@ -2028,8 +2503,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/PointLightIntensityTest/glTF-Binary/PointLightIntensityTest.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/PointLightIntensityTest/glTF/PointLightIntensityTest.gltf",
-    "image": "/images/PointLightIntensityTest/screenshot/screenshot.jpg",
-    "thumbnail": "/images/PointLightIntensityTest/screenshot/screenshot.thumb.webp"
+    "image": "/images/PointLightIntensityTest.webp",
+    "thumbnail": "/images/PointLightIntensityTest.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "PotOfCoals": {
     "name": "PotOfCoals",
@@ -2049,8 +2529,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/PotOfCoals/glTF-Binary/PotOfCoals.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/PotOfCoals/glTF/PotOfCoals.gltf",
-    "image": "/images/PotOfCoals/screenshot/screenshot.jpg",
-    "thumbnail": "/images/PotOfCoals/screenshot/screenshot.thumb.webp"
+    "image": "/images/PotOfCoals.webp",
+    "thumbnail": "/images/PotOfCoals.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "PotOfCoalsAnimationPointer": {
     "name": "PotOfCoalsAnimationPointer",
@@ -2080,8 +2565,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/PotOfCoalsAnimationPointer/glTF-Binary/PotOfCoalsAnimationPointer.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/PotOfCoalsAnimationPointer/glTF/PotOfCoalsAnimationPointer.gltf",
-    "image": "/images/PotOfCoalsAnimationPointer/screenshot/screenshot.jpg",
-    "thumbnail": "/images/PotOfCoalsAnimationPointer/screenshot/screenshot.thumb.webp"
+    "image": "/images/PotOfCoalsAnimationPointer.webp",
+    "thumbnail": "/images/PotOfCoalsAnimationPointer.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "PrimitiveModeNormalsTest": {
     "name": "PrimitiveModeNormalsTest",
@@ -2095,8 +2585,13 @@
       "glTF": "PrimitiveModeNormalsTest.gltf"
     },
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/PrimitiveModeNormalsTest/glTF/PrimitiveModeNormalsTest.gltf",
-    "image": "/images/PrimitiveModeNormalsTest/screenshot/screenshot.png",
-    "thumbnail": "/images/PrimitiveModeNormalsTest/screenshot/screenshot.thumb.webp"
+    "image": "/images/PrimitiveModeNormalsTest.webp",
+    "thumbnail": "/images/PrimitiveModeNormalsTest.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "RecursiveSkeletons": {
     "name": "RecursiveSkeletons",
@@ -2113,8 +2608,13 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/RecursiveSkeletons/glTF-Binary/RecursiveSkeletons.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/RecursiveSkeletons/glTF/RecursiveSkeletons.gltf",
-    "image": "/images/RecursiveSkeletons/screenshot/screenshot.jpg",
-    "thumbnail": "/images/RecursiveSkeletons/screenshot/screenshot.thumb.webp"
+    "image": "/images/RecursiveSkeletons.webp",
+    "thumbnail": "/images/RecursiveSkeletons.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "RiggedFigure": {
     "name": "RiggedFigure",
@@ -2134,8 +2634,13 @@
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/RiggedFigure/glTF-Binary/RiggedFigure.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/RiggedFigure/glTF/RiggedFigure.gltf",
     "dracoModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/RiggedFigure/glTF-Draco/RiggedFigure.gltf",
-    "image": "/images/RiggedFigure/screenshot/screenshot.gif",
-    "thumbnail": "/images/RiggedFigure/screenshot/screenshot.thumb.webp"
+    "image": "/images/RiggedFigure.webp",
+    "thumbnail": "/images/RiggedFigure.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "RiggedSimple": {
     "name": "RiggedSimple",
@@ -2155,8 +2660,13 @@
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/RiggedSimple/glTF-Binary/RiggedSimple.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/RiggedSimple/glTF/RiggedSimple.gltf",
     "dracoModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/RiggedSimple/glTF-Draco/RiggedSimple.gltf",
-    "image": "/images/RiggedSimple/screenshot/screenshot.gif",
-    "thumbnail": "/images/RiggedSimple/screenshot/screenshot.thumb.webp"
+    "image": "/images/RiggedSimple.webp",
+    "thumbnail": "/images/RiggedSimple.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "Skull": {
     "name": "Skull",
@@ -2182,8 +2692,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/ScatteringSkull/glTF-Binary/ScatteringSkull.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/ScatteringSkull/glTF/ScatteringSkull.gltf",
-    "image": "/images/Skull/screenshot/screenshot.jpg",
-    "thumbnail": "/images/Skull/screenshot/screenshot.thumb.webp"
+    "image": "/images/Skull.webp",
+    "thumbnail": "/images/Skull.webp",
+    "camera": {
+      "yaw": 45,
+      "pitch": 20,
+      "distance": 0
+    }
   },
   "SciFiHelmet": {
     "name": "SciFiHelmet",
@@ -2197,8 +2712,13 @@
       "glTF": "SciFiHelmet.gltf"
     },
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SciFiHelmet/glTF/SciFiHelmet.gltf",
-    "image": "/images/SciFiHelmet/screenshot/screenshot.jpg",
-    "thumbnail": "/images/SciFiHelmet/screenshot/screenshot.thumb.webp"
+    "image": "/images/SciFiHelmet.webp",
+    "thumbnail": "/images/SciFiHelmet.webp",
+    "camera": {
+      "yaw": 45,
+      "pitch": 20,
+      "distance": 0
+    }
   },
   "SheenChair": {
     "name": "SheenChair",
@@ -2222,8 +2742,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SheenChair/glTF-Binary/SheenChair.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SheenChair/glTF/SheenChair.gltf",
-    "image": "/images/SheenChair/screenshot/screenshot.jpg",
-    "thumbnail": "/images/SheenChair/screenshot/screenshot.thumb.webp"
+    "image": "/images/SheenChair.webp",
+    "thumbnail": "/images/SheenChair.webp",
+    "camera": {
+      "yaw": 45,
+      "pitch": 20,
+      "distance": 0
+    }
   },
   "SheenCloth": {
     "name": "SheenCloth",
@@ -2243,8 +2768,13 @@
       "KHR_materials_sheen"
     ],
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SheenCloth/glTF/SheenCloth.gltf",
-    "image": "/images/SheenCloth/screenshot/screenshot.jpg",
-    "thumbnail": "/images/SheenCloth/screenshot/screenshot.thumb.webp"
+    "image": "/images/SheenCloth.webp",
+    "thumbnail": "/images/SheenCloth.webp",
+    "camera": {
+      "yaw": 45,
+      "pitch": 20,
+      "distance": 0
+    }
   },
   "SheenTestGrid": {
     "name": "SheenTestGrid",
@@ -2264,8 +2794,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SheenTestGrid/glTF-Binary/SheenTestGrid.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SheenTestGrid/glTF/SheenTestGrid.gltf",
-    "image": "/images/SheenTestGrid/screenshot/screenshot.jpg",
-    "thumbnail": "/images/SheenTestGrid/screenshot/screenshot.thumb.webp"
+    "image": "/images/SheenTestGrid.webp",
+    "thumbnail": "/images/SheenTestGrid.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "SheenWoodLeatherSofa": {
     "name": "SheenWoodLeatherSofa",
@@ -2291,8 +2826,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SheenWoodLeatherSofa/glTF-Binary/SheenWoodLeatherSofa.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SheenWoodLeatherSofa/glTF/SheenWoodLeatherSofa.gltf",
-    "image": "/images/SheenWoodLeatherSofa/screenshot/screenshot.jpg",
-    "thumbnail": "/images/SheenWoodLeatherSofa/screenshot/screenshot.thumb.webp"
+    "image": "/images/SheenWoodLeatherSofa.webp",
+    "thumbnail": "/images/SheenWoodLeatherSofa.webp",
+    "camera": {
+      "yaw": 45,
+      "pitch": 20,
+      "distance": 0
+    }
   },
   "SimpleInstancing": {
     "name": "SimpleInstancing",
@@ -2311,8 +2851,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SimpleInstancing/glTF-Binary/SimpleInstancing.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SimpleInstancing/glTF/SimpleInstancing.gltf",
-    "image": "/images/SimpleInstancing/screenshot/screenshot.png",
-    "thumbnail": "/images/SimpleInstancing/screenshot/screenshot.thumb.webp"
+    "image": "/images/SimpleInstancing.webp",
+    "thumbnail": "/images/SimpleInstancing.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "SimpleMaterial": {
     "name": "SimpleMaterial",
@@ -2327,8 +2872,13 @@
       "glTF": "SimpleMaterial.gltf"
     },
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SimpleMaterial/glTF/SimpleMaterial.gltf",
-    "image": "/images/SimpleMaterial/screenshot/screenshot.png",
-    "thumbnail": "/images/SimpleMaterial/screenshot/screenshot.thumb.webp"
+    "image": "/images/SimpleMaterial.webp",
+    "thumbnail": "/images/SimpleMaterial.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "SimpleMeshes": {
     "name": "SimpleMeshes",
@@ -2343,8 +2893,13 @@
       "glTF": "SimpleMeshes.gltf"
     },
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SimpleMeshes/glTF/SimpleMeshes.gltf",
-    "image": "/images/SimpleMeshes/screenshot/screenshot.png",
-    "thumbnail": "/images/SimpleMeshes/screenshot/screenshot.thumb.webp"
+    "image": "/images/SimpleMeshes.webp",
+    "thumbnail": "/images/SimpleMeshes.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "SimpleMorph": {
     "name": "SimpleMorph",
@@ -2361,8 +2916,13 @@
       "glTF": "SimpleMorph.gltf"
     },
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SimpleMorph/glTF/SimpleMorph.gltf",
-    "image": "/images/SimpleMorph/screenshot/screenshot.png",
-    "thumbnail": "/images/SimpleMorph/screenshot/screenshot.thumb.webp"
+    "image": "/images/SimpleMorph.webp",
+    "thumbnail": "/images/SimpleMorph.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "SimpleSkin": {
     "name": "SimpleSkin",
@@ -2378,8 +2938,13 @@
       "glTF": "SimpleSkin.gltf"
     },
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SimpleSkin/glTF/SimpleSkin.gltf",
-    "image": "/images/SimpleSkin/screenshot/screenshot.gif",
-    "thumbnail": "/images/SimpleSkin/screenshot/screenshot.thumb.webp"
+    "image": "/images/SimpleSkin.webp",
+    "thumbnail": "/images/SimpleSkin.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "SimpleSparseAccessor": {
     "name": "SimpleSparseAccessor",
@@ -2394,8 +2959,13 @@
       "glTF": "SimpleSparseAccessor.gltf"
     },
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SimpleSparseAccessor/glTF/SimpleSparseAccessor.gltf",
-    "image": "/images/SimpleSparseAccessor/screenshot/screenshot.png",
-    "thumbnail": "/images/SimpleSparseAccessor/screenshot/screenshot.thumb.webp"
+    "image": "/images/SimpleSparseAccessor.webp",
+    "thumbnail": "/images/SimpleSparseAccessor.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "SimpleTexture": {
     "name": "SimpleTexture",
@@ -2410,8 +2980,13 @@
       "glTF": "SimpleTexture.gltf"
     },
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SimpleTexture/glTF/SimpleTexture.gltf",
-    "image": "/images/SimpleTexture/screenshot/screenshot.png",
-    "thumbnail": "/images/SimpleTexture/screenshot/screenshot.thumb.webp"
+    "image": "/images/SimpleTexture.webp",
+    "thumbnail": "/images/SimpleTexture.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "SpecGlossVsMetalRough": {
     "name": "SpecGlossVsMetalRough",
@@ -2431,8 +3006,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SpecGlossVsMetalRough/glTF-Binary/SpecGlossVsMetalRough.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SpecGlossVsMetalRough/glTF/SpecGlossVsMetalRough.gltf",
-    "image": "/images/SpecGlossVsMetalRough/screenshot/screenshot.jpg",
-    "thumbnail": "/images/SpecGlossVsMetalRough/screenshot/screenshot.thumb.webp"
+    "image": "/images/SpecGlossVsMetalRough.webp",
+    "thumbnail": "/images/SpecGlossVsMetalRough.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "SpecularSilkPouf": {
     "name": "SpecularSilkPouf",
@@ -2454,8 +3034,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SpecularSilkPouf/glTF-Binary/SpecularSilkPouf.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SpecularSilkPouf/glTF/SpecularSilkPouf.gltf",
-    "image": "/images/SpecularSilkPouf/screenshot/screenshot.jpg",
-    "thumbnail": "/images/SpecularSilkPouf/screenshot/screenshot.thumb.webp"
+    "image": "/images/SpecularSilkPouf.webp",
+    "thumbnail": "/images/SpecularSilkPouf.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "SpecularTest": {
     "name": "SpecularTest",
@@ -2475,8 +3060,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SpecularTest/glTF-Binary/SpecularTest.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SpecularTest/glTF/SpecularTest.gltf",
-    "image": "/images/SpecularTest/screenshot/screenshot.jpg",
-    "thumbnail": "/images/SpecularTest/screenshot/screenshot.thumb.webp"
+    "image": "/images/SpecularTest.webp",
+    "thumbnail": "/images/SpecularTest.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "Sponza": {
     "name": "Sponza",
@@ -2489,8 +3079,13 @@
       "glTF": "Sponza.gltf"
     },
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Sponza/glTF/Sponza.gltf",
-    "image": "/images/Sponza/screenshot/screenshot.jpg",
-    "thumbnail": "/images/Sponza/screenshot/screenshot.thumb.webp"
+    "image": "/images/Sponza.webp",
+    "thumbnail": "/images/Sponza.webp",
+    "camera": {
+      "yaw": 45,
+      "pitch": 20,
+      "distance": 0
+    }
   },
   "StainedGlassLamp": {
     "name": "StainedGlassLamp",
@@ -2520,8 +3115,13 @@
     ],
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/StainedGlassLamp/glTF/StainedGlassLamp.gltf",
     "ktxModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/StainedGlassLamp/glTF-KTX-BasisU/StainedGlassLamp.gltf",
-    "image": "/images/StainedGlassLamp/screenshot/screenshot.jpg",
-    "thumbnail": "/images/StainedGlassLamp/screenshot/screenshot.thumb.webp"
+    "image": "/images/StainedGlassLamp.webp",
+    "thumbnail": "/images/StainedGlassLamp.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "SunglassesKhronos": {
     "name": "SunglassesKhronos",
@@ -2550,8 +3150,13 @@
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SunglassesKhronos/glTF-Binary/SunglassesKhronos.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SunglassesKhronos/glTF/SunglassesKhronos.gltf",
     "dracoModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SunglassesKhronos/glTF-Draco/SunglassesKhronos.gltf",
-    "image": "/images/SunglassesKhronos/screenshot/screenshot.jpg",
-    "thumbnail": "/images/SunglassesKhronos/screenshot/screenshot.thumb.webp"
+    "image": "/images/SunglassesKhronos.webp",
+    "thumbnail": "/images/SunglassesKhronos.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "Suzanne": {
     "name": "Suzanne",
@@ -2565,8 +3170,13 @@
       "glTF": "Suzanne.gltf"
     },
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Suzanne/glTF/Suzanne.gltf",
-    "image": "/images/Suzanne/screenshot/screenshot.jpg",
-    "thumbnail": "/images/Suzanne/screenshot/screenshot.thumb.webp"
+    "image": "/images/Suzanne.webp",
+    "thumbnail": "/images/Suzanne.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "TextureCoordinateTest": {
     "name": "TextureCoordinateTest",
@@ -2583,8 +3193,13 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TextureCoordinateTest/glTF-Binary/TextureCoordinateTest.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TextureCoordinateTest/glTF/TextureCoordinateTest.gltf",
-    "image": "/images/TextureCoordinateTest/screenshot/screenshot.png",
-    "thumbnail": "/images/TextureCoordinateTest/screenshot/screenshot.thumb.webp"
+    "image": "/images/TextureCoordinateTest.webp",
+    "thumbnail": "/images/TextureCoordinateTest.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "TextureEncodingTest": {
     "name": "TextureEncodingTest",
@@ -2600,8 +3215,13 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TextureEncodingTest/glTF-Binary/TextureEncodingTest.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TextureEncodingTest/glTF/TextureEncodingTest.gltf",
-    "image": "/images/TextureEncodingTest/screenshot/screenshot.png",
-    "thumbnail": "/images/TextureEncodingTest/screenshot/screenshot.thumb.webp"
+    "image": "/images/TextureEncodingTest.webp",
+    "thumbnail": "/images/TextureEncodingTest.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "TextureLinearInterpolationTest": {
     "name": "TextureLinearInterpolationTest",
@@ -2617,8 +3237,13 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TextureLinearInterpolationTest/glTF-Binary/TextureLinearInterpolationTest.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TextureLinearInterpolationTest/glTF/TextureLinearInterpolationTest.gltf",
-    "image": "/images/TextureLinearInterpolationTest/screenshot/screenshot.png",
-    "thumbnail": "/images/TextureLinearInterpolationTest/screenshot/screenshot.thumb.webp"
+    "image": "/images/TextureLinearInterpolationTest.webp",
+    "thumbnail": "/images/TextureLinearInterpolationTest.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "TextureSettingsTest": {
     "name": "TextureSettingsTest",
@@ -2635,8 +3260,13 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TextureSettingsTest/glTF-Binary/TextureSettingsTest.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TextureSettingsTest/glTF/TextureSettingsTest.gltf",
-    "image": "/images/TextureSettingsTest/screenshot/screenshot.png",
-    "thumbnail": "/images/TextureSettingsTest/screenshot/screenshot.thumb.webp"
+    "image": "/images/TextureSettingsTest.webp",
+    "thumbnail": "/images/TextureSettingsTest.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "TextureTransformMultiTest": {
     "name": "TextureTransformMultiTest",
@@ -2660,8 +3290,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TextureTransformMultiTest/glTF-Binary/TextureTransformMultiTest.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TextureTransformMultiTest/glTF/TextureTransformMultiTest.gltf",
-    "image": "/images/TextureTransformMultiTest/screenshot/screenshot.jpg",
-    "thumbnail": "/images/TextureTransformMultiTest/screenshot/screenshot.thumb.webp"
+    "image": "/images/TextureTransformMultiTest.webp",
+    "thumbnail": "/images/TextureTransformMultiTest.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "TextureTransformTest": {
     "name": "TextureTransformTest",
@@ -2679,8 +3314,13 @@
       "KHR_texture_transform"
     ],
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TextureTransformTest/glTF/TextureTransformTest.gltf",
-    "image": "/images/TextureTransformTest/screenshot/screenshot.jpg",
-    "thumbnail": "/images/TextureTransformTest/screenshot/screenshot.thumb.webp"
+    "image": "/images/TextureTransformTest.webp",
+    "thumbnail": "/images/TextureTransformTest.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "ToyCar": {
     "name": "ToyCar",
@@ -2706,8 +3346,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/ToyCar/glTF-Binary/ToyCar.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/ToyCar/glTF/ToyCar.gltf",
-    "image": "/images/ToyCar/screenshot/screenshot.jpg",
-    "thumbnail": "/images/ToyCar/screenshot/screenshot.thumb.webp"
+    "image": "/images/ToyCar.webp",
+    "thumbnail": "/images/ToyCar.webp",
+    "camera": {
+      "yaw": 45,
+      "pitch": 20,
+      "distance": 0
+    }
   },
   "TransmissionOrderTest": {
     "name": "TransmissionOrderTest",
@@ -2729,8 +3374,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TransmissionOrderTest/glTF-Binary/TransmissionOrderTest.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TransmissionOrderTest/glTF/TransmissionOrderTest.gltf",
-    "image": "/images/TransmissionOrderTest/screenshot/screenshot.jpg",
-    "thumbnail": "/images/TransmissionOrderTest/screenshot/screenshot.thumb.webp"
+    "image": "/images/TransmissionOrderTest.webp",
+    "thumbnail": "/images/TransmissionOrderTest.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "TransmissionRoughnessTest": {
     "name": "TransmissionRoughnessTest",
@@ -2754,8 +3404,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TransmissionRoughnessTest/glTF-Binary/TransmissionRoughnessTest.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TransmissionRoughnessTest/glTF/TransmissionRoughnessTest.gltf",
-    "image": "/images/TransmissionRoughnessTest/screenshot/screenshot.jpg",
-    "thumbnail": "/images/TransmissionRoughnessTest/screenshot/screenshot.thumb.webp"
+    "image": "/images/TransmissionRoughnessTest.webp",
+    "thumbnail": "/images/TransmissionRoughnessTest.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "TransmissionTest": {
     "name": "TransmissionTest",
@@ -2777,8 +3432,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TransmissionTest/glTF-Binary/TransmissionTest.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TransmissionTest/glTF/TransmissionTest.gltf",
-    "image": "/images/TransmissionTest/screenshot/screenshot.jpg",
-    "thumbnail": "/images/TransmissionTest/screenshot/screenshot.thumb.webp"
+    "image": "/images/TransmissionTest.webp",
+    "thumbnail": "/images/TransmissionTest.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "TransmissionThinwallTestGrid": {
     "name": "TransmissionThinwallTestGrid",
@@ -2802,8 +3462,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TransmissionThinwallTestGrid/glTF-Binary/TransmissionThinwallTestGrid.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TransmissionThinwallTestGrid/glTF/TransmissionThinwallTestGrid.gltf",
-    "image": "/images/TransmissionThinwallTestGrid/screenshot/screenshot.jpg",
-    "thumbnail": "/images/TransmissionThinwallTestGrid/screenshot/screenshot.thumb.webp"
+    "image": "/images/TransmissionThinwallTestGrid.webp",
+    "thumbnail": "/images/TransmissionThinwallTestGrid.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "Triangle": {
     "name": "Triangle",
@@ -2818,8 +3483,13 @@
       "glTF": "Triangle.gltf"
     },
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Triangle/glTF/Triangle.gltf",
-    "image": "/images/Triangle/screenshot/screenshot.png",
-    "thumbnail": "/images/Triangle/screenshot/screenshot.thumb.webp"
+    "image": "/images/Triangle.webp",
+    "thumbnail": "/images/Triangle.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "TriangleWithoutIndices": {
     "name": "TriangleWithoutIndices",
@@ -2834,8 +3504,13 @@
       "glTF": "TriangleWithoutIndices.gltf"
     },
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TriangleWithoutIndices/glTF/TriangleWithoutIndices.gltf",
-    "image": "/images/TriangleWithoutIndices/screenshot/screenshot.png",
-    "thumbnail": "/images/TriangleWithoutIndices/screenshot/screenshot.thumb.webp"
+    "image": "/images/TriangleWithoutIndices.webp",
+    "thumbnail": "/images/TriangleWithoutIndices.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "TwoSidedPlane": {
     "name": "TwoSidedPlane",
@@ -2848,8 +3523,13 @@
       "glTF": "TwoSidedPlane.gltf"
     },
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TwoSidedPlane/glTF/TwoSidedPlane.gltf",
-    "image": "/images/TwoSidedPlane/screenshot/screenshot.jpg",
-    "thumbnail": "/images/TwoSidedPlane/screenshot/screenshot.thumb.webp"
+    "image": "/images/TwoSidedPlane.webp",
+    "thumbnail": "/images/TwoSidedPlane.webp",
+    "camera": {
+      "yaw": 45,
+      "pitch": 20,
+      "distance": 0
+    }
   },
   "Unicode%E2%9D%A4%E2%99%BBTest": {
     "name": "Unicode❤♻Test",
@@ -2865,8 +3545,13 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Unicode❤♻Test/glTF-Binary/Unicode❤♻Test.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Unicode❤♻Test/glTF/Unicode❤♻Test.gltf",
-    "image": "/images/Unicode%E2%9D%A4%E2%99%BBTest/screenshot/screenshot.png",
-    "thumbnail": "/images/Unicode%E2%9D%A4%E2%99%BBTest/screenshot/screenshot.thumb.webp"
+    "image": "/images/Unicode%E2%9D%A4%E2%99%BBTest.webp",
+    "thumbnail": "/images/Unicode%E2%9D%A4%E2%99%BBTest.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "UnlitTest": {
     "name": "UnlitTest",
@@ -2886,8 +3571,13 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/UnlitTest/glTF-Binary/UnlitTest.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/UnlitTest/glTF/UnlitTest.gltf",
-    "image": "/images/UnlitTest/screenshot/screenshot.png",
-    "thumbnail": "/images/UnlitTest/screenshot/screenshot.thumb.webp"
+    "image": "/images/UnlitTest.webp",
+    "thumbnail": "/images/UnlitTest.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "VertexColorTest": {
     "name": "VertexColorTest",
@@ -2904,8 +3594,13 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/VertexColorTest/glTF-Binary/VertexColorTest.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/VertexColorTest/glTF/VertexColorTest.gltf",
-    "image": "/images/VertexColorTest/screenshot/screenshot.png",
-    "thumbnail": "/images/VertexColorTest/screenshot/screenshot.thumb.webp"
+    "image": "/images/VertexColorTest.webp",
+    "thumbnail": "/images/VertexColorTest.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   },
   "VirtualCity": {
     "name": "VirtualCity",
@@ -2925,8 +3620,13 @@
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/VirtualCity/glTF-Binary/VirtualCity.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/VirtualCity/glTF/VirtualCity.gltf",
     "dracoModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/VirtualCity/glTF-Draco/VirtualCity.gltf",
-    "image": "/images/VirtualCity/screenshot/screenshot.gif",
-    "thumbnail": "/images/VirtualCity/screenshot/screenshot.thumb.webp"
+    "image": "/images/VirtualCity.webp",
+    "thumbnail": "/images/VirtualCity.webp",
+    "camera": {
+      "yaw": 45,
+      "pitch": 20,
+      "distance": 0
+    }
   },
   "WaterBottle": {
     "name": "WaterBottle",
@@ -2944,8 +3644,13 @@
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/WaterBottle/glTF-Binary/WaterBottle.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/WaterBottle/glTF/WaterBottle.gltf",
     "dracoModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/WaterBottle/glTF-Draco/WaterBottle.gltf",
-    "image": "/images/WaterBottle/screenshot/screenshot.jpg",
-    "thumbnail": "/images/WaterBottle/screenshot/screenshot.thumb.webp"
+    "image": "/images/WaterBottle.webp",
+    "thumbnail": "/images/WaterBottle.webp",
+    "camera": {
+      "yaw": 45,
+      "pitch": 20,
+      "distance": 0
+    }
   },
   "XmpMetadataRoundedCube": {
     "name": "XmpMetadataRoundedCube",
@@ -2964,7 +3669,12 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/XmpMetadataRoundedCube/glTF-Binary/XmpMetadataRoundedCube.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/XmpMetadataRoundedCube/glTF/XmpMetadataRoundedCube.gltf",
-    "image": "/images/XmpMetadataRoundedCube/screenshot/screenshot.jpg",
-    "thumbnail": "/images/XmpMetadataRoundedCube/screenshot/screenshot.thumb.webp"
+    "image": "/images/XmpMetadataRoundedCube.webp",
+    "thumbnail": "/images/XmpMetadataRoundedCube.webp",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "distance": 0
+    }
   }
 }

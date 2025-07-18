@@ -183,9 +183,11 @@ await (async () => {
       const tgt_directory = path.dirname(tgt_file);
       const filename = path.basename(screenshot, path.extname(screenshot));
       
-      ModelMap2[name].image = image_directory + '/' + name + "/" + model.screenshot;
-      ModelMap2[name].thumbnail = tgt_directory + '/' + filename + '.thumb' + '.webp';
+      //ModelMap2[name].image = image_directory + '/' + name + "/" + model.screenshot;
+      //ModelMap2[name].thumbnail = tgt_directory + '/' + filename + '.thumb' + '.webp';
       //ModelMap2[name].thumbnail = `${tgt_directory}/${filename}.thumb.webp`;
+      ModelMap2[name].image = `/images/${name}.webp`;
+      ModelMap2[name].thumbnail = `/images/${name}.webp`;      
 
       ModelMap2[name].camera = {
         yaw: (CameraProperties[name] && CameraProperties[name].yaw) ?? 0,

@@ -73,7 +73,5 @@ const ModelMap = require('../data/model-index.SampleAssets.json'); // Adjust the
     });
   }
 
-  console.log('Screenshot saved to output.png');
-
   await browser.close();
 })();

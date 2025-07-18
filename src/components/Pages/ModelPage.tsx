@@ -88,10 +88,10 @@ export default function ComparePage({name, label, image, tags, description, mode
             <Link onClick={onShare} href="#" color="inherit" underline='hover' target="_blank" rel="noopener" sx={{fontWeight:'bold', display:'flex', alignItems:'center'}}>Share <ShareIcon fontSize='small' sx={{color: 'grey.100', ml: 0.5}}/></Link>
           </Box>
           {downloadUrl && <Box mr={3}>
-            <ExternalLink url={`https://github.khronos.org/glTF-Sample-Viewer-Release/?model=${downloadUrl}`}>See on sample viewer</ExternalLink>
+            <ExternalLink url={`https://github.khronos.org/glTF-Sample-Viewer-Release/?model=${downloadUrl}`}>View on Sample Viewer</ExternalLink>
           </Box>}
           <Box mr={3}>
-            <ExternalLink url={`https://github.khronos.org/glTF-Render-Fidelity/model/${name}`}>Compare</ExternalLink>
+            <ExternalLink url={`https://github.khronos.org/glTF-Render-Fidelity/model/${name}`}>View on Render Fidelity</ExternalLink>
           </Box>
           <Box mr={1}>
             <Link href={`https://github.com/KhronosGroup/glTF-Sample-Assets/blob/main/Models/${name}/README.md`} color="inherit" underline='hover' target="_blank" rel="noopener" sx={{fontWeight:'bold', display:'flex', alignItems:'center'}}>More info <LaunchIcon fontSize='small' sx={{ml:0.5}}/></Link>
@@ -124,9 +124,9 @@ export default function ComparePage({name, label, image, tags, description, mode
       {/* Right Content - Suggested */}
       <Box sx={{flex: 1}}>
         {!isMagnified && <Grid className={styles.side} display={{xs:'none', sm:'flex'}} sx={{overflow: "auto", width:'100%'}} height={"70vh"} container spacing={2}>
-          <Box display="flex" mt={1} sx={{width: '100%'}}><Typography variant='h6'>{"Showcase"}</Typography></Box>
+          <Box display="flex" mt={1} sx={{width: '100%'}}><Typography variant='h6'>{"Top picks"}</Typography></Box>
           {showcaseModels.map((e,i) => { return <ModelRenderCard key={e.name+""+i} name={e.name} label={e.label} thumbnail={e.thumbnail} onSelection={ () => {}}/>})}
-          <Box display="flex" mt={1} sx={{width: '100%'}}><Typography variant='h6'>{"Suggested"}</Typography></Box>
+          <Box display="flex" mt={1} sx={{width: '100%'}}><Typography variant='h6'>{"Relevant"}</Typography></Box>
           {suggestedModels.map((e,i) => { return <ModelRenderCard key={e.name+""+i} name={e.name} label={e.label} thumbnail={e.thumbnail} onSelection={ () => {}}/>})}
         </Grid>}
       </Box>
