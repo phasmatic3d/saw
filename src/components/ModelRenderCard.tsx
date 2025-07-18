@@ -3,7 +3,6 @@ import React from 'react'
 import Image from 'next/image'
 import NextLink from 'next/link';
 import { Box, Typography, Link } from "@mui/material";
-import { useTheme } from '@mui/material/styles';
 import { basePath } from '@/lib/paths';
 
 export type ModelCardProps = {
@@ -36,7 +35,6 @@ export default function ModelRenderCard({name, label, thumbnail, onSelection}: M
                 style={{ 
                     width: "100%",
                     height: "auto",
-                    aspectRatio: '4/3',
                     objectFit: 'cover',
                     textAlign: "center", 
                     cursor: 'pointer', 
