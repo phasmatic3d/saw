@@ -68,15 +68,18 @@ export default async function Page({params}: { params: Promise<{ name: string }>
   const showcaseList = modelList.filter(m => m.name !== name && m.tags.includes("Showcase")).sort((a, b) => {
     return b.score - a.score;
   });
-  const relevantList = modelList.filter(m => m.name !== name).sort((a, b) => {
-    return b.score - a.score;
-  });
 
   const showcaseModels : Array<ModelType> = [
     showcaseList[0],
     showcaseList[1],
     showcaseList[2]
   ];
+
+  const relevantList = modelList
+  .filter(m => m.name !== name && m.name !== showcaseList[0].name && m.name !== showcaseList[1].name && m.name !== showcaseList[2].name)
+  .sort((a, b) => {
+    return b.score - a.score;
+  });
   const suggestedModels : Array<ModelType> = [
     relevantList[0],
     relevantList[1],
