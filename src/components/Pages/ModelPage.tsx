@@ -2,7 +2,6 @@
 import React from 'react';
 import { Chip, Typography, Box, Grid2 as Grid, Divider, Button, Popper, Grow, Paper, IconButton, Snackbar, Link } from "@mui/material";
 import ModelRenderCard from "@/components/ModelRenderCard"
-import ImageDifferenceView from '@/components/ImageComparison/ImageDifferenceView';
 import { useMediaQuery } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import styles from "./ModelPage.module.css";

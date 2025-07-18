@@ -100,8 +100,9 @@ const handleMouseUp = (ev: React.MouseEvent<HTMLCanvasElement>) => {
     orbit.deltaY = 0;
   }  
 }
-const handleMouseWheel = (ev: React.WheelEvent<HTMLCanvasElement>) => {
+const handleMouseWheel = (ev: WheelEvent) => {
   orbit.deltaZoom = normalizeWheel(ev).spinY;//ev.deltaY;
+  ev.preventDefault();
 }
 
 const available_extensions = { 
@@ -380,13 +381,18 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback, o
   }, [imgSrc]);
 
   React.useEffect(() => {
-    console.warn("MOUNT");
     const isDracoLoaded = !!document.querySelector('script[src="https://www.gstatic.com/draco/v1/decoders/draco_decoder_gltf.js"]')
     const isKTXLoaded = !!document.querySelector('script[src="/libs/libktx.js"]')
     setKTXLoaded(isKTXLoaded);
     setDracoLoaded(isDracoLoaded);
 
-    return () => { console.warn("Unmount")};
+    if(canvasRef.current)
+      canvasRef.current.addEventListener('wheel', handleMouseWheel, { passive: false });
+
+    return () => { 
+      if(canvasRef.current)
+        canvasRef.current.removeEventListener('wheel', handleMouseWheel);
+    };
   }, [])
   
     return (
