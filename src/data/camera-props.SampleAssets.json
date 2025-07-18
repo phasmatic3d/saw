@@ -1,0 +1,459 @@
+{
+  "ABeautifulGame": {
+    "yaw": 45,
+    "pitch": 20
+  },
+  "AlphaBlendModeTest": {
+    
+  },
+  "AnimatedColorsCube": {
+    
+  },
+  "AnimatedCube": {
+    
+  },
+  "AnimatedMorphCube": {
+    
+  },
+  "AnimatedTriangle": {
+    
+  },
+  "AnimationPointerUVs": {
+    
+  },
+  "AnisotropyBarnLamp": {
+    
+  },
+  "AnisotropyDiscTest": {
+    
+  },
+  "AnisotropyRotationTest": {
+    
+  },
+  "AnisotropyStrengthTest": {
+   
+  },
+  "AntiqueCamera": {
+    "yaw": 45,
+    "pitch": 20    
+  },
+  "AttenuationTest": {
+    
+  },
+  "Avocado": {
+    
+  },
+  "BarramundiFish": {
+    "yaw": 45,
+    "pitch": 20    
+  },
+  "BoomBox": {
+    
+  },
+  "BoomBoxwithAxes": {
+    
+  },
+  "Box": {
+    
+  },
+  "BoxWithSpaces": {
+    
+  },
+  "BoxAnimated": {
+    
+  },
+  "Boxwithinterleavedpositionandnormalattributes": {
+    
+  },
+  "BoxTextured": {
+    
+  },
+  "BoxTexturednot2%5EN": {
+    
+  },
+  "BoxVertexColors": {
+    
+  },
+  "BrainStem": {
+    
+  },
+  "Cameras": {
+    
+  },
+  "CarbonFibreBall": {
+    
+  },
+  "CarConcept": {
+    "yaw": 45,
+    "pitch": 20
+  },
+  "CesiumMan": {
+    
+  },
+  "CesiumMilkTruck": {
+    "yaw": 45,
+    "pitch": 20
+  },
+  "ChairDamaskPurplegold": {
+    "yaw": 45,
+    "pitch": 20
+  },
+  "ChronographWatch": {
+    "yaw": 45,
+    "pitch": 20
+  },
+  "ClearCoatCarPaint": {
+    
+  },
+  "KHR_materials_clearcoatTest": {
+    
+  },
+  "ClearcoatWicker": {
+    
+  },
+  "CommercialRefrigerator": {
+    "yaw": 45,
+    "pitch": 20
+  },
+  "CompareAlphaCoverage": {
+    
+  },
+  "CompareAmbientOcclusion": {
+    
+  },
+  "CompareAnisotropy": {
+    
+  },
+  "CompareBaseColor": {
+   
+  },
+  "CompareClearcoat": {
+    
+  },
+  "CompareDispersion": {
+    
+  },
+  "CompareEmissiveStrength": {
+    
+  },
+  "CompareIOR": {
+    
+  },
+  "CompareIridescence": {
+    
+  },
+  "CompareMetallic": {
+    
+  },
+  "CompareNormal": {
+    
+  },
+  "CompareRoughness": {
+    
+  },
+  "CompareSheen": {
+    
+  },
+  "CompareSpecular": {
+    
+  },
+  "CompareTransmission": {
+    
+  },
+  "CompareVolume": {
+    
+  },
+  "Corset": {
+    
+  },
+  "Cube": {
+    
+  },
+  "DamagedHelmet": {
+    "yaw": 45,
+    "pitch": 20
+  },
+  "DiffuseTransmissionPlant": {
+    "yaw": 45,
+    "pitch": 20
+  },
+  "DiffuseTransmissionTeacup": {
+    "yaw": 45,
+    "pitch": 20
+  },
+  "DiffuseTransmissionTest": {
+    
+  },
+  "DirectionalLight": {
+    
+  },
+  "DispersionTest": {
+    "yaw": 45,
+    "pitch": 20    
+  },
+  "DragonAttenuation": {
+    "yaw": 45,
+    "pitch": 20
+  },
+  "DragonDispersion": {
+    "yaw": 45,
+    "pitch": 20
+  },
+  "Duck": {
+    "yaw": 45,
+    "pitch": 20
+  },
+  "EmissiveStrengthTest": {
+    
+  },
+  "EnvironmentTest": {
+    
+  },
+  "FlightHelmet": {
+    
+  },
+  "Fox": {
+    "yaw": 45,
+    "pitch": 20
+  },
+  "GlamVelvetSofa": {
+    "yaw": 45,
+    "pitch": 20
+  },
+  "GlassBrokenWindow": {
+    
+  },
+  "GlassHurricaneCandleHolder": {
+    
+  },
+  "GlassVasewithFlowers": {
+    "yaw": 45,
+    "pitch": 20
+  },
+  "InterpolationTest": {
+    
+  },
+  "IORTestGrid": {
+    
+  },
+  "IridescenceAbalone": {
+    "yaw": 45,
+    "pitch": 20
+  },
+  "IridescenceDielectricSpheres": {
+    
+  },
+  "IridescenceLamp": {
+   
+  },
+  "IridescenceMetallicSpheres": {
+    
+  },
+  "IridescenceSuzanne": {
+    "distance": 1
+  },
+  "IridescentDishwithOlives": {
+    "distance": 1
+  },
+  "Lantern": {
+    "yaw": 45,
+    "pitch": 20
+  },
+  "LampwithPunctualLights": {
+    
+  },
+  "MandarinOrange": {
+    "yaw": 45,
+    "pitch": 20
+  },
+  "MaterialsVariantsShoe": {
+    "yaw": 45,
+    "pitch": 20
+  },
+  "MeshPrimitiveModes": {
+    
+  },
+  "Metal-RoughSpheres": {
+    
+  },
+  "Metal-RoughSpheres(textureless)": {
+    
+  },
+  "Morph-PrimitivesTest": {
+    
+  },
+  "MorphStressTest": {
+    
+  },
+  "MosquitoInAmber": {
+    
+  },
+  "MultipleScenes": {
+    
+  },
+  "MultiUVTest": {
+    
+  },
+  "NegativeScaleTest": {
+    
+  },
+  "Normal-TangentMirrorTest": {
+    
+  },
+  "Normal-TangentTest": {
+    
+  },
+  "OrientationTest": {
+    
+  },
+  "PointLightIntensityTest": {
+    
+  },
+  "PotOfCoals": {
+    
+  },
+  "PotOfCoalsAnimationPointer": {
+    
+  },
+  "PrimitiveModeNormalsTest": {
+    
+  },
+  "RecursiveSkeletons": {
+    
+  },
+  "RiggedFigure": {
+    
+  },
+  "RiggedSimple": {
+    
+  },
+  "Skull": {
+    "yaw": 45,
+    "pitch": 20
+  },
+  "SciFiHelmet": {
+    "yaw": 45,
+    "pitch": 20
+  },
+  "SheenChair": {
+    "yaw": 45,
+    "pitch": 20
+  },
+  "SheenCloth": {
+    "yaw": 45,
+    "pitch": 20
+  },
+  "SheenTestGrid": {
+    
+  },
+  "SheenWoodLeatherSofa": {
+    "yaw": 45,
+    "pitch": 20
+  },
+  "SimpleInstancing": {
+    
+  },
+  "SimpleMaterial": {
+    
+  },
+  "SimpleMeshes": {
+    
+  },
+  "SimpleMorph": {
+    
+  },
+  "SimpleSkin": {
+    
+  },
+  "SimpleSparseAccessor": {
+    
+  },
+  "SimpleTexture": {
+    
+  },
+  "SpecGlossVsMetalRough": {
+    
+  },
+  "SpecularSilkPouf": {
+    
+  },
+  "SpecularTest": {
+    
+  },
+  "Sponza": {
+    "yaw": 45,
+    "pitch": 20
+  },
+  "StainedGlassLamp": {
+    
+  },
+  "SunglassesKhronos": {
+    
+  },
+  "Suzanne": {
+    
+  },
+  "TextureCoordinateTest": {
+    
+  },
+  "TextureEncodingTest": {
+    
+  },
+  "TextureLinearInterpolationTest": {
+    
+  },
+  "TextureSettingsTest": {
+    
+  },
+  "TextureTransformMultiTest": {
+    
+  },
+  "TextureTransformTest": {
+    
+  },
+  "ToyCar": {
+    "yaw": 45,
+    "pitch": 20
+  },
+  "TransmissionOrderTest": {
+    
+  },
+  "TransmissionRoughnessTest": {
+    
+  },
+  "TransmissionTest": {
+    
+  },
+  "TransmissionThinwallTestGrid": {
+    
+  },
+  "Triangle": {
+    
+  },
+  "TriangleWithoutIndices": {
+    
+  },
+  "TwoSidedPlane": {
+    
+  },
+  "Unicode%E2%9D%A4%E2%99%BBTest": {
+    
+  },
+  "UnlitTest": {
+    
+  },
+  "VertexColorTest": {
+    
+  },
+  "VirtualCity": {
+    "yaw": 45,
+    "pitch": 20
+  },
+  "WaterBottle": {
+    "yaw": 45,
+    "pitch": 20
+  },
+  "XmpMetadataRoundedCube": {
+    
+  }
+}
