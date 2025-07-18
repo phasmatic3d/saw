@@ -193,7 +193,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback, o
       const animation_names = [] as string[];
       for(const animation of state.gltf.animations)
       {
-        animation_names.push(animation.name);
+        animation_names.push(animation.name?? "Animate");
       }
       setAnimations(animation_names);
       if(state.gltf.extensionsUsed)
@@ -454,7 +454,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback, o
                   {animations.map((anim) => (
                     <Button
                       key={anim}
-                      sx={{ justifyContent: 'flex-start', textAlign: 'left' }}
+                      sx={{ justifyContent: 'flex-start', textAlign: 'left', textTransform: 'none' }}
                       color="inherit"
                       onClick={() => toggleAnimation(anim)}
                     >

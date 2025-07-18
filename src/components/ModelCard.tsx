@@ -41,7 +41,7 @@ export default function ModelCard({name, title, thumbnail, tags, selectTagCallba
             />
           </Link>
         </Grid>
-        <Box display="flex" flexDirection="column" p={1} >
+        <Box display="flex" flexDirection="column" p={0} >
           <Typography fontSize={18} fontWeight={'bold'} sx={{overflowWrap: "anywhere", textAlign:'center'}}>{title}</Typography>
         </Box>          
       </Box>
