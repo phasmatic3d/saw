@@ -5,16 +5,6 @@ import { Box, Button, IconButton, Paper, Checkbox, FormControlLabel, Switch, Typ
 import MenuIcon from '@mui/icons-material/Menu';
 import normalizeWheel from 'normalize-wheel';
 
-// Load the images
-const loadImage = (src: string) =>
-  new Promise((resolve) => {
-    const img = new Image();
-    img.src = src;
-    img.crossOrigin = '';
-    img.onload = () => resolve(img);
-  }
-);
-
 export type Stats = {
   totalImagesFileSize: number
   numberOfVertices: number
@@ -131,7 +121,7 @@ const supported_extensions = new Map([
   ["KHR_materials_transmission", true],
   ["KHR_materials_volume", true]
 ]);
-const debugOptions = ['None', 'Occlusion', 'Shading Normal', "Base Color", "Metallic", "Roughness"];
+const debugOptions = ['None', "Base Color", "Metallic", "Roughness", 'Occlusion', 'Shading Normal'];
 
 let active_debugOutput = "None";
 let active_animations = [] as number[];
