@@ -18,20 +18,23 @@ const ModelMap = require('../data/model-index.SampleAssets.json'); // Adjust the
   });
 
   // Dummy load to avoid stalls later in the process
-  const htmlPath = `file://${path.resolve(__dirname, 'viewer.html')}?model=DamagedHelmet.glb`;  
-  await page.goto(htmlPath, { waitUntil: 'networkidle2' });
+  //const htmlPath = `file://${path.resolve(__dirname, 'viewer.html')}?`;  
+  //await page.goto(htmlPath, { waitUntil: 'networkidle2' });
   // Set viewport and take screenshot
   await page.setViewport({ width: 1920, height: 1080 });
-  await new Promise(resolve => setTimeout(resolve, 3000));  
+  //await new Promise(resolve => setTimeout(resolve, 3000));  
 
   // Create thumbnails dir
   //const imagesDir = path.resolve(__dirname, "images");
-  const imagesDir = path.resolve(__dirname, "..", "..", "public", "images2");
+  const imagesDir = path.resolve(__dirname, "..", "..", "public", "images");
   fs.mkdirSync(imagesDir, { recursive: true });
 
   const model_names = Object.keys(ModelMap)//.filter((e,i) => i == 2);
   for(const model_name of model_names)
   {
+    //if(model_name !== 'TwoSidedPlane')
+    //  continue;
+
     const model = ModelMap[model_name].gltfModel;
     console.log("Processing", model_name, model);
     const yaw = ModelMap[model_name].camera.yaw;
