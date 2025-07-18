@@ -60,20 +60,30 @@ export default async function Page({params}: { params: Promise<{ name: string }>
 
   const model = (models as Record<string, ModelType>)[name];
 
-  const model1 = (models as Record<string, ModelType>)["ABeautifulGame"];
-  const model2 = (models as Record<string, ModelType>)["ChronographWatch"];
-  const model3 = (models as Record<string, ModelType>)["CommercialRefrigerator"];
+  const tags = new Set(model.tags);
+  const modelList = Object.values(models as Record<string, ModelType>).map(m => { 
+    return {...m, score: m.tags.filter(label => tags.has(label)).length } as ModelType & { score: number};
+  });  
+
+  const showcaseList = modelList.filter(m => m.name !== name && m.tags.includes("Showcase")).sort((a, b) => {
+    return b.score - a.score;
+  });
+  const relevantList = modelList.filter(m => m.name !== name).sort((a, b) => {
+    return b.score - a.score;
+  });
 
   const showcaseModels : Array<ModelType> = [
-    model1,
-    model2,
-    model3
+    showcaseList[0],
+    showcaseList[1],
+    showcaseList[2]
   ];
   const suggestedModels : Array<ModelType> = [
-    model1,
-    model2,
-    model3,
-    model
+    relevantList[0],
+    relevantList[1],
+    relevantList[2],
+    relevantList[3],
+    relevantList[4],
+    relevantList[5]
   ];
   
   return (
