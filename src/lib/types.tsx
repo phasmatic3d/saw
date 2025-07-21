@@ -10,4 +10,6 @@ export type ModelType = {
   downloadModel?: string,
   image: string,
   thumbnail: string
+  authors: Array<string>
+  license: Array<{license: string, url:string, icon:string}>
 };

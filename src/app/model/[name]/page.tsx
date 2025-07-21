@@ -92,7 +92,7 @@ export default async function Page({params}: { params: Promise<{ name: string }>
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <ModelPage name={name} label={model.label} description={model.description} tags={model.tags} image={model.image} modelURL={model.downloadModel || model.gltfModel} downloadUrl={model.downloadModel} showcaseModels={showcaseModels} suggestedModels={suggestedModels}/>
+        <ModelPage name={name} label={model.label} description={model.description} tags={model.tags} image={model.image} modelURL={model.downloadModel || model.gltfModel} downloadUrl={model.downloadModel} model={model} showcaseModels={showcaseModels} suggestedModels={suggestedModels}/>
       </main>
     </div>)
 }

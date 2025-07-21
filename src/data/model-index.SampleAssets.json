@@ -28,7 +28,24 @@
       "yaw": 45,
       "pitch": 20,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      },
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "MaterialX Project",
+      "Ed Mackey"
+    ]
   },
   "AlphaBlendModeTest": {
     "name": "AlphaBlendModeTest",
@@ -51,7 +68,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Ed Mackey"
+    ]
   },
   "AnimatedColorsCube": {
     "name": "AnimatedColorsCube",
@@ -77,7 +105,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Ed Mackey"
+    ]
   },
   "AnimatedCube": {
     "name": "AnimatedCube",
@@ -98,7 +137,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Norbert Nopper"
+    ]
   },
   "AnimatedMorphCube": {
     "name": "AnimatedMorphCube",
@@ -124,7 +174,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Microsoft"
+    ]
   },
   "AnimatedTriangle": {
     "name": "AnimatedTriangle",
@@ -146,7 +207,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Marco Hutter (https://github.com/javagl/)"
+    ]
   },
   "AnimationPointerUVs": {
     "name": "AnimationPointerUVs",
@@ -193,7 +265,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Eric Chadwick"
+    ]
   },
   "AnisotropyBarnLamp": {
     "name": "AnisotropyBarnLamp",
@@ -230,7 +313,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/4.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Eric Chadwick"
+    ]
   },
   "AnisotropyDiscTest": {
     "name": "AnisotropyDiscTest",
@@ -256,7 +350,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Eric Chadwick"
+    ]
   },
   "AnisotropyRotationTest": {
     "name": "AnisotropyRotationTest",
@@ -282,7 +387,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY International 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Ed Mackey"
+    ]
   },
   "AnisotropyStrengthTest": {
     "name": "AnisotropyStrengthTest",
@@ -308,7 +424,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "Public Domain / CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Ed Mackey"
+    ]
   },
   "AntiqueCamera": {
     "name": "AntiqueCamera",
@@ -330,7 +457,24 @@
       "yaw": 45,
       "pitch": 20,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      },
+      {
+        "license": "LicenseRef-LegalMark-UX3D",
+        "url": "",
+        "icon": ""
+      }
+    ],
+    "authors": [
+      "Maximillan Kamps",
+      "Non-copyrightable logo"
+    ]
   },
   "AttenuationTest": {
     "name": "AttenuationTest",
@@ -358,7 +502,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Ed Mackey"
+    ]
   },
   "Avocado": {
     "name": "Avocado",
@@ -385,7 +540,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Microsoft"
+    ]
   },
   "BarramundiFish": {
     "name": "BarramundiFish",
@@ -409,7 +575,18 @@
       "yaw": 45,
       "pitch": 20,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Microsoft"
+    ]
   },
   "BoomBox": {
     "name": "BoomBox",
@@ -433,7 +610,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Microsoft"
+    ]
   },
   "BoomBoxwithAxes": {
     "name": "BoomBoxwithAxes",
@@ -453,7 +641,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Microsoft"
+    ]
   },
   "Box": {
     "name": "Box",
@@ -478,7 +677,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Cesium"
+    ]
   },
   "BoxWithSpaces": {
     "name": "BoxWithSpaces",
@@ -498,7 +708,24 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      },
+      {
+        "license": "LicenseRef-LegalMark-Khronos",
+        "url": "",
+        "icon": ""
+      }
+    ],
+    "authors": [
+      "Ed Mackey",
+      "Non-copyrightable logo"
+    ]
   },
   "BoxAnimated": {
     "name": "BoxAnimated",
@@ -522,7 +749,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Cesium"
+    ]
   },
   "Boxwithinterleavedpositionandnormalattributes": {
     "name": "Boxwithinterleavedpositionandnormalattributes",
@@ -545,7 +783,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Cesium"
+    ]
   },
   "BoxTextured": {
     "name": "BoxTextured",
@@ -568,7 +817,24 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "LicenseRef-CC-BY-TM",
+        "url": "",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      },
+      {
+        "license": "LicenseRef-LegalMark-Cesium",
+        "url": "",
+        "icon": ""
+      }
+    ],
+    "authors": [
+      "Cesium",
+      "Non-copyrightable logo"
+    ]
   },
   "BoxTexturednot2%5EN": {
     "name": "BoxTexturednot2^N",
@@ -591,7 +857,24 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "LicenseRef-CC-BY-TM",
+        "url": "",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      },
+      {
+        "license": "LicenseRef-LegalMark-Cesium",
+        "url": "",
+        "icon": ""
+      }
+    ],
+    "authors": [
+      "Cesium",
+      "Non-copyrightable logo"
+    ]
   },
   "BoxVertexColors": {
     "name": "BoxVertexColors",
@@ -614,7 +897,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "Public Domain / CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Marco Hutter (https://github.com/javagl/)"
+    ]
   },
   "BrainStem": {
     "name": "BrainStem",
@@ -641,7 +935,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "LicenseRef-Poser-EULA",
+        "url": "https://archive.org/stream/poser-pro-2014-reference-manual/Poser_Pro_2014_reference_manual_djvu.txt",
+        "icon": ""
+      }
+    ],
+    "authors": [
+      "Keith Hunter"
+    ]
   },
   "Cameras": {
     "name": "Cameras",
@@ -662,7 +967,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Marco Hutter (https://github.com/javagl/)"
+    ]
   },
   "CarbonFibreBall": {
     "name": "CarbonFibreBall",
@@ -687,7 +1003,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY International 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Eric Chadwick"
+    ]
   },
   "CarConcept": {
     "name": "CarConcept",
@@ -728,7 +1055,30 @@
       "yaw": 45,
       "pitch": 20,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      },
+      {
+        "license": "LicenseRef-LegalMark-Khronos",
+        "url": "",
+        "icon": ""
+      },
+      {
+        "license": "LicenseRef-LegalMark-Khronos",
+        "url": "",
+        "icon": ""
+      }
+    ],
+    "authors": [
+      "Eric Chadwick",
+      "Non-copyrightable logo",
+      "Non-copyrightable logo"
+    ]
   },
   "CesiumMan": {
     "name": "CesiumMan",
@@ -754,7 +1104,24 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "LicenseRef-CC-BY-TM",
+        "url": "",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      },
+      {
+        "license": "LicenseRef-LegalMark-Cesium",
+        "url": "",
+        "icon": ""
+      }
+    ],
+    "authors": [
+      "Cesium",
+      "Non-copyrightable logo"
+    ]
   },
   "CesiumMilkTruck": {
     "name": "CesiumMilkTruck",
@@ -780,7 +1147,24 @@
       "yaw": 45,
       "pitch": 20,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "LicenseRef-CC-BY-TM",
+        "url": "",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      },
+      {
+        "license": "LicenseRef-LegalMark-Cesium",
+        "url": "",
+        "icon": ""
+      }
+    ],
+    "authors": [
+      "Cesium",
+      "Non-copyrightable logo"
+    ]
   },
   "ChairDamaskPurplegold": {
     "name": "ChairDamaskPurplegold",
@@ -809,7 +1193,18 @@
       "yaw": 45,
       "pitch": 20,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY International 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Eric Chadwick"
+    ]
   },
   "ChronographWatch": {
     "name": "ChronographWatch",
@@ -844,7 +1239,36 @@
       "yaw": 45,
       "pitch": 20,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      },
+      {
+        "license": "LicenseRef-LegalMark-Khronos",
+        "url": "",
+        "icon": ""
+      },
+      {
+        "license": "LicenseRef-LegalMark-Khronos",
+        "url": "",
+        "icon": ""
+      },
+      {
+        "license": "LicenseRef-LegalMark-DGG",
+        "url": "",
+        "icon": ""
+      }
+    ],
+    "authors": [
+      "Eric Chadwick",
+      "Non-copyrightable logo",
+      "Non-copyrightable logo",
+      "Copyrightable logo"
+    ]
   },
   "ClearCoatCarPaint": {
     "name": "ClearCoatCarPaint",
@@ -872,7 +1296,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "Public Domain / CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Eric Chadwick"
+    ]
   },
   "KHR_materials_clearcoatTest": {
     "name": "KHR_materials_clearcoatTest",
@@ -898,7 +1333,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Ed Mackey"
+    ]
   },
   "ClearcoatWicker": {
     "name": "ClearcoatWicker",
@@ -924,7 +1370,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "Public Domain / CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Eric Chadwick"
+    ]
   },
   "CommercialRefrigerator": {
     "name": "CommercialRefrigerator",
@@ -953,7 +1410,24 @@
       "yaw": 45,
       "pitch": 20,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      },
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Eric Chadwick",
+      "Sean Thomas"
+    ]
   },
   "CompareAlphaCoverage": {
     "name": "CompareAlphaCoverage",
@@ -975,7 +1449,24 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "LicenseRef-LegalMark-Khronos",
+        "url": "",
+        "icon": ""
+      },
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Non-copyrightable logo",
+      "Eric Chadwick and DGG"
+    ]
   },
   "CompareAmbientOcclusion": {
     "name": "CompareAmbientOcclusion",
@@ -997,7 +1488,30 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "LicenseRef-LegalMark-Khronos",
+        "url": "",
+        "icon": ""
+      },
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      },
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Non-copyrightable logo",
+      "Polyhaven",
+      "Eric Chadwick and DGG"
+    ]
   },
   "CompareAnisotropy": {
     "name": "CompareAnisotropy",
@@ -1025,7 +1539,24 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "LicenseRef-LegalMark-Khronos",
+        "url": "",
+        "icon": ""
+      },
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Non-copyrightable logo",
+      "Eric Chadwick and DGG"
+    ]
   },
   "CompareBaseColor": {
     "name": "CompareBaseColor",
@@ -1050,7 +1581,24 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "LicenseRef-LegalMark-Khronos",
+        "url": "",
+        "icon": ""
+      },
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Non-copyrightable logo",
+      "Eric Chadwick and DGG"
+    ]
   },
   "CompareClearcoat": {
     "name": "CompareClearcoat",
@@ -1078,7 +1626,24 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "LicenseRef-LegalMark-Khronos",
+        "url": "",
+        "icon": ""
+      },
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Non-copyrightable logo",
+      "Eric Chadwick and DGG"
+    ]
   },
   "CompareDispersion": {
     "name": "CompareDispersion",
@@ -1109,7 +1674,24 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "LicenseRef-LegalMark-Khronos",
+        "url": "",
+        "icon": ""
+      },
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Non-copyrightable logo",
+      "Eric Chadwick and DGG"
+    ]
   },
   "CompareEmissiveStrength": {
     "name": "CompareEmissiveStrength",
@@ -1135,7 +1717,24 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "LicenseRef-LegalMark-Khronos",
+        "url": "",
+        "icon": ""
+      },
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Non-copyrightable logo",
+      "Eric Chadwick and DGG"
+    ]
   },
   "CompareIOR": {
     "name": "CompareIOR",
@@ -1165,7 +1764,24 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "LicenseRef-LegalMark-Khronos",
+        "url": "",
+        "icon": ""
+      },
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Non-copyrightable logo",
+      "Eric Chadwick and DGG"
+    ]
   },
   "CompareIridescence": {
     "name": "CompareIridescence",
@@ -1191,7 +1807,24 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "LicenseRef-LegalMark-Khronos",
+        "url": "",
+        "icon": ""
+      },
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Non-copyrightable logo",
+      "Eric Chadwick and DGG"
+    ]
   },
   "CompareMetallic": {
     "name": "CompareMetallic",
@@ -1213,7 +1846,24 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "LicenseRef-LegalMark-Khronos",
+        "url": "",
+        "icon": ""
+      },
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Non-copyrightable logo",
+      "Eric Chadwick and DGG"
+    ]
   },
   "CompareNormal": {
     "name": "CompareNormal",
@@ -1235,7 +1885,24 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "LicenseRef-LegalMark-Khronos",
+        "url": "",
+        "icon": ""
+      },
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Non-copyrightable logo",
+      "Eric Chadwick and DGG"
+    ]
   },
   "CompareRoughness": {
     "name": "CompareRoughness",
@@ -1257,7 +1924,24 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "LicenseRef-LegalMark-Khronos",
+        "url": "",
+        "icon": ""
+      },
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Non-copyrightable logo",
+      "Eric Chadwick and DGG"
+    ]
   },
   "CompareSheen": {
     "name": "CompareSheen",
@@ -1283,7 +1967,24 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "LicenseRef-LegalMark-Khronos",
+        "url": "",
+        "icon": ""
+      },
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Non-copyrightable logo",
+      "Eric Chadwick and DGG"
+    ]
   },
   "CompareSpecular": {
     "name": "CompareSpecular",
@@ -1309,7 +2010,24 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "LicenseRef-LegalMark-Khronos",
+        "url": "",
+        "icon": ""
+      },
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Non-copyrightable logo",
+      "Eric Chadwick and DGG"
+    ]
   },
   "CompareTransmission": {
     "name": "CompareTransmission",
@@ -1335,7 +2053,24 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "LicenseRef-LegalMark-Khronos",
+        "url": "",
+        "icon": ""
+      },
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Non-copyrightable logo",
+      "Eric Chadwick and DGG"
+    ]
   },
   "CompareVolume": {
     "name": "CompareVolume",
@@ -1363,7 +2098,24 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "LicenseRef-LegalMark-Khronos",
+        "url": "",
+        "icon": ""
+      },
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Non-copyrightable logo",
+      "Eric Chadwick and DGG"
+    ]
   },
   "Corset": {
     "name": "Corset",
@@ -1387,7 +2139,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Microsoft"
+    ]
   },
   "Cube": {
     "name": "Cube",
@@ -1407,7 +2170,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Norbert Nopper"
+    ]
   },
   "DamagedHelmet": {
     "name": "DamagedHelmet",
@@ -1431,7 +2205,24 @@
       "yaw": 45,
       "pitch": 20,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      },
+      {
+        "license": "CC-BY-NC",
+        "url": "https://creativecommons.org/licenses/by-nc/4.0/legalcode",
+        "icon": "https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc.png"
+      }
+    ],
+    "authors": [
+      "ctxwing",
+      "theblueturtle_"
+    ]
   },
   "DiffuseTransmissionPlant": {
     "name": "DiffuseTransmissionPlant",
@@ -1459,7 +2250,24 @@
       "yaw": 45,
       "pitch": 20,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      },
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Eric Chadwick",
+      "Rico Cilliers"
+    ]
   },
   "DiffuseTransmissionTeacup": {
     "name": "DiffuseTransmissionTeacup",
@@ -1484,7 +2292,18 @@
       "yaw": 45,
       "pitch": 20,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0-1.0",
+        "url": "https://creativecommons.org/share-your-work/public-domain/cc0",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Polyhaven.com, and Eric Chadwick"
+    ]
   },
   "DiffuseTransmissionTest": {
     "name": "DiffuseTransmissionTest",
@@ -1513,7 +2332,30 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      },
+      {
+        "license": "LicenseRef-LegalMark-Khronos",
+        "url": "",
+        "icon": ""
+      },
+      {
+        "license": "LicenseRef-LegalMark-Khronos",
+        "url": "",
+        "icon": ""
+      }
+    ],
+    "authors": [
+      "Eric Chadwick",
+      "Non-copyrightable logo",
+      "Non-copyrightable logo"
+    ]
   },
   "DirectionalLight": {
     "name": "DirectionalLight",
@@ -1538,7 +2380,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "Public Domain / CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Rickard Sahlin"
+    ]
   },
   "DispersionTest": {
     "name": "DispersionTest",
@@ -1569,7 +2422,18 @@
       "yaw": 45,
       "pitch": 20,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Ed Mackey"
+    ]
   },
   "DragonAttenuation": {
     "name": "DragonAttenuation",
@@ -1600,7 +2464,30 @@
       "yaw": 45,
       "pitch": 20,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "LicenseRef-Stanford-Graphics",
+        "url": "https://graphics.stanford.edu/data/3Dscanrep/",
+        "icon": ""
+      },
+      {
+        "license": "LicenseRef-Stanford-Graphics",
+        "url": "https://graphics.stanford.edu/data/3Dscanrep/",
+        "icon": ""
+      },
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Stanford University Computer Graphics Laboratory",
+      "Morgan McGuire's Computer Graphics Archive",
+      "Adobe"
+    ]
   },
   "DragonDispersion": {
     "name": "DragonDispersion",
@@ -1631,7 +2518,30 @@
       "yaw": 45,
       "pitch": 20,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "LicenseRef-Stanford-Graphics",
+        "url": "https://graphics.stanford.edu/data/3Dscanrep/",
+        "icon": ""
+      },
+      {
+        "license": "LicenseRef-Stanford-Graphics",
+        "url": "https://graphics.stanford.edu/data/3Dscanrep/",
+        "icon": ""
+      },
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Stanford University Computer Graphics Laboratory",
+      "Morgan McGuire's Computer Graphics Archive",
+      "Adobe"
+    ]
   },
   "Duck": {
     "name": "Duck",
@@ -1659,7 +2569,18 @@
       "yaw": 45,
       "pitch": 20,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "SCEA",
+        "url": "https://spdx.org/licenses/SCEA.html",
+        "icon": ""
+      }
+    ],
+    "authors": [
+      "Sony"
+    ]
   },
   "EmissiveStrengthTest": {
     "name": "EmissiveStrengthTest",
@@ -1685,7 +2606,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Ed Mackey"
+    ]
   },
   "EnvironmentTest": {
     "name": "EnvironmentTest",
@@ -1707,7 +2639,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "LicenseRef-Adobe-Stock",
+        "url": "https://stock.adobe.com/license-terms?prev_url=detail&comparison-full#enhanced-license-terms",
+        "icon": ""
+      }
+    ],
+    "authors": [
+      "Adobe"
+    ]
   },
   "FlightHelmet": {
     "name": "FlightHelmet",
@@ -1731,7 +2674,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Gary Hsu"
+    ]
   },
   "Fox": {
     "name": "Fox",
@@ -1754,7 +2708,30 @@
       "yaw": 45,
       "pitch": 20,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      },
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      },
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "PixelMannen",
+      "tomkranis",
+      "@AsoboStudio and @scurest"
+    ]
   },
   "GlamVelvetSofa": {
     "name": "GlamVelvetSofa",
@@ -1787,7 +2764,18 @@
       "yaw": 45,
       "pitch": 20,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Eric Chadwick"
+    ]
   },
   "GlassBrokenWindow": {
     "name": "GlassBrokenWindow",
@@ -1812,7 +2800,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Eric Chadwick"
+    ]
   },
   "GlassHurricaneCandleHolder": {
     "name": "GlassHurricaneCandleHolder",
@@ -1840,7 +2839,30 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      },
+      {
+        "license": "LicenseRef-LegalMark-Khronos",
+        "url": "",
+        "icon": ""
+      },
+      {
+        "license": "LicenseRef-LegalMark-Khronos",
+        "url": "",
+        "icon": ""
+      }
+    ],
+    "authors": [
+      "Eric Chadwick",
+      "Non-copyrightable logo",
+      "Non-copyrightable logo"
+    ]
   },
   "GlassVasewithFlowers": {
     "name": "GlassVasewithFlowers",
@@ -1867,7 +2889,24 @@
       "yaw": 45,
       "pitch": 20,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      },
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Eric Chadwick",
+      "Rico Cilliers"
+    ]
   },
   "InterpolationTest": {
     "name": "InterpolationTest",
@@ -1890,7 +2929,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Khronos"
+    ]
   },
   "IORTestGrid": {
     "name": "IORTestGrid",
@@ -1922,7 +2972,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Eric Chadwick"
+    ]
   },
   "IridescenceAbalone": {
     "name": "IridescenceAbalone",
@@ -1947,7 +3008,24 @@
       "yaw": 45,
       "pitch": 20,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      },
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Abby Crawford",
+      "Eric Chadwick"
+    ]
   },
   "IridescenceDielectricSpheres": {
     "name": "IridescenceDielectricSpheres",
@@ -1973,7 +3051,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Khronos"
+    ]
   },
   "IridescenceLamp": {
     "name": "IridescenceLamp",
@@ -2005,7 +3094,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Eric Chadwick"
+    ]
   },
   "IridescenceMetallicSpheres": {
     "name": "IridescenceMetallicSpheres",
@@ -2031,7 +3131,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "UX3D"
+    ]
   },
   "IridescenceSuzanne": {
     "name": "IridescenceSuzanne",
@@ -2065,7 +3176,24 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 1
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      },
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Mathias Kanzler",
+      "Pascal Schoen"
+    ]
   },
   "IridescentDishwithOlives": {
     "name": "IridescentDishwithOlives",
@@ -2098,7 +3226,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 1
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Eric Chadwick"
+    ]
   },
   "Lantern": {
     "name": "Lantern",
@@ -2125,7 +3264,24 @@
       "yaw": 45,
       "pitch": 20,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      },
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "sbtron",
+      "Frank Galligan"
+    ]
   },
   "LampwithPunctualLights": {
     "name": "LampwithPunctualLights",
@@ -2153,7 +3309,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "DGG"
+    ]
   },
   "MandarinOrange": {
     "name": "MandarinOrange",
@@ -2176,7 +3343,24 @@
       "yaw": 45,
       "pitch": 20,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY International 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      },
+      {
+        "license": "CC-BY International 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "zamdreamer",
+      "Eric Chadwick"
+    ]
   },
   "MaterialsVariantsShoe": {
     "name": "MaterialsVariantsShoe",
@@ -2202,7 +3386,18 @@
       "yaw": 45,
       "pitch": 20,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY International 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Shopify"
+    ]
   },
   "MeshPrimitiveModes": {
     "name": "MeshPrimitiveModes",
@@ -2223,7 +3418,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "Public Domain / CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Marco Hutter (https://github.com/javagl/)"
+    ]
   },
   "Metal-RoughSpheres": {
     "name": "Metal-RoughSpheres",
@@ -2246,7 +3452,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Ed Mackey"
+    ]
   },
   "Metal-RoughSpheres(textureless)": {
     "name": "Metal-RoughSpheres(textureless)",
@@ -2268,7 +3485,24 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      },
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Krill Gavrilov",
+      "CAD Model generated by Draw Harness script using Open CASCADE Technology"
+    ]
   },
   "Morph-PrimitivesTest": {
     "name": "Morph-PrimitivesTest",
@@ -2294,7 +3528,24 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      },
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "ft-lab",
+      "Frank Galligan"
+    ]
   },
   "MorphStressTest": {
     "name": "MorphStressTest",
@@ -2318,7 +3569,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Ed Mackey"
+    ]
   },
   "MosquitoInAmber": {
     "name": "MosquitoInAmber",
@@ -2348,7 +3610,24 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      },
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Loic Norgeot",
+      "Sketchfab"
+    ]
   },
   "MultipleScenes": {
     "name": "MultipleScenes",
@@ -2369,7 +3648,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "Public Domain / CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Public"
+    ]
   },
   "MultiUVTest": {
     "name": "MultiUVTest",
@@ -2392,7 +3682,24 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      },
+      {
+        "license": "LicenseRef-LegalMark-Khronos",
+        "url": "",
+        "icon": ""
+      }
+    ],
+    "authors": [
+      "Hilo 3D",
+      "Non-copyrightable logo"
+    ]
   },
   "NegativeScaleTest": {
     "name": "NegativeScaleTest",
@@ -2414,7 +3721,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY International 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Ed Mackey"
+    ]
   },
   "Normal-TangentMirrorTest": {
     "name": "Normal-TangentMirrorTest",
@@ -2436,7 +3754,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Ed Mackey"
+    ]
   },
   "Normal-TangentTest": {
     "name": "Normal-TangentTest",
@@ -2458,7 +3787,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Ed Mackey"
+    ]
   },
   "OrientationTest": {
     "name": "OrientationTest",
@@ -2481,7 +3821,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Khronos"
+    ]
   },
   "PointLightIntensityTest": {
     "name": "PointLightIntensityTest",
@@ -2509,7 +3860,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Ed Mackey"
+    ]
   },
   "PotOfCoals": {
     "name": "PotOfCoals",
@@ -2535,7 +3897,30 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      },
+      {
+        "license": "LicenseRef-LegalMark-Khronos",
+        "url": "",
+        "icon": ""
+      },
+      {
+        "license": "LicenseRef-LegalMark-Khronos",
+        "url": "",
+        "icon": ""
+      }
+    ],
+    "authors": [
+      "Eric Chadwick",
+      "Non-copyrightable logo",
+      "Non-copyrightable logo"
+    ]
   },
   "PotOfCoalsAnimationPointer": {
     "name": "PotOfCoalsAnimationPointer",
@@ -2571,7 +3956,30 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      },
+      {
+        "license": "LicenseRef-LegalMark-Khronos",
+        "url": "",
+        "icon": ""
+      },
+      {
+        "license": "LicenseRef-LegalMark-Khronos",
+        "url": "",
+        "icon": ""
+      }
+    ],
+    "authors": [
+      "Eric Chadwick",
+      "Non-copyrightable logo",
+      "Non-copyrightable logo"
+    ]
   },
   "PrimitiveModeNormalsTest": {
     "name": "PrimitiveModeNormalsTest",
@@ -2591,7 +3999,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "Public Domain / CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Unknown"
+    ]
   },
   "RecursiveSkeletons": {
     "name": "RecursiveSkeletons",
@@ -2614,7 +4033,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Cesium"
+    ]
   },
   "RiggedFigure": {
     "name": "RiggedFigure",
@@ -2640,7 +4070,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Cesium"
+    ]
   },
   "RiggedSimple": {
     "name": "RiggedSimple",
@@ -2666,7 +4107,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Cesium"
+    ]
   },
   "Skull": {
     "name": "Skull",
@@ -2698,7 +4150,18 @@
       "yaw": 45,
       "pitch": 20,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Vladimir Petkovic"
+    ]
   },
   "SciFiHelmet": {
     "name": "SciFiHelmet",
@@ -2718,7 +4181,24 @@
       "yaw": 45,
       "pitch": 20,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      },
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Michael Pavlovic",
+      "Norbert Nopper"
+    ]
   },
   "SheenChair": {
     "name": "SheenChair",
@@ -2748,7 +4228,18 @@
       "yaw": 45,
       "pitch": 20,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Eric Chadwick"
+    ]
   },
   "SheenCloth": {
     "name": "SheenCloth",
@@ -2774,7 +4265,18 @@
       "yaw": 45,
       "pitch": 20,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Microsoft"
+    ]
   },
   "SheenTestGrid": {
     "name": "SheenTestGrid",
@@ -2800,7 +4302,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Eric Chadwick"
+    ]
   },
   "SheenWoodLeatherSofa": {
     "name": "SheenWoodLeatherSofa",
@@ -2832,7 +4345,24 @@
       "yaw": 45,
       "pitch": 20,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      },
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Eric Chadwick",
+      "Fran Calvente"
+    ]
   },
   "SimpleInstancing": {
     "name": "SimpleInstancing",
@@ -2857,7 +4387,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "Public Domain / CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Marco Hutter (https://github.com/javagl/)"
+    ]
   },
   "SimpleMaterial": {
     "name": "SimpleMaterial",
@@ -2878,7 +4419,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Marco Hutter (https://github.com/javagl/)"
+    ]
   },
   "SimpleMeshes": {
     "name": "SimpleMeshes",
@@ -2899,7 +4451,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Marco Hutter (https://github.com/javagl/)"
+    ]
   },
   "SimpleMorph": {
     "name": "SimpleMorph",
@@ -2922,7 +4485,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Marco Hutter (https://github.com/javagl/)"
+    ]
   },
   "SimpleSkin": {
     "name": "SimpleSkin",
@@ -2944,7 +4518,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Marco Hutter (https://github.com/javagl/)"
+    ]
   },
   "SimpleSparseAccessor": {
     "name": "SimpleSparseAccessor",
@@ -2965,7 +4550,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Marco Hutter (https://github.com/javagl/)"
+    ]
   },
   "SimpleTexture": {
     "name": "SimpleTexture",
@@ -2986,7 +4582,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Marco Hutter (https://github.com/javagl/)"
+    ]
   },
   "SpecGlossVsMetalRough": {
     "name": "SpecGlossVsMetalRough",
@@ -3012,7 +4619,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Microsoft"
+    ]
   },
   "SpecularSilkPouf": {
     "name": "SpecularSilkPouf",
@@ -3040,7 +4658,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/4.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Eric Chadwick"
+    ]
   },
   "SpecularTest": {
     "name": "SpecularTest",
@@ -3066,7 +4695,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Ed Mackey"
+    ]
   },
   "Sponza": {
     "name": "Sponza",
@@ -3085,7 +4725,18 @@
       "yaw": 45,
       "pitch": 20,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "LicenseRef-CRYENGINE-Agreement",
+        "url": "https://www.cryengine.com/ce-terms",
+        "icon": ""
+      }
+    ],
+    "authors": [
+      "Crytek"
+    ]
   },
   "StainedGlassLamp": {
     "name": "StainedGlassLamp",
@@ -3121,7 +4772,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Eric Chadwick"
+    ]
   },
   "SunglassesKhronos": {
     "name": "SunglassesKhronos",
@@ -3156,7 +4818,30 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      },
+      {
+        "license": "LicenseRef-LegalMark-Khronos",
+        "url": "",
+        "icon": ""
+      },
+      {
+        "license": "LicenseRef-LegalMark-Khronos",
+        "url": "",
+        "icon": ""
+      }
+    ],
+    "authors": [
+      "Eric Chadwick",
+      "Non-copyrightable logo",
+      "Non-copyrightable logo"
+    ]
   },
   "Suzanne": {
     "name": "Suzanne",
@@ -3176,7 +4861,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Norbert Nopper"
+    ]
   },
   "TextureCoordinateTest": {
     "name": "TextureCoordinateTest",
@@ -3199,7 +4895,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Ed Mackey"
+    ]
   },
   "TextureEncodingTest": {
     "name": "TextureEncodingTest",
@@ -3221,7 +4928,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "lexaknyazev"
+    ]
   },
   "TextureLinearInterpolationTest": {
     "name": "TextureLinearInterpolationTest",
@@ -3243,7 +4961,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "lexaknyazev"
+    ]
   },
   "TextureSettingsTest": {
     "name": "TextureSettingsTest",
@@ -3266,7 +4995,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Ed Mackey"
+    ]
   },
   "TextureTransformMultiTest": {
     "name": "TextureTransformMultiTest",
@@ -3296,7 +5036,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Ed Mackey"
+    ]
   },
   "TextureTransformTest": {
     "name": "TextureTransformTest",
@@ -3320,7 +5071,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Microsoft"
+    ]
   },
   "ToyCar": {
     "name": "ToyCar",
@@ -3352,7 +5114,24 @@
       "yaw": 45,
       "pitch": 20,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      },
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Guido Odendahl",
+      "Eric Chadwick"
+    ]
   },
   "TransmissionOrderTest": {
     "name": "TransmissionOrderTest",
@@ -3380,7 +5159,24 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      },
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Ed Mackey",
+      "Adobe"
+    ]
   },
   "TransmissionRoughnessTest": {
     "name": "TransmissionRoughnessTest",
@@ -3410,7 +5206,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Ed Mackey"
+    ]
   },
   "TransmissionTest": {
     "name": "TransmissionTest",
@@ -3438,7 +5245,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Adobe"
+    ]
   },
   "TransmissionThinwallTestGrid": {
     "name": "TransmissionThinwallTestGrid",
@@ -3468,7 +5286,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Eric Chadwick"
+    ]
   },
   "Triangle": {
     "name": "Triangle",
@@ -3489,7 +5318,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Marco Hutter (https://github.com/javagl/)"
+    ]
   },
   "TriangleWithoutIndices": {
     "name": "TriangleWithoutIndices",
@@ -3510,7 +5350,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Marco Hutter (https://github.com/javagl/)"
+    ]
   },
   "TwoSidedPlane": {
     "name": "TwoSidedPlane",
@@ -3529,7 +5380,18 @@
       "yaw": 45,
       "pitch": 20,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Norbert Nopper"
+    ]
   },
   "Unicode%E2%9D%A4%E2%99%BBTest": {
     "name": "Unicode❤♻Test",
@@ -3551,7 +5413,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Viktor Kovács"
+    ]
   },
   "UnlitTest": {
     "name": "UnlitTest",
@@ -3577,7 +5450,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Ed Mackey"
+    ]
   },
   "VertexColorTest": {
     "name": "VertexColorTest",
@@ -3600,7 +5484,18 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Ed Mackey"
+    ]
   },
   "VirtualCity": {
     "name": "VirtualCity",
@@ -3626,7 +5521,18 @@
       "yaw": 45,
       "pitch": 20,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "LicenseRef-3DRT-Testing",
+        "url": "",
+        "icon": ""
+      }
+    ],
+    "authors": [
+      "3DRT"
+    ]
   },
   "WaterBottle": {
     "name": "WaterBottle",
@@ -3650,7 +5556,18 @@
       "yaw": 45,
       "pitch": 20,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Microsoft"
+    ]
   },
   "XmpMetadataRoundedCube": {
     "name": "XmpMetadataRoundedCube",
@@ -3675,6 +5592,17 @@
       "yaw": 0,
       "pitch": 0,
       "distance": 0
-    }
+    },
+    "keywords": [],
+    "license": [
+      {
+        "license": "CC-BY International 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
+      }
+    ],
+    "authors": [
+      "Adam Morris"
+    ]
   }
 }

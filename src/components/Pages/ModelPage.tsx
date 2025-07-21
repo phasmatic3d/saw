@@ -13,6 +13,7 @@ import { basePath } from '@/lib/paths';
 import { ModelType } from '@/lib/types';
 import { Stats } from "@/components/LivePreviewSampleRenderer";
 import { toReadableBytes, toReadableNumber } from '@/lib/conversions';
+import License from '../License';
 
 type ExternalLinkProps = {
   url: string,
@@ -28,15 +29,13 @@ type ModelPageProps = {
   image: string,
   tags: string[],
   modelURL: string,
-  ktxUrl?: string,
-  dracoUrl?: string,
-  quantizedUrl?: string,
   downloadUrl?: string,
+  model: ModelType,
   showcaseModels: Array<ModelType>
   suggestedModels: Array<ModelType>
 }
 
-export default function ComparePage({name, label, image, tags, description, modelURL, downloadUrl, showcaseModels, suggestedModels}: ModelPageProps) {  
+export default function ComparePage({name, label, image, tags, description, modelURL, downloadUrl, model, showcaseModels, suggestedModels}: ModelPageProps) {  
   const theme = useTheme();
   const isXs = useMediaQuery(theme.breakpoints.only('xs'));
   const [isMagnified, setMagnified] = React.useState(false);
@@ -114,9 +113,17 @@ export default function ComparePage({name, label, image, tags, description, mode
           </Box>}
           
         </Box>
+        {/* Authors */}
+        <Box display='flex' mt={2}>
+          <Typography variant='body1' sx={{mr:1, fontWeight:'bold'}}>Authors: </Typography>{model.authors.join(", ")}
+        </Box>
         {/* Description */}
         <Box display='flex' mt={2}>
           <Typography>{description}</Typography>          
+        </Box>
+        {/* License */}
+        <Box display='flex' mt={2}>
+          <Typography component='span' variant='body1' sx={{mr:1, fontWeight:'bold'}}>License: </Typography>{model.license.map(e => <License title={e.license} url={e.url} iconURL={e.icon} sx={{mr: 1}} />)}
         </Box>
 
 
