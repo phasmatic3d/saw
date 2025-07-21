@@ -23,6 +23,7 @@ export type LivePreviewSampleRendererProps = {
 const orbit = {
   prev_mouse: [0,0],
   curr_mouse: [0,0],
+  old_touch_dist: 0,
 
   deltaPhi: 0,
   deltaTheta: 0,
@@ -72,9 +73,6 @@ const handleMouseMove = (ev: React.MouseEvent<HTMLCanvasElement>) => {
     orbit.deltaX = orbit.curr_mouse[0] - orbit.prev_mouse[0];
     orbit.deltaY = orbit.curr_mouse[1] - orbit.prev_mouse[1];
 
-    console.log(orbit.deltaX);
-    console.log(orbit.deltaY);
-
     orbit.prev_mouse[0] = ev.pageX;
     orbit.prev_mouse[1] = ev.pageY; 
   }
@@ -94,6 +92,52 @@ const handleMouseUp = (ev: React.MouseEvent<HTMLCanvasElement>) => {
 const handleMouseWheel = (ev: WheelEvent) => {
   orbit.deltaZoom = normalizeWheel(ev).spinY;//ev.deltaY;
   ev.preventDefault();
+}
+
+const handleTouchStart = (ev: TouchEvent) => {
+  if(ev.touches.length === 2)
+  {
+    const distVec = [ev.touches[0].clientX - ev.touches[1].clientX, ev.touches[0].clientY - ev.touches[1].clientY];
+    const dist = Math.sqrt(distVec[0] * distVec[0] + distVec[1] * distVec[1]);
+    orbit.old_touch_dist = dist;
+  }
+  else if(ev.touches.length == 1)
+  {
+    orbit.curr_mouse[0] = ev.touches[0].clientX;
+    orbit.curr_mouse[1] = ev.touches[0].clientY;
+
+    orbit.prev_mouse[0] = ev.touches[0].clientX;
+    orbit.prev_mouse[1] = ev.touches[0].clientY;
+  }
+
+}
+const handleTouchMove = (ev: TouchEvent) => {
+  if(ev.touches.length === 2)
+  {
+    const distVec = [ev.touches[0].clientX - ev.touches[1].clientX, ev.touches[0].clientY - ev.touches[1].clientY];
+    const dist = Math.sqrt(distVec[0] * distVec[0] + distVec[1] * distVec[1]);
+    orbit.deltaZoom = 0.1 * (orbit.old_touch_dist - dist);
+    orbit.old_touch_dist = dist;
+  }
+  else if(ev.touches.length == 1)
+  {
+    orbit.curr_mouse[0] = ev.touches[0].clientX;
+    orbit.curr_mouse[1] = ev.touches[0].clientY;
+
+    orbit.deltaPhi = 0.5 * (orbit.curr_mouse[0] - orbit.prev_mouse[0]);
+    orbit.deltaTheta = 0.5 * (orbit.curr_mouse[1] - orbit.prev_mouse[1]);
+
+    orbit.prev_mouse[0] = ev.touches[0].clientX;
+    orbit.prev_mouse[1] = ev.touches[0].clientY;
+  }
+}
+
+const handleTouchEnd = (ev: TouchEvent) => {
+  orbit.deltaPhi = 0;
+  orbit.deltaTheta = 0;
+  orbit.deltaZoom = 0;
+  orbit.deltaX = 0;
+  orbit.deltaY = 0;
 }
 
 const available_extensions = { 
@@ -386,11 +430,21 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
     setDracoLoaded(isDracoLoaded);
 
     if(canvasRef.current)
+    {
       canvasRef.current.addEventListener('wheel', handleMouseWheel, { passive: false });
+      canvasRef.current.addEventListener('touchstart', handleTouchStart);
+      canvasRef.current.addEventListener('touchmove', handleTouchMove);
+      canvasRef.current.addEventListener('touchend', handleTouchEnd);
+    }
 
     return () => { 
       if(canvasRef.current)
+      {
         canvasRef.current.removeEventListener('wheel', handleMouseWheel);
+        canvasRef.current.removeEventListener('touchstart', handleTouchStart);
+        canvasRef.current.removeEventListener('touchmove', handleTouchMove);
+        canvasRef.current.removeEventListener('touchend', handleTouchEnd);
+      }
     };
   }, [])
   
