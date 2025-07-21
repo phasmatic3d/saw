@@ -20,8 +20,6 @@
       "KHR_materials_volume"
     ],
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/ABeautifulGame/glTF/ABeautifulGame.gltf",
-    "dracoModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/ABeautifulGame/glTF-Binary-KTX-ETC1S-Draco/ABeautifulGame.glb",
-    "ktxModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/ABeautifulGame/glTF-Binary-KTX-ETC1S-Draco/ABeautifulGame.glb",
     "image": "/images/ABeautifulGame.webp",
     "thumbnail": "/images/ABeautifulGame.webp",
     "camera": {
@@ -167,7 +165,6 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnimatedMorphCube/glTF-Binary/AnimatedMorphCube.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnimatedMorphCube/glTF/AnimatedMorphCube.gltf",
-    "quantizedModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnimatedMorphCube/glTF-Quantized/AnimatedMorphCube.gltf",
     "image": "/images/AnimatedMorphCube.webp",
     "thumbnail": "/images/AnimatedMorphCube.webp",
     "camera": {
@@ -306,7 +303,6 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnisotropyBarnLamp/glTF-Binary/AnisotropyBarnLamp.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnisotropyBarnLamp/glTF/AnisotropyBarnLamp.gltf",
-    "ktxModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnisotropyBarnLamp/glTF-KTX-BasisU/AnisotropyBarnLamp.gltf",
     "image": "/images/AnisotropyBarnLamp.webp",
     "thumbnail": "/images/AnisotropyBarnLamp.webp",
     "camera": {
@@ -464,16 +460,10 @@
         "license": "CC0",
         "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
-      },
-      {
-        "license": "LicenseRef-LegalMark-UX3D",
-        "url": "",
-        "icon": ""
       }
     ],
     "authors": [
-      "Maximillan Kamps",
-      "Non-copyrightable logo"
+      "Maximillan Kamps"
     ]
   },
   "AttenuationTest": {
@@ -532,8 +522,6 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Avocado/glTF-Binary/Avocado.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Avocado/glTF/Avocado.gltf",
-    "dracoModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Avocado/glTF-Draco/Avocado.gltf",
-    "quantizedModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Avocado/glTF-Quantized/Avocado.gltf",
     "image": "/images/Avocado.webp",
     "thumbnail": "/images/Avocado.webp",
     "camera": {
@@ -568,7 +556,6 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BarramundiFish/glTF-Binary/BarramundiFish.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BarramundiFish/glTF/BarramundiFish.gltf",
-    "dracoModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BarramundiFish/glTF-Draco/BarramundiFish.gltf",
     "image": "/images/BarramundiFish.webp",
     "thumbnail": "/images/BarramundiFish.webp",
     "camera": {
@@ -603,7 +590,6 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoomBox/glTF-Binary/BoomBox.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoomBox/glTF/BoomBox.gltf",
-    "dracoModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoomBox/glTF-Draco/BoomBox.gltf",
     "image": "/images/BoomBox.webp",
     "thumbnail": "/images/BoomBox.webp",
     "camera": {
@@ -670,7 +656,6 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Box/glTF-Binary/Box.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Box/glTF/Box.gltf",
-    "dracoModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Box/glTF-Draco/Box.gltf",
     "image": "/images/Box.webp",
     "thumbnail": "/images/Box.webp",
     "camera": {
@@ -715,16 +700,10 @@
         "license": "CC0",
         "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
-      },
-      {
-        "license": "LicenseRef-LegalMark-Khronos",
-        "url": "",
-        "icon": ""
       }
     ],
     "authors": [
-      "Ed Mackey",
-      "Non-copyrightable logo"
+      "Ed Mackey"
     ]
   },
   "BoxAnimated": {
@@ -824,16 +803,10 @@
         "license": "LicenseRef-CC-BY-TM",
         "url": "",
         "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
-      },
-      {
-        "license": "LicenseRef-LegalMark-Cesium",
-        "url": "",
-        "icon": ""
       }
     ],
     "authors": [
-      "Cesium",
-      "Non-copyrightable logo"
+      "Cesium"
     ]
   },
   "BoxTexturednot2%5EN": {
@@ -864,16 +837,10 @@
         "license": "LicenseRef-CC-BY-TM",
         "url": "",
         "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
-      },
-      {
-        "license": "LicenseRef-LegalMark-Cesium",
-        "url": "",
-        "icon": ""
       }
     ],
     "authors": [
-      "Cesium",
-      "Non-copyrightable logo"
+      "Cesium"
     ]
   },
   "BoxVertexColors": {
@@ -928,7 +895,6 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BrainStem/glTF-Binary/BrainStem.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BrainStem/glTF/BrainStem.gltf",
-    "dracoModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BrainStem/glTF-Draco/BrainStem.gltf",
     "image": "/images/BrainStem.webp",
     "thumbnail": "/images/BrainStem.webp",
     "camera": {
@@ -937,16 +903,8 @@
       "distance": 0
     },
     "keywords": [],
-    "license": [
-      {
-        "license": "LicenseRef-Poser-EULA",
-        "url": "https://archive.org/stream/poser-pro-2014-reference-manual/Poser_Pro_2014_reference_manual_djvu.txt",
-        "icon": ""
-      }
-    ],
-    "authors": [
-      "Keith Hunter"
-    ]
+    "license": [],
+    "authors": []
   },
   "Cameras": {
     "name": "Cameras",
@@ -1047,8 +1005,6 @@
       "KHR_texture_transform"
     ],
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CarConcept/glTF/CarConcept.gltf",
-    "dracoModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CarConcept/glTF-KTX-BasisU-Draco/CarConcept.gltf",
-    "ktxModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CarConcept/glTF-KTX-BasisU-Draco/CarConcept.gltf",
     "image": "/images/CarConcept.webp",
     "thumbnail": "/images/CarConcept.webp",
     "camera": {
@@ -1062,22 +1018,10 @@
         "license": "CC-BY 4.0",
         "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
         "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
-      },
-      {
-        "license": "LicenseRef-LegalMark-Khronos",
-        "url": "",
-        "icon": ""
-      },
-      {
-        "license": "LicenseRef-LegalMark-Khronos",
-        "url": "",
-        "icon": ""
       }
     ],
     "authors": [
-      "Eric Chadwick",
-      "Non-copyrightable logo",
-      "Non-copyrightable logo"
+      "Eric Chadwick"
     ]
   },
   "CesiumMan": {
@@ -1097,7 +1041,6 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CesiumMan/glTF-Binary/CesiumMan.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CesiumMan/glTF/CesiumMan.gltf",
-    "dracoModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CesiumMan/glTF-Draco/CesiumMan.gltf",
     "image": "/images/CesiumMan.webp",
     "thumbnail": "/images/CesiumMan.webp",
     "camera": {
@@ -1111,16 +1054,10 @@
         "license": "LicenseRef-CC-BY-TM",
         "url": "",
         "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
-      },
-      {
-        "license": "LicenseRef-LegalMark-Cesium",
-        "url": "",
-        "icon": ""
       }
     ],
     "authors": [
-      "Cesium",
-      "Non-copyrightable logo"
+      "Cesium"
     ]
   },
   "CesiumMilkTruck": {
@@ -1140,7 +1077,6 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CesiumMilkTruck/glTF-Binary/CesiumMilkTruck.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CesiumMilkTruck/glTF/CesiumMilkTruck.gltf",
-    "dracoModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CesiumMilkTruck/glTF-Draco/CesiumMilkTruck.gltf",
     "image": "/images/CesiumMilkTruck.webp",
     "thumbnail": "/images/CesiumMilkTruck.webp",
     "camera": {
@@ -1154,16 +1090,10 @@
         "license": "LicenseRef-CC-BY-TM",
         "url": "",
         "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
-      },
-      {
-        "license": "LicenseRef-LegalMark-Cesium",
-        "url": "",
-        "icon": ""
       }
     ],
     "authors": [
-      "Cesium",
-      "Non-copyrightable logo"
+      "Cesium"
     ]
   },
   "ChairDamaskPurplegold": {
@@ -1232,7 +1162,6 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/ChronographWatch/glTF-Binary/ChronographWatch.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/ChronographWatch/glTF/ChronographWatch.gltf",
-    "ktxModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/ChronographWatch/glTF-KTX-BasisU/ChronographWatch.gltf",
     "image": "/images/ChronographWatch.webp",
     "thumbnail": "/images/ChronographWatch.webp",
     "camera": {
@@ -1246,28 +1175,10 @@
         "license": "CC-BY 4.0",
         "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
         "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
-      },
-      {
-        "license": "LicenseRef-LegalMark-Khronos",
-        "url": "",
-        "icon": ""
-      },
-      {
-        "license": "LicenseRef-LegalMark-Khronos",
-        "url": "",
-        "icon": ""
-      },
-      {
-        "license": "LicenseRef-LegalMark-DGG",
-        "url": "",
-        "icon": ""
       }
     ],
     "authors": [
-      "Eric Chadwick",
-      "Non-copyrightable logo",
-      "Non-copyrightable logo",
-      "Copyrightable logo"
+      "Eric Chadwick"
     ]
   },
   "ClearCoatCarPaint": {
@@ -1453,18 +1364,12 @@
     "keywords": [],
     "license": [
       {
-        "license": "LicenseRef-LegalMark-Khronos",
-        "url": "",
-        "icon": ""
-      },
-      {
         "license": "CC0",
         "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
       }
     ],
     "authors": [
-      "Non-copyrightable logo",
       "Eric Chadwick and DGG"
     ]
   },
@@ -1492,11 +1397,6 @@
     "keywords": [],
     "license": [
       {
-        "license": "LicenseRef-LegalMark-Khronos",
-        "url": "",
-        "icon": ""
-      },
-      {
         "license": "CC0",
         "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
@@ -1508,7 +1408,6 @@
       }
     ],
     "authors": [
-      "Non-copyrightable logo",
       "Polyhaven",
       "Eric Chadwick and DGG"
     ]
@@ -1543,18 +1442,12 @@
     "keywords": [],
     "license": [
       {
-        "license": "LicenseRef-LegalMark-Khronos",
-        "url": "",
-        "icon": ""
-      },
-      {
         "license": "CC0",
         "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
       }
     ],
     "authors": [
-      "Non-copyrightable logo",
       "Eric Chadwick and DGG"
     ]
   },
@@ -1585,18 +1478,12 @@
     "keywords": [],
     "license": [
       {
-        "license": "LicenseRef-LegalMark-Khronos",
-        "url": "",
-        "icon": ""
-      },
-      {
         "license": "CC0",
         "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
       }
     ],
     "authors": [
-      "Non-copyrightable logo",
       "Eric Chadwick and DGG"
     ]
   },
@@ -1630,18 +1517,12 @@
     "keywords": [],
     "license": [
       {
-        "license": "LicenseRef-LegalMark-Khronos",
-        "url": "",
-        "icon": ""
-      },
-      {
         "license": "CC0",
         "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
       }
     ],
     "authors": [
-      "Non-copyrightable logo",
       "Eric Chadwick and DGG"
     ]
   },
@@ -1678,18 +1559,12 @@
     "keywords": [],
     "license": [
       {
-        "license": "LicenseRef-LegalMark-Khronos",
-        "url": "",
-        "icon": ""
-      },
-      {
         "license": "CC0",
         "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
       }
     ],
     "authors": [
-      "Non-copyrightable logo",
       "Eric Chadwick and DGG"
     ]
   },
@@ -1721,18 +1596,12 @@
     "keywords": [],
     "license": [
       {
-        "license": "LicenseRef-LegalMark-Khronos",
-        "url": "",
-        "icon": ""
-      },
-      {
         "license": "CC0",
         "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
       }
     ],
     "authors": [
-      "Non-copyrightable logo",
       "Eric Chadwick and DGG"
     ]
   },
@@ -1768,18 +1637,12 @@
     "keywords": [],
     "license": [
       {
-        "license": "LicenseRef-LegalMark-Khronos",
-        "url": "",
-        "icon": ""
-      },
-      {
         "license": "CC0",
         "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
       }
     ],
     "authors": [
-      "Non-copyrightable logo",
       "Eric Chadwick and DGG"
     ]
   },
@@ -1811,18 +1674,12 @@
     "keywords": [],
     "license": [
       {
-        "license": "LicenseRef-LegalMark-Khronos",
-        "url": "",
-        "icon": ""
-      },
-      {
         "license": "CC0",
         "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
       }
     ],
     "authors": [
-      "Non-copyrightable logo",
       "Eric Chadwick and DGG"
     ]
   },
@@ -1850,18 +1707,12 @@
     "keywords": [],
     "license": [
       {
-        "license": "LicenseRef-LegalMark-Khronos",
-        "url": "",
-        "icon": ""
-      },
-      {
         "license": "CC0",
         "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
       }
     ],
     "authors": [
-      "Non-copyrightable logo",
       "Eric Chadwick and DGG"
     ]
   },
@@ -1889,18 +1740,12 @@
     "keywords": [],
     "license": [
       {
-        "license": "LicenseRef-LegalMark-Khronos",
-        "url": "",
-        "icon": ""
-      },
-      {
         "license": "CC0",
         "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
       }
     ],
     "authors": [
-      "Non-copyrightable logo",
       "Eric Chadwick and DGG"
     ]
   },
@@ -1928,18 +1773,12 @@
     "keywords": [],
     "license": [
       {
-        "license": "LicenseRef-LegalMark-Khronos",
-        "url": "",
-        "icon": ""
-      },
-      {
         "license": "CC0",
         "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
       }
     ],
     "authors": [
-      "Non-copyrightable logo",
       "Eric Chadwick and DGG"
     ]
   },
@@ -1971,18 +1810,12 @@
     "keywords": [],
     "license": [
       {
-        "license": "LicenseRef-LegalMark-Khronos",
-        "url": "",
-        "icon": ""
-      },
-      {
         "license": "CC0",
         "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
       }
     ],
     "authors": [
-      "Non-copyrightable logo",
       "Eric Chadwick and DGG"
     ]
   },
@@ -2014,18 +1847,12 @@
     "keywords": [],
     "license": [
       {
-        "license": "LicenseRef-LegalMark-Khronos",
-        "url": "",
-        "icon": ""
-      },
-      {
         "license": "CC0",
         "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
       }
     ],
     "authors": [
-      "Non-copyrightable logo",
       "Eric Chadwick and DGG"
     ]
   },
@@ -2057,18 +1884,12 @@
     "keywords": [],
     "license": [
       {
-        "license": "LicenseRef-LegalMark-Khronos",
-        "url": "",
-        "icon": ""
-      },
-      {
         "license": "CC0",
         "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
       }
     ],
     "authors": [
-      "Non-copyrightable logo",
       "Eric Chadwick and DGG"
     ]
   },
@@ -2102,18 +1923,12 @@
     "keywords": [],
     "license": [
       {
-        "license": "LicenseRef-LegalMark-Khronos",
-        "url": "",
-        "icon": ""
-      },
-      {
         "license": "CC0",
         "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
       }
     ],
     "authors": [
-      "Non-copyrightable logo",
       "Eric Chadwick and DGG"
     ]
   },
@@ -2132,7 +1947,6 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Corset/glTF-Binary/Corset.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Corset/glTF/Corset.gltf",
-    "dracoModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Corset/glTF-Draco/Corset.gltf",
     "image": "/images/Corset.webp",
     "thumbnail": "/images/Corset.webp",
     "camera": {
@@ -2339,22 +2153,10 @@
         "license": "CC-BY 4.0",
         "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
         "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
-      },
-      {
-        "license": "LicenseRef-LegalMark-Khronos",
-        "url": "",
-        "icon": ""
-      },
-      {
-        "license": "LicenseRef-LegalMark-Khronos",
-        "url": "",
-        "icon": ""
       }
     ],
     "authors": [
-      "Eric Chadwick",
-      "Non-copyrightable logo",
-      "Non-copyrightable logo"
+      "Eric Chadwick"
     ]
   },
   "DirectionalLight": {
@@ -2468,24 +2270,12 @@
     "keywords": [],
     "license": [
       {
-        "license": "LicenseRef-Stanford-Graphics",
-        "url": "https://graphics.stanford.edu/data/3Dscanrep/",
-        "icon": ""
-      },
-      {
-        "license": "LicenseRef-Stanford-Graphics",
-        "url": "https://graphics.stanford.edu/data/3Dscanrep/",
-        "icon": ""
-      },
-      {
         "license": "CC0",
         "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
       }
     ],
     "authors": [
-      "Stanford University Computer Graphics Laboratory",
-      "Morgan McGuire's Computer Graphics Archive",
       "Adobe"
     ]
   },
@@ -2522,24 +2312,12 @@
     "keywords": [],
     "license": [
       {
-        "license": "LicenseRef-Stanford-Graphics",
-        "url": "https://graphics.stanford.edu/data/3Dscanrep/",
-        "icon": ""
-      },
-      {
-        "license": "LicenseRef-Stanford-Graphics",
-        "url": "https://graphics.stanford.edu/data/3Dscanrep/",
-        "icon": ""
-      },
-      {
         "license": "CC0",
         "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "icon": "https://licensebuttons.net/p/zero/1.0/88x31.png"
       }
     ],
     "authors": [
-      "Stanford University Computer Graphics Laboratory",
-      "Morgan McGuire's Computer Graphics Archive",
       "Adobe"
     ]
   },
@@ -2561,8 +2339,6 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Duck/glTF-Binary/Duck.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Duck/glTF/Duck.gltf",
-    "dracoModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Duck/glTF-Draco/Duck.gltf",
-    "quantizedModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Duck/glTF-Quantized/Duck.gltf",
     "image": "/images/Duck.webp",
     "thumbnail": "/images/Duck.webp",
     "camera": {
@@ -2571,16 +2347,8 @@
       "distance": 0
     },
     "keywords": [],
-    "license": [
-      {
-        "license": "SCEA",
-        "url": "https://spdx.org/licenses/SCEA.html",
-        "icon": ""
-      }
-    ],
-    "authors": [
-      "Sony"
-    ]
+    "license": [],
+    "authors": []
   },
   "EmissiveStrengthTest": {
     "name": "EmissiveStrengthTest",
@@ -2641,16 +2409,8 @@
       "distance": 0
     },
     "keywords": [],
-    "license": [
-      {
-        "license": "LicenseRef-Adobe-Stock",
-        "url": "https://stock.adobe.com/license-terms?prev_url=detail&comparison-full#enhanced-license-terms",
-        "icon": ""
-      }
-    ],
-    "authors": [
-      "Adobe"
-    ]
+    "license": [],
+    "authors": []
   },
   "FlightHelmet": {
     "name": "FlightHelmet",
@@ -2846,22 +2606,10 @@
         "license": "CC-BY 4.0",
         "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
         "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
-      },
-      {
-        "license": "LicenseRef-LegalMark-Khronos",
-        "url": "",
-        "icon": ""
-      },
-      {
-        "license": "LicenseRef-LegalMark-Khronos",
-        "url": "",
-        "icon": ""
       }
     ],
     "authors": [
-      "Eric Chadwick",
-      "Non-copyrightable logo",
-      "Non-copyrightable logo"
+      "Eric Chadwick"
     ]
   },
   "GlassVasewithFlowers": {
@@ -3256,8 +3004,6 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Lantern/glTF-Binary/Lantern.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Lantern/glTF/Lantern.gltf",
-    "dracoModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Lantern/glTF-Draco/Lantern.gltf",
-    "quantizedModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Lantern/glTF-Quantized/Lantern.gltf",
     "image": "/images/Lantern.webp",
     "thumbnail": "/images/Lantern.webp",
     "camera": {
@@ -3521,7 +3267,6 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MorphPrimitivesTest/glTF-Binary/MorphPrimitivesTest.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MorphPrimitivesTest/glTF/MorphPrimitivesTest.gltf",
-    "dracoModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MorphPrimitivesTest/glTF-Draco/MorphPrimitivesTest.gltf",
     "image": "/images/Morph-PrimitivesTest.webp",
     "thumbnail": "/images/Morph-PrimitivesTest.webp",
     "camera": {
@@ -3689,16 +3434,10 @@
         "license": "CC-BY 4.0",
         "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
         "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
-      },
-      {
-        "license": "LicenseRef-LegalMark-Khronos",
-        "url": "",
-        "icon": ""
       }
     ],
     "authors": [
-      "Hilo 3D",
-      "Non-copyrightable logo"
+      "Hilo 3D"
     ]
   },
   "NegativeScaleTest": {
@@ -3904,22 +3643,10 @@
         "license": "CC-BY 4.0",
         "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
         "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
-      },
-      {
-        "license": "LicenseRef-LegalMark-Khronos",
-        "url": "",
-        "icon": ""
-      },
-      {
-        "license": "LicenseRef-LegalMark-Khronos",
-        "url": "",
-        "icon": ""
       }
     ],
     "authors": [
-      "Eric Chadwick",
-      "Non-copyrightable logo",
-      "Non-copyrightable logo"
+      "Eric Chadwick"
     ]
   },
   "PotOfCoalsAnimationPointer": {
@@ -3963,22 +3690,10 @@
         "license": "CC-BY 4.0",
         "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
         "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
-      },
-      {
-        "license": "LicenseRef-LegalMark-Khronos",
-        "url": "",
-        "icon": ""
-      },
-      {
-        "license": "LicenseRef-LegalMark-Khronos",
-        "url": "",
-        "icon": ""
       }
     ],
     "authors": [
-      "Eric Chadwick",
-      "Non-copyrightable logo",
-      "Non-copyrightable logo"
+      "Eric Chadwick"
     ]
   },
   "PrimitiveModeNormalsTest": {
@@ -4063,7 +3778,6 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/RiggedFigure/glTF-Binary/RiggedFigure.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/RiggedFigure/glTF/RiggedFigure.gltf",
-    "dracoModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/RiggedFigure/glTF-Draco/RiggedFigure.gltf",
     "image": "/images/RiggedFigure.webp",
     "thumbnail": "/images/RiggedFigure.webp",
     "camera": {
@@ -4100,7 +3814,6 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/RiggedSimple/glTF-Binary/RiggedSimple.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/RiggedSimple/glTF/RiggedSimple.gltf",
-    "dracoModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/RiggedSimple/glTF-Draco/RiggedSimple.gltf",
     "image": "/images/RiggedSimple.webp",
     "thumbnail": "/images/RiggedSimple.webp",
     "camera": {
@@ -4727,16 +4440,8 @@
       "distance": 0
     },
     "keywords": [],
-    "license": [
-      {
-        "license": "LicenseRef-CRYENGINE-Agreement",
-        "url": "https://www.cryengine.com/ce-terms",
-        "icon": ""
-      }
-    ],
-    "authors": [
-      "Crytek"
-    ]
+    "license": [],
+    "authors": []
   },
   "StainedGlassLamp": {
     "name": "StainedGlassLamp",
@@ -4765,7 +4470,6 @@
       "KHR_materials_volume"
     ],
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/StainedGlassLamp/glTF/StainedGlassLamp.gltf",
-    "ktxModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/StainedGlassLamp/glTF-KTX-BasisU/StainedGlassLamp.gltf",
     "image": "/images/StainedGlassLamp.webp",
     "thumbnail": "/images/StainedGlassLamp.webp",
     "camera": {
@@ -4811,7 +4515,6 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SunglassesKhronos/glTF-Binary/SunglassesKhronos.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SunglassesKhronos/glTF/SunglassesKhronos.gltf",
-    "dracoModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SunglassesKhronos/glTF-Draco/SunglassesKhronos.gltf",
     "image": "/images/SunglassesKhronos.webp",
     "thumbnail": "/images/SunglassesKhronos.webp",
     "camera": {
@@ -4825,22 +4528,10 @@
         "license": "CC-BY 4.0",
         "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
         "icon": "https://licensebuttons.net/l/by/3.0/88x31.png"
-      },
-      {
-        "license": "LicenseRef-LegalMark-Khronos",
-        "url": "",
-        "icon": ""
-      },
-      {
-        "license": "LicenseRef-LegalMark-Khronos",
-        "url": "",
-        "icon": ""
       }
     ],
     "authors": [
-      "Eric Chadwick",
-      "Non-copyrightable logo",
-      "Non-copyrightable logo"
+      "Eric Chadwick"
     ]
   },
   "Suzanne": {
@@ -5514,7 +5205,6 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/VirtualCity/glTF-Binary/VirtualCity.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/VirtualCity/glTF/VirtualCity.gltf",
-    "dracoModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/VirtualCity/glTF-Draco/VirtualCity.gltf",
     "image": "/images/VirtualCity.webp",
     "thumbnail": "/images/VirtualCity.webp",
     "camera": {
@@ -5523,16 +5213,8 @@
       "distance": 0
     },
     "keywords": [],
-    "license": [
-      {
-        "license": "LicenseRef-3DRT-Testing",
-        "url": "",
-        "icon": ""
-      }
-    ],
-    "authors": [
-      "3DRT"
-    ]
+    "license": [],
+    "authors": []
   },
   "WaterBottle": {
     "name": "WaterBottle",
@@ -5549,7 +5231,6 @@
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/WaterBottle/glTF-Binary/WaterBottle.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/WaterBottle/glTF/WaterBottle.gltf",
-    "dracoModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/WaterBottle/glTF-Draco/WaterBottle.gltf",
     "image": "/images/WaterBottle.webp",
     "thumbnail": "/images/WaterBottle.webp",
     "camera": {

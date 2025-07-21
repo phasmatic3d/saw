@@ -21,7 +21,7 @@ const License = ({title, url, iconURL, sx} : LicenseProps) => {
           href={url}
           target='_blank'
         >
-            <img height={16} src={iconURL} />
+            <img height={16} src={iconURL} alt={title}/>
         </a>
       </Tooltip>
     </Box>
