@@ -38,7 +38,6 @@ type ModelPageProps = {
 export default function ComparePage({name, label, image, tags, description, modelURL, downloadUrl, model, showcaseModels, suggestedModels}: ModelPageProps) {  
   const theme = useTheme();
   const isXs = useMediaQuery(theme.breakpoints.only('xs'));
-  const [isMagnified, setMagnified] = React.useState(false);
   const [shareSnackbarOpen, setShareSnackbarOpen] = React.useState(false);
   const [isPreviewReady, setPreviewReady] = React.useState(false);
 
@@ -69,9 +68,9 @@ export default function ComparePage({name, label, image, tags, description, mode
   }
 
   return (
-    <Box display="flex" sx={{width: '100%'}}>
+    <Box display="flex" sx={{width: '100%'}} flexDirection={{sm: 'row', xs:'column'}}>
       {/* Main Content */}
-      <Box flex={4} p={2}>
+      <Box flex={4} p={{sm: 2, xs: 0}}>
         <LivePreviewSampleRenderer src={modelURL} imgSrc={image1} variants={model.variants} statsCallback={(stats => { setMeshStats(stats)})} onReady={() => setPreviewReady(true)}/>
         <Typography variant='h5' component="h1" sx={{paddingTop: 2}}>{label}</Typography>
         <Typography variant='body1' component='span' sx={{ml:1, fontWeight:'bold'}}>by: </Typography>{model.authors.join(", ")}
@@ -126,13 +125,13 @@ export default function ComparePage({name, label, image, tags, description, mode
 
       </Box>
       {/* Right Content - Suggested */}
-      <Box sx={{flex: 1}}>
-        {!isMagnified && <Grid className={styles.side} display={{xs:'none', sm:'flex'}} sx={{overflow: "auto", width:'100%'}} height={"80vh"} container spacing={2}>
+      <Box sx={{flex: 1}} mt={{sm: 0, xs: 2}}>
+        <Grid className={styles.side} sx={{overflow: "auto", width:'100%'}} height={"80vh"} container spacing={2}>
           <Box display="flex" mt={1} sx={{width: '100%'}}><Typography variant='h6'>{"Top picks"}</Typography></Box>
           {showcaseModels.map((e,i) => { return <ModelRenderCard key={e.name+""+i} name={e.name} label={e.label} thumbnail={e.thumbnail} onSelection={ () => {}}/>})}
           <Box display="flex" mt={1} sx={{width: '100%'}}><Typography variant='h6'>{"See Also"}</Typography></Box>
           {suggestedModels.map((e,i) => { return <ModelRenderCard key={e.name+""+i} name={e.name} label={e.label} thumbnail={e.thumbnail} onSelection={ () => {}}/>})}
-        </Grid>}
+        </Grid>
       </Box>
     </Box>);
 }
