@@ -126,7 +126,7 @@ const debugOptions = ['None', "Base Color", "Metallic", "Roughness", 'Occlusion'
 
 let active_debugOutput = "None";
 let active_animations = [] as number[];
-let active_extensions = new Map<string, boolean>(supported_extensions);
+const active_extensions = new Map<string, boolean>(supported_extensions);
 let active_variant = "glTF-Binary";
 let change_variant = false;
 
@@ -350,8 +350,8 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
           console.log("Resize", canvas.width, canvas.height)
           
           // Calculate new dimensions while maintaining aspect ratio
-          let width = canvasContainer.clientWidth;
-          let height = canvasContainer.clientHeight;
+          const width = canvasContainer.clientWidth;
+          const height = canvasContainer.clientHeight;
 
           canvasContainerWrapper.style.width = `${width}px`;
           canvasContainerWrapper.style.height = `${height}px`;
