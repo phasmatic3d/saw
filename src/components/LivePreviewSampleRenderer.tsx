@@ -138,7 +138,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
   const [debugOutput, setDebugOutput] = React.useState("None");
   const [extensions, setExtensions] = React.useState(new Map<string, boolean>());
   const [animations, setAnimations] = React.useState<Array<string>>([]);
-  const [modelVariants, setModelVariants] = React.useState('glTF-Binary');
+  const [modelVariants, setModelVariants] = React.useState(src.endsWith(".glb") ? 'glTF-Binary' : 'glTF');
 
   const canvasRef = React.useRef<HTMLCanvasElement>(null);
   const canvasContainerRef = React.useRef<HTMLDivElement>(null);
