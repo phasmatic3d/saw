@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import Script from 'next/script'
-import { Box, Button, IconButton, Paper, Checkbox, FormControlLabel, Switch, Typography, ButtonGroup, Select, FormControl, InputLabel, MenuItem  } from "@mui/material";
+import { Box, Button, IconButton, Paper, FormControlLabel, Switch, Typography, Select, FormControl, InputLabel, MenuItem, ClickAwayListener  } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 import normalizeWheel from 'normalize-wheel';
 
@@ -162,10 +162,6 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
   React.useEffect(() => {
       active_debugOutput = debugOutput;
   }, [debugOutput])
-  React.useEffect(() => {
-      active_variant = modelVariants;
-      change_variant = true;
-  }, [modelVariants])
 
   React.useEffect(() => {
     if((ktxLoaded && dracoLoaded) == false)
@@ -414,6 +410,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
           </Box>
           {/* Floating options window */}
           {showOptions && (
+            <ClickAwayListener onClickAway={() => setShowOptions(false)}>
             <Paper
               elevation={4}
               sx={{
@@ -493,7 +490,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
                     labelId="variants-label"
                     value={modelVariants}
                     label="Variants"
-                    onChange={(e) => { setModelVariants(e.target.value)}}
+                    onChange={(e) => { active_variant = e.target.value; change_variant = true; setModelVariants(e.target.value)}}
                     MenuProps={{
                       disableScrollLock: true, // disables body padding-right
                     }}
@@ -507,6 +504,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
                 </FormControl>
               </Box>
             </Paper>
+            </ClickAwayListener>
           )}
         </Box>
       </Box>

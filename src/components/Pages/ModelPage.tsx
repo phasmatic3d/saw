@@ -73,7 +73,8 @@ export default function ComparePage({name, label, image, tags, description, mode
       {/* Main Content */}
       <Box flex={4} p={2}>
         <LivePreviewSampleRenderer src={modelURL} imgSrc={image1} variants={model.variants} statsCallback={(stats => { setMeshStats(stats)})} onReady={() => setPreviewReady(true)}/>
-        <Typography variant='h5' component="h1" sx={{paddingTop: 2, paddingBottom: 2}}>{label}</Typography>
+        <Typography variant='h5' component="h1" sx={{paddingTop: 2}}>{label}</Typography>
+        <Typography variant='body1' component='span' sx={{ml:1, fontWeight:'bold'}}>by: </Typography>{model.authors.join(", ")}
         {/* Tags */}
         <Box display='flex' flexDirection='row'>
           {tags.map((e,i) => {return <Chip key={e} label={e} sx={{ml : i==0? 0 : 1, fontWeight: 'bold'}} color={"success"} />})}
@@ -113,17 +114,13 @@ export default function ComparePage({name, label, image, tags, description, mode
           </Box>}
           
         </Box>
-        {/* Authors */}
-        <Box display='flex' mt={2}>
-          <Typography variant='body1' sx={{mr:1, fontWeight:'bold'}}>Authors: </Typography>{model.authors.join(", ")}
-        </Box>
         {/* Description */}
         <Box display='flex' mt={2}>
           <Typography>{description}</Typography>          
         </Box>
         {/* License */}
         <Box display='flex' mt={2}>
-          <Typography component='span' variant='body1' sx={{mr:1, fontWeight:'bold'}}>License: </Typography>{model.license.map(e => <License title={e.license} url={e.url} iconURL={e.icon} sx={{mr: 1}} />)}
+          <Typography variant='body1' sx={{mr:1, fontWeight:'bold'}}>License: </Typography>{model.license.filter((item, index, arr) => index === arr.findIndex(o => o.license === item.license)).map(e => <License key={e.license} title={e.license} url={e.url} iconURL={e.icon} sx={{mr: 1}} />)}
         </Box>
 
 
