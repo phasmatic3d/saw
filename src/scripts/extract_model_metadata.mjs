@@ -175,9 +175,11 @@ await (async () => {
 
       ModelMap2[name].downloadModel = glb? `https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/${folderpath}/glTF-Binary/${glb}` : undefined
       ModelMap2[name].gltfModel = gltf_file? `https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/${folderpath}/glTF/${gltf_file}` : undefined
-      ModelMap2[name].dracoModel = glb_draco? `https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/${folderpath}/${glb_draco}/${model.variants[`${glb_draco}`]}` : undefined
-      ModelMap2[name].ktxModel = glb_ktx? `https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/${folderpath}/${glb_ktx}/${model.variants[`${glb_ktx}`]}` : undefined
-      ModelMap2[name].quantizedModel = glb_quantized? `https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/${folderpath}/${glb_quantized}/${model.variants[`${glb_quantized}`]}` : undefined
+
+      for(let variant_name of Object.keys(ModelMap2[name].variants))
+      {
+        ModelMap2[name].variants[variant_name] = `https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/${folderpath}/${variant_name}/${ModelMap2[name].variants[variant_name]}`;
+      }
       
       const tgt_file = image_directory + '/' + name + "/" + model.screenshot;
       const tgt_directory = path.dirname(tgt_file);
@@ -193,6 +195,18 @@ await (async () => {
         yaw: (CameraProperties[name] && CameraProperties[name].yaw) ?? 0,
         pitch: (CameraProperties[name] && CameraProperties[name].pitch) ?? 0,
         distance: (CameraProperties[name] && CameraProperties[name].distance) ?? 0,
+      }
+
+      ModelMap2[name].keywords = [];
+      if(metadata.legal)
+      {
+        ModelMap2[name].license = metadata.legal.filter(e => e.icon && e.icon.length > 0).map(e => {return {license: e.license, url: e.licenseUrl, icon: e.icon}});
+        ModelMap2[name].authors = metadata.legal.filter(e => e.icon && e.icon.length > 0).map(e => e.artist);
+      }
+      else
+      {
+        ModelMap2[name].license = [];
+        ModelMap2[name].authors = [];
       }
     }   
   }
