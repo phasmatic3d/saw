@@ -12,4 +12,5 @@ export type ModelType = {
   thumbnail: string
   authors: Array<string>
   license: Array<{license: string, url:string, icon:string}>
+  variants: Record<string, string>
 };

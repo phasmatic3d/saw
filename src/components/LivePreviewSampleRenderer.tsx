@@ -15,6 +15,7 @@ export type Stats = {
 export type LivePreviewSampleRendererProps = {
   src: string,
   imgSrc: string,
+  variants: Record<string, string>,
   statsCallback: (stats: Stats) => void,
   onReady: () => void
 }
@@ -126,8 +127,10 @@ const debugOptions = ['None', "Base Color", "Metallic", "Roughness", 'Occlusion'
 let active_debugOutput = "None";
 let active_animations = [] as number[];
 let active_extensions = new Map<string, boolean>(supported_extensions);
+let active_variant = "glTF-Binary";
+let change_variant = false;
 
-export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback, onReady}: LivePreviewSampleRendererProps) {
+export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsCallback, onReady}: LivePreviewSampleRendererProps) {
 
   const [ktxLoaded, setKTXLoaded] = React.useState(false);
   const [dracoLoaded, setDracoLoaded] = React.useState(false);
@@ -135,6 +138,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback, o
   const [debugOutput, setDebugOutput] = React.useState("None");
   const [extensions, setExtensions] = React.useState(new Map<string, boolean>());
   const [animations, setAnimations] = React.useState<Array<string>>([]);
+  const [modelVariants, setModelVariants] = React.useState('glTF-Binary');
 
   const canvasRef = React.useRef<HTMLCanvasElement>(null);
   const canvasContainerRef = React.useRef<HTMLDivElement>(null);
@@ -157,7 +161,11 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback, o
 
   React.useEffect(() => {
       active_debugOutput = debugOutput;
-    }, [debugOutput])
+  }, [debugOutput])
+  React.useEffect(() => {
+      active_variant = modelVariants;
+      change_variant = true;
+  }, [modelVariants])
 
   React.useEffect(() => {
     if((ktxLoaded && dracoLoaded) == false)
@@ -295,6 +303,11 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback, o
       state.renderingParameters.debugOutput = debugOutput;
       const update = () =>
       { 
+        if(change_variant)
+        {
+          resourceLoader.loadGltf(variants[active_variant]).then(res => { console.log("Loaded"); state.gltf = res});          
+          change_variant = false;
+        }
         // Rendering Properties
         state.renderingParameters.debugOutput = active_debugOutput;
         state.animationIndices = active_animations;
@@ -466,6 +479,26 @@ export default function LivePreviewSampleRenderer({src, imgSrc, statsCallback, o
                     }}
                   >
                     {debugOptions.map((opt) => (
+                      <MenuItem key={opt} value={opt}>
+                        {opt}
+                      </MenuItem>
+                    ))}
+                  </Select>
+                </FormControl>
+              </Box>
+              <Box width='100%' mt={2}>
+                <FormControl fullWidth size="small">
+                  <InputLabel id="variants-label">Variants</InputLabel>
+                  <Select
+                    labelId="variants-label"
+                    value={modelVariants}
+                    label="Variants"
+                    onChange={(e) => { setModelVariants(e.target.value)}}
+                    MenuProps={{
+                      disableScrollLock: true, // disables body padding-right
+                    }}
+                  >
+                    {Object.keys(variants).map((opt) => (
                       <MenuItem key={opt} value={opt}>
                         {opt}
                       </MenuItem>

@@ -14,7 +14,7 @@ const License = ({title, url, iconURL, sx} : LicenseProps) => {
   const theme = useTheme();
 
   return (
-    <Box sx={sx} display='inline'>
+    <Box sx={sx}>
       <Tooltip title={title} slotProps={{tooltip: { sx: {color: `${theme.palette.text.primary}`, }}}}>
         <a 
           color="primary" 

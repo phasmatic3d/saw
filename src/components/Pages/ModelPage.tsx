@@ -72,7 +72,7 @@ export default function ComparePage({name, label, image, tags, description, mode
     <Box display="flex" sx={{width: '100%'}}>
       {/* Main Content */}
       <Box flex={4} p={2}>
-        <LivePreviewSampleRenderer src={modelURL} imgSrc={image1} statsCallback={(stats => { setMeshStats(stats)})} onReady={() => setPreviewReady(true)}/>
+        <LivePreviewSampleRenderer src={modelURL} imgSrc={image1} variants={model.variants} statsCallback={(stats => { setMeshStats(stats)})} onReady={() => setPreviewReady(true)}/>
         <Typography variant='h5' component="h1" sx={{paddingTop: 2, paddingBottom: 2}}>{label}</Typography>
         {/* Tags */}
         <Box display='flex' flexDirection='row'>
