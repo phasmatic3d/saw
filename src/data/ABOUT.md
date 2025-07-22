@@ -23,7 +23,7 @@
 ## Overview 
 <br>
 
-The glTF Sample Asset web site provides a curated collection of glTF models that illustrate one or more features or capabilities of glTF. Each model is previewed using the Khronos [glTF-Sample-Renderer](https://github.com/KhronosGroup/glTF-Sample-Renderer) using [WebGL 2.0](https://www.khronos.org/webgl/). 
+The glTF Sample Asset web site provides a curated collection of glTF models that illustrate one or more features or capabilities of glTF. Each asset is previewed using the Khronos [glTF-Sample-Renderer](https://github.com/KhronosGroup/glTF-Sample-Renderer) using [WebGL 2.0](https://www.khronos.org/webgl/). 
 <br>
 <br>
 
