@@ -6,6 +6,12 @@ import MenuIcon from '@mui/icons-material/Menu';
 import FullscreenIcon from '@mui/icons-material/Fullscreen';
 import normalizeWheel from 'normalize-wheel';
 
+interface FullscreenCanvas extends HTMLCanvasElement {
+  webkitRequestFullscreen?: () => Promise<void>;
+  mozRequestFullScreen?: () => Promise<void>;
+  msRequestFullscreen?: () => Promise<void>;
+}
+
 export type Stats = {
   totalImagesFileSize: number
   numberOfVertices: number
@@ -206,16 +212,16 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
   }
 
   const requestFullScreen = () => {
-    const canvas = canvasRef.current;
+    const canvas = canvasRef.current as FullscreenCanvas;
     if (canvas) {
       if (canvas.requestFullscreen) {
         canvas.requestFullscreen();
-      } else if ((canvas as any).webkitRequestFullscreen) {
-        (canvas as any).webkitRequestFullscreen();
-      } else if ((canvas as any).mozRequestFullScreen) {
-        (canvas as any).mozRequestFullScreen();
-      } else if ((canvas as any).msRequestFullscreen) {
-        (canvas as any).msRequestFullscreen();
+      } else if (canvas.webkitRequestFullscreen) {
+        canvas.webkitRequestFullscreen();
+      } else if (canvas.mozRequestFullScreen) {
+        canvas.mozRequestFullScreen();
+      } else if (canvas.msRequestFullscreen) {
+        canvas.msRequestFullscreen();
       }
     }
   };
