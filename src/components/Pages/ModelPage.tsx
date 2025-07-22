@@ -1,8 +1,7 @@
 "use client"
 import React from 'react';
-import { Chip, Typography, Box, Grid2 as Grid, Divider, Button, Popper, Grow, Paper, IconButton, Snackbar, Link } from "@mui/material";
+import { Chip, Typography, Box, Grid2 as Grid, Divider, Snackbar, Link } from "@mui/material";
 import ModelRenderCard from "@/components/ModelRenderCard"
-import { useMediaQuery } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import styles from "./ModelPage.module.css";
 import LaunchIcon from '@mui/icons-material/Launch';
@@ -37,7 +36,6 @@ type ModelPageProps = {
 
 export default function ComparePage({name, label, image, tags, description, modelURL, downloadUrl, model, showcaseModels, suggestedModels}: ModelPageProps) {  
   const theme = useTheme();
-  const isXs = useMediaQuery(theme.breakpoints.only('xs'));
   const [shareSnackbarOpen, setShareSnackbarOpen] = React.useState(false);
   const [isPreviewReady, setPreviewReady] = React.useState(false);
 
@@ -140,9 +138,9 @@ export default function ComparePage({name, label, image, tags, description, mode
       <Box sx={{flex: 1}} mt={{sm: 0, xs: 2}}>
         <Grid className={styles.side} sx={{overflow: "auto", width:'100%'}} height={"80vh"} container spacing={2}>
           <Box display="flex" mt={1} sx={{width: '100%'}}><Typography variant='h6'>{"Top picks"}</Typography></Box>
-          {showcaseModels.map((e,i) => { return <ModelRenderCard key={e.name+""+i} name={e.name} label={e.label} thumbnail={e.thumbnail} onSelection={ () => {}}/>})}
+          {showcaseModels.map((e,i) => { return <ModelRenderCard key={e.name+""+i} name={e.name} label={e.label} thumbnail={e.thumbnail} />})}
           <Box display="flex" mt={1} sx={{width: '100%'}}><Typography variant='h6'>{"See Also"}</Typography></Box>
-          {suggestedModels.map((e,i) => { return <ModelRenderCard key={e.name+""+i} name={e.name} label={e.label} thumbnail={e.thumbnail} onSelection={ () => {}}/>})}
+          {suggestedModels.map((e,i) => { return <ModelRenderCard key={e.name+""+i} name={e.name} label={e.label} thumbnail={e.thumbnail} />})}
         </Grid>
       </Box>
     </Box>);

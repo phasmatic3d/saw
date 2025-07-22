@@ -10,12 +10,10 @@ import { basePath } from '@/lib/paths';
 export type ModelCardProps = {
     name: string, //clickable string
     title: string,
-    thumbnail: string,
-    tags: Array<string>
-    selectTagCallback?: (tag:string) => void
+    thumbnail: string
 }
 
-export default function ModelCard({name, title, thumbnail, tags, selectTagCallback}: ModelCardProps) {
+export default function ModelCard({name, title, thumbnail}: ModelCardProps) {
   return (
       <Box width={{xs: '100%', sm: '400px' }} 
         margin={{xs: '5px 5px', sm: '10px 5px'}}

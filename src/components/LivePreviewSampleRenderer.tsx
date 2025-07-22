@@ -362,7 +362,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
       { 
         if(change_variant)
         {
-          resourceLoader.loadGltf(variants[active_variant]).then(res => { console.log("Loaded"); state.gltf = res});          
+          resourceLoader.loadGltf(variants[active_variant]).then(res => { console.log("Reload gltf"); state.gltf = res});          
           change_variant = false;
         }
         // Rendering Properties

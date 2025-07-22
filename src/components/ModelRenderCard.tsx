@@ -8,11 +8,10 @@ import { basePath } from '@/lib/paths';
 export type ModelCardProps = {
     name: string,
     label: string,
-    thumbnail: string,
-    onSelection: (arg0: string) => void
+    thumbnail: string
 }
 
-export default function ModelRenderCard({name, label, thumbnail, onSelection}: ModelCardProps) {
+export default function ModelRenderCard({name, label, thumbnail}: ModelCardProps) {
 
   return (
       <Box onClick={() => {}} width={'100%'} maxWidth={{xs: '100%', sm: '400px' }} 

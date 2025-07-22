@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import { Box, Chip, Typography, Grid2 as Grid, useMediaQuery } from "@mui/material";
+import { Box, Chip, Typography, Grid2 as Grid } from "@mui/material";
 import Search from "@/components/Search";
 import Fuse from 'fuse.js'
 import ModelCard from "@/components/ModelCard";
@@ -77,7 +77,7 @@ export default function LandingPage({models}: LandingPageProps) {
   const handleChipDelete = (tag: {name: string, selected: boolean}) => {
     console.log("Delete", tag);
     setSelectedTags(prevItems => {
-      const temp = tags.map(t => {return {...t}}); // deep copy
+      const temp = tags.map(t => {return {...t, selected: false}}); // deep copy (also remove showcase from selected)
       prevItems.filter(t => t.selected).forEach(t => {const item = temp.find(e => e.name === t.name); if(item) item.selected = true;})
 
       const item = temp.find(e => e.name == tag.name);
@@ -91,25 +91,13 @@ export default function LandingPage({models}: LandingPageProps) {
   const handleChipSelection = (tag: {name: string, selected: boolean}) => {
     console.log("Add", tag);
     setSelectedTags(prevItems => {
-      const temp = tags.map(t => {return {...t}}); // deep copy
+      const temp = tags.map(t => {return {...t, selected: false}}); // deep copy (also remove showcase from selected)
       prevItems.filter(t => t.selected).forEach(t => {const item = temp.find(e => e.name === t.name); if(item) item.selected = true;})
 
       const item = temp.find(e => e.name == tag.name);
       if(item)
       {
         item.selected = true;
-      }
-      return [...temp].sort((a,b) => a.selected && b.selected? 0 : a.selected? -1 : b.selected? 1 : 0);
-    })
-  }
-  const handleChipReplace = (tag:string) => {
-    setSelectedTags(prevItems => {
-      const temp = tags.map(t => {return {...t}}); // deep copy
-      const item = temp.find(e => e.name == tag);
-      if(item)
-      {
-        item.selected = true;
-        window.scrollTo({top: 0, behavior: 'smooth'});
       }
       return [...temp].sort((a,b) => a.selected && b.selected? 0 : a.selected? -1 : b.selected? 1 : 0);
     })
@@ -175,7 +163,7 @@ export default function LandingPage({models}: LandingPageProps) {
 
         {/* Models */}
         <Grid container style={{padding: 0, margin: 0}} spacing={1} sx={{ justifyContent: "center"}}>
-        {result.map((e,i) => { return <ModelCard key={e.item.name} name={e.item.name} title={e.item.label} thumbnail={e.item.thumbnail} tags={e.item.tags} selectTagCallback={(t)=>{handleChipReplace(t)}}/>})}
+        {result.map((e,i) => { return <ModelCard key={e.item.name} name={e.item.name} title={e.item.label} thumbnail={e.item.thumbnail} />})}
         </Grid>     
     </>
   );
