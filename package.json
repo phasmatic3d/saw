@@ -10,7 +10,8 @@
     "thumbnail": "node src/scripts/create_thumbnails.mjs",
     "metadata": "node scripts/extract_model_metadata.mjs",
     "generate": "node scripts/render.js",
-    "preinstall": "cd ./glTF-Sample-Renderer && npm install && npm run build"
+    "preinstall": "cd ./glTF-Sample-Renderer && npm install && npm run build",
+    "postinstall": "cp ./glTF-Sample-Renderer/dist/libs/*.wasm ./glTF-Sample-Renderer/dist/"
   },
   "dependencies": {
     "@emotion/cache": "^11.14.0",
