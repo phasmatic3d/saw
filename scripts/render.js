@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
 const sharp = require('sharp');
-const ModelMap = require('../data/model-index.SampleAssets.json'); // Adjust the path to your JSON file
+const ModelMap = require('./../src/data/model-index.SampleAssets.json'); // Adjust the path to your JSON file
 
 (async () => {
   const browser = await puppeteer.launch({
@@ -26,13 +26,13 @@ const ModelMap = require('../data/model-index.SampleAssets.json'); // Adjust the
 
   // Create thumbnails dir
   //const imagesDir = path.resolve(__dirname, "images");
-  const imagesDir = path.resolve(__dirname, "..", "..", "public", "images");
+  const imagesDir = path.resolve(__dirname, "..", "public", "images");
   fs.mkdirSync(imagesDir, { recursive: true });
 
   const model_names = Object.keys(ModelMap)//.filter((e,i) => i == 2);
   for(const model_name of model_names)
   {
-    //if(model_name !== 'TwoSidedPlane')
+    //if(model_name !== 'DispersionTest')
     //  continue;
 
     const model = ModelMap[model_name].gltfModel;
@@ -48,9 +48,9 @@ const ModelMap = require('../data/model-index.SampleAssets.json'); // Adjust the
     // Set viewport and take screenshot
     //await page.setViewport({ width: 1920, height: 1080 });
 
-    // Total: 5 sec
+    // Total: 4 sec
     const totalFrames = 100;
-    const frameDelay = 50; // ms between frames (10 fps)
+    const frameDelay = 40; // ms between frames
 
     //const startedValue = await page.evaluate(() => window.renderStarted);
     //console.log('window.renderStarted =', startedValue);
