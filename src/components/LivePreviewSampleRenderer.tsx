@@ -173,6 +173,7 @@ let active_animations = [] as number[];
 const active_extensions = new Map<string, boolean>(supported_extensions);
 let active_variant = "glTF-Binary";
 let change_variant = false;
+let current_update_func_id = 0;
 
 export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsCallback, onReady}: LivePreviewSampleRendererProps) {
 
@@ -369,7 +370,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
         orbit.deltaX = 0;
         orbit.deltaY = 0;
         view.renderFrame(state, canvas.width, canvas.height);
-        window.requestAnimationFrame(update);
+        current_update_func_id = window.requestAnimationFrame(update);
       };
       window.requestAnimationFrame(update);
     };
@@ -438,6 +439,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
     }
 
     return () => { 
+      window.cancelAnimationFrame(current_update_func_id);
       if(canvasRef.current)
       {
         canvasRef.current.removeEventListener('wheel', handleMouseWheel);
