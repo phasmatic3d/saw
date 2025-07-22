@@ -76,8 +76,20 @@ export default function ComparePage({name, label, image, tags, description, mode
         <Typography variant='body1' component='span' sx={{ml:1, fontWeight:'bold'}}>by: </Typography>{model.authors.join(", ")}
         {/* Tags */}
         <Box display='flex' flexDirection='row' flexWrap="wrap" mt={2}>
-          {tags.map((e,i) => {return <Chip key={e} label={e} sx={{ml : i==0? 0 : 1, bgcolor: theme.palette.grey[100], color: theme.palette.getContrastText(theme.palette.grey[100])}} />})}
-        </Box>
+          {tags.map((e,i) => {
+            return <Chip key={e} label={e} sx={{
+              ml : {
+                xs: 1,
+                sm: i==0? 0 : 1,
+              },
+              mb: {
+                xs: 1,
+                sm: 0
+              }, 
+              bgcolor: theme.palette.grey[100], color: theme.palette.getContrastText(theme.palette.grey[100])
+            }} />})
+          }
+          </Box>
         {/* Actions */}
         <Box display='flex' flexDirection={{xs:'column', sm:'row'}} width='100%' justifyContent='flex-start' mt={2}>
           {downloadUrl && <Box mr={3}>
