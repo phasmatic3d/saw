@@ -1,8 +1,9 @@
 "use client"
 import React from 'react'
 import Script from 'next/script'
-import { Box, Button, IconButton, Paper, FormControlLabel, Switch, Typography, Select, FormControl, InputLabel, MenuItem, ClickAwayListener  } from "@mui/material";
+import { Box, Button, IconButton, Paper, FormControlLabel, Switch, Typography, Select, FormControl, InputLabel, MenuItem } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
+import FullscreenIcon from '@mui/icons-material/Fullscreen';
 import normalizeWheel from 'normalize-wheel';
 
 export type Stats = {
@@ -204,6 +205,21 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
       console.warn("Error", animation_name);
   }
 
+  const requestFullScreen = () => {
+    const canvas = canvasRef.current;
+    if (canvas) {
+      if (canvas.requestFullscreen) {
+        canvas.requestFullscreen();
+      } else if ((canvas as any).webkitRequestFullscreen) {
+        (canvas as any).webkitRequestFullscreen();
+      } else if ((canvas as any).mozRequestFullScreen) {
+        (canvas as any).mozRequestFullScreen();
+      } else if ((canvas as any).msRequestFullscreen) {
+        (canvas as any).msRequestFullscreen();
+      }
+    }
+  };
+
   React.useEffect(() => {
       active_debugOutput = debugOutput;
   }, [debugOutput])
@@ -390,16 +406,17 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
       
       const toolResize = () => {
         if (canvasContainer.clientWidth == 0 || canvasContainer.clientHeight == 0) return;
-          canvas.width = canvasContainer.clientWidth; // Update the actual width
-          canvas.height = canvasContainer.clientHeight; // Update the actual height
-          console.log("Resize", canvas.width, canvas.height)
-          
+                   
           // Calculate new dimensions while maintaining aspect ratio
-          const width = canvasContainer.clientWidth;
-          const height = canvasContainer.clientHeight;
+          const width = document.fullscreenElement !== null? window.innerWidth : canvasContainer.clientWidth;
+          const height = document.fullscreenElement !== null? window.innerHeight : canvasContainer.clientHeight;
+          console.log("Resize", width, height)
 
-          canvasContainerWrapper.style.width = `${width}px`;
-          canvasContainerWrapper.style.height = `${height}px`;
+          if(document.fullscreenElement == null)
+          {
+            canvasContainerWrapper.style.width = `${width}px`;
+            canvasContainerWrapper.style.height = `${height}px`;
+          }
     
           canvas.width = width;
           canvas.height = height;
@@ -460,13 +477,18 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
 
           {/* Button in bottom left */}
           <Box position="absolute" bottom={{sm: 20, xs: 10}} left={{sm: 20, xs: 10}} zIndex={10}>
-            <IconButton color="default" onClick={() => setShowOptions(!showOptions)} sx={{ backgroundColor: 'black', color: 'white', '&:hover': { backgroundColor: 'gray', }, width: 32, height: 32, borderRadius: '50%', }}>
+            <IconButton color="default" onClick={() => setShowOptions(!showOptions)} sx={{ backgroundColor: '#212121', color: 'white', '&:hover': { backgroundColor: 'gray', }, width: 32, height: 32, borderRadius: '50%', }}>
               <MenuIcon />
+            </IconButton>
+          </Box>
+          {/* Button in bottom right */}
+          <Box position="absolute" bottom={{sm: 20, xs: 10}} right={{sm: 20, xs: 10}} zIndex={10}>
+            <IconButton color="default" onClick={() => requestFullScreen()} sx={{ backgroundColor: "#212121", color: 'white', '&:hover': { backgroundColor: 'gray', }, width: 32, height: 32, borderRadius: '50%', }}>
+              <FullscreenIcon />
             </IconButton>
           </Box>
           {/* Floating options window */}
           {showOptions && (
-            <ClickAwayListener onClickAway={() => setShowOptions(false)}>
             <Paper
               elevation={4}
               sx={{
@@ -560,7 +582,6 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
                 </FormControl>
               </Box>
             </Paper>
-            </ClickAwayListener>
           )}
         </Box>
       </Box>
