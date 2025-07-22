@@ -75,7 +75,7 @@ export default function LandingPage({models}: LandingPageProps) {
   }, []);
 
   const handleChipDelete = (tag: {name: string, selected: boolean}) => {
-    console.log("Delete", tag);
+    //console.log("Delete", tag);
     setSelectedTags(prevItems => {
       const temp = tags.map(t => {return {...t, selected: false}}); // deep copy (also remove showcase from selected)
       prevItems.filter(t => t.selected).forEach(t => {const item = temp.find(e => e.name === t.name); if(item) item.selected = true;})
@@ -89,7 +89,7 @@ export default function LandingPage({models}: LandingPageProps) {
     })
   }
   const handleChipSelection = (tag: {name: string, selected: boolean}) => {
-    console.log("Add", tag);
+    //console.log("Add", tag);
     setSelectedTags(prevItems => {
       const temp = tags.map(t => {return {...t, selected: false}}); // deep copy (also remove showcase from selected)
       prevItems.filter(t => t.selected).forEach(t => {const item = temp.find(e => e.name === t.name); if(item) item.selected = true;})
