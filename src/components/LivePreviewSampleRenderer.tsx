@@ -521,11 +521,11 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
               </Box>
               <Box width='100%' mt={2}>
                 <FormControl fullWidth size="small">
-                  <InputLabel id="debug-output-label">Debug Output</InputLabel>
+                  <InputLabel id="debug-output-label">Debug Visualization</InputLabel>
                   <Select
                     labelId="debug-output-label"
                     value={debugOutput}
-                    label="Debug Output"
+                    label="Debug Visualization"
                     onChange={(e) => { setDebugOutput(e.target.value)}}
                     MenuProps={{
                       disableScrollLock: true, // disables body padding-right
@@ -541,11 +541,11 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
               </Box>
               <Box width='100%' mt={2}>
                 <FormControl fullWidth size="small">
-                  <InputLabel id="variants-label">Variants</InputLabel>
+                  <InputLabel id="variants-label">Format Variants</InputLabel>
                   <Select
                     labelId="variants-label"
                     value={modelVariants}
-                    label="Variants"
+                    label="Format Variants"
                     onChange={(e) => { active_variant = e.target.value; change_variant = true; setModelVariants(e.target.value)}}
                     MenuProps={{
                       disableScrollLock: true, // disables body padding-right
