@@ -75,8 +75,8 @@ export default function ComparePage({name, label, image, tags, description, mode
         <Typography variant='h5' component="h1" sx={{paddingTop: 2}}>{label}</Typography>
         <Typography variant='body1' component='span' sx={{ml:1, fontWeight:'bold'}}>by: </Typography>{model.authors.join(", ")}
         {/* Tags */}
-        <Box display='flex' flexDirection='row' mt={2}>
-          {tags.map((e,i) => {return <Chip key={e} label={e} sx={{ml : i==0? 0 : 1, fontWeight: 'bold'}} color={"success"} />})}
+        <Box display='flex' flexDirection='row' flexWrap="wrap" mt={2}>
+          {tags.map((e,i) => {return <Chip key={e} label={e} sx={{ml : i==0? 0 : 1, bgcolor: theme.palette.grey[100], color: theme.palette.getContrastText(theme.palette.grey[100])}} />})}
         </Box>
         {/* Actions */}
         <Box display='flex' flexDirection={{xs:'column', sm:'row'}} width='100%' justifyContent='flex-start' mt={2}>
