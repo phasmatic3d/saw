@@ -28,13 +28,13 @@ export default function ModelCard({name, title, thumbnail, tags, selectTagCallba
           },
         }}>
         <Grid container justifyContent="center">
-          <Link component={NextLink} width={{xs: '100%', sm: '400px' }} height={"250px"} href={encodeURI(`/model/${name}`)}>
+          <Link component={NextLink} href={encodeURI(`/model/${name}`)}>
             <Image
               width={512}
               height={512}
               quality={90}
               /* Added color: '' because of https://github.com/vercel/next.js/issues/45184 */
-              style={{ color: '', width: '100%', height: "100%", maxWidth: "100%", textAlign: "center", cursor: 'pointer', objectFit: 'contain', borderRadius: '16px'}}
+              style={{ color: '', width: '100%', height: "auto", maxWidth: "100%", textAlign: "center", cursor: 'pointer', objectFit: 'contain', borderRadius: '16px'}}
               src={`${basePath}${encodeURI(thumbnail)}`}
               alt={title}  
               loading="lazy"
