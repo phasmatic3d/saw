@@ -188,8 +188,7 @@
     
   },
   "DispersionTest": {
-    "yaw": 45,
-    "pitch": 20    
+    
   },
   "DragonAttenuation": {
     "yaw": 45,
@@ -200,7 +199,7 @@
     "pitch": 20
   },
   "Duck": {
-    "yaw": 45,
+    "yaw": -45,
     "pitch": 20
   },
   "EmissiveStrengthTest": {
@@ -217,7 +216,7 @@
     "pitch": 20
   },
   "GlamVelvetSofa": {
-    "yaw": 45,
+    "yaw": -45,
     "pitch": 20
   },
   "GlassBrokenWindow": {
@@ -227,8 +226,7 @@
     
   },
   "GlassVasewithFlowers": {
-    "yaw": 45,
-    "pitch": 20
+    
   },
   "InterpolationTest": {
     
@@ -256,7 +254,7 @@
     "distance": 1
   },
   "Lantern": {
-    "yaw": 45,
+    "yaw": -45,
     "pitch": 20
   },
   "LampwithPunctualLights": {
@@ -267,17 +265,17 @@
     "pitch": 20
   },
   "MaterialsVariantsShoe": {
-    "yaw": 45,
+    "yaw": -45,
     "pitch": 20
   },
   "MeshPrimitiveModes": {
     
   },
   "Metal-RoughSpheres": {
-    
+    "distance": 2
   },
   "Metal-RoughSpheres(textureless)": {
-    
+    "distance": 4
   },
   "Morph-PrimitivesTest": {
     

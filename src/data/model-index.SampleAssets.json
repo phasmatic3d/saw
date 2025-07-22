@@ -2221,8 +2221,8 @@
     "image": "/images/DispersionTest.webp",
     "thumbnail": "/images/DispersionTest.webp",
     "camera": {
-      "yaw": 45,
-      "pitch": 20,
+      "yaw": 0,
+      "pitch": 0,
       "distance": 0
     },
     "keywords": [],
@@ -2342,7 +2342,7 @@
     "image": "/images/Duck.webp",
     "thumbnail": "/images/Duck.webp",
     "camera": {
-      "yaw": 45,
+      "yaw": -45,
       "pitch": 20,
       "distance": 0
     },
@@ -2521,7 +2521,7 @@
     "image": "/images/GlamVelvetSofa.webp",
     "thumbnail": "/images/GlamVelvetSofa.webp",
     "camera": {
-      "yaw": 45,
+      "yaw": -45,
       "pitch": 20,
       "distance": 0
     },
@@ -2634,8 +2634,8 @@
     "image": "/images/GlassVasewithFlowers.webp",
     "thumbnail": "/images/GlassVasewithFlowers.webp",
     "camera": {
-      "yaw": 45,
-      "pitch": 20,
+      "yaw": 0,
+      "pitch": 0,
       "distance": 0
     },
     "keywords": [],
@@ -3007,7 +3007,7 @@
     "image": "/images/Lantern.webp",
     "thumbnail": "/images/Lantern.webp",
     "camera": {
-      "yaw": 45,
+      "yaw": -45,
       "pitch": 20,
       "distance": 0
     },
@@ -3129,7 +3129,7 @@
     "image": "/images/MaterialsVariantsShoe.webp",
     "thumbnail": "/images/MaterialsVariantsShoe.webp",
     "camera": {
-      "yaw": 45,
+      "yaw": -45,
       "pitch": 20,
       "distance": 0
     },
@@ -3230,7 +3230,7 @@
     "camera": {
       "yaw": 0,
       "pitch": 0,
-      "distance": 0
+      "distance": 4
     },
     "keywords": [],
     "license": [
