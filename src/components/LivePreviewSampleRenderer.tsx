@@ -343,10 +343,10 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
       };
       customGatherStatistics(state).then(res => { statsCallback(res); });
       
-      resourceLoader.loadEnvironment("/Cannon_Exterior.hdr", {
-         lut_ggx_file: "/assets/lut_ggx.png", 
-         lut_charlie_file: "/assets/lut_charlie.png",
-         lut_sheen_E_file: "/assets/lut_sheen_E.png"
+      resourceLoader.loadEnvironment(`${basePath}/Cannon_Exterior.hdr`, {
+         lut_ggx_file: `${basePath}/assets/lut_ggx.png`, 
+         lut_charlie_file: `${basePath}/assets/lut_charlie.png`,
+         lut_sheen_E_file: `${basePath}/assets/lut_sheen_E.png`
       }).then((environment) => {
         state.environment = environment;
       })
