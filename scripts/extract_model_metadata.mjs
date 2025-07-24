@@ -20,12 +20,13 @@ async function* getFiles(dir) {
 //const ModelList = await fetch("https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/model-index.json").then(res => res.json()).catch(e => {return []});
 const ModelList = JSON.parse(await fs.promises.readFile(`./glTF-Sample-Assets/Models/model-index.json`, 'utf-8'));
 const CameraProperties = JSON.parse(await fs.promises.readFile(`./src/data/camera-props.SampleAssets.json`, 'utf-8'));
+const ModelKeywords = JSON.parse(await fs.promises.readFile(`./src/data/keywords.SampleAssets.json`, 'utf-8'));
 const ModelTags = {};
 const ModelMap = {};
 ModelList.forEach(item => {
   ModelMap[item.name] = item;
 });
-const ModelMap2 = {};
+const OutputModelMap = {};
 
 //const model_directory = await fetch("https://api.github.com/repos/KhronosGroup/glTF-Sample-Assets/contents/Models").then(res => res.json()).catch(e => {return []});
 const model_directory = await fs.promises.readdir("./glTF-Sample-Assets/Models", { withFileTypes: true });
@@ -55,7 +56,21 @@ const ext_to_label = {
   "KHR_lights_punctual": "Lights",
   "KHR_texture_transform": "Texture Transform",
   "KHR_xmp": "XMP",
-  "EXT_texture_webp": "WebP"
+  "KHR_xmp_json_ld": "XMP JSON",
+  "EXT_texture_webp": "WebP",
+  "KHR_materials_dispersion": "Dispersion",
+  "KHR_materials_volume_scatter": "Volume Scatter",
+  "EXT_mesh_gpu_instancing": "Mesh Instancing",
+  "KHR_materials_diffuse_transmission": "Diffuse Transmission",
+  "KHR_animation_pointer": "Animation Pointer"
+};
+
+const addTag = (tagMap, tag) => {
+  if (tag in tagMap) {
+    tagMap[tag]++;
+  } else {
+    tagMap[tag] = 1;
+  }
 };
 
 await (async () => {
@@ -96,52 +111,52 @@ await (async () => {
     if(model && metadata && screenshot)
     {
       const name = encodeURIComponent(metadata.name.replace(/\s+/g, ''));
-      const addTag = (tagMap, tag) => {
-        if (tag in tagMap) {
-          tagMap[tag]++;
-        } else {
-          tagMap[tag] = 1;
-        }
-      };
-      ModelMap2[name] = {};
-      ModelMap2[name].name = metadata.name.replace(/\s+/g, '');
-      ModelMap2[name].label = metadata.name;
-      ModelMap2[name].description = metadata.summary;
-      ModelMap2[name].tags = [];
+      OutputModelMap[name] = {};
+      OutputModelMap[name].name = metadata.name.replace(/\s+/g, '');
+      OutputModelMap[name].label = metadata.name;
+      OutputModelMap[name].description = metadata.summary;
+      OutputModelMap[name].tags = [];
       for (const tag of metadata.tags.filter(tag => tag in keep_dict)) {
-        ModelMap2[name].tags.push(keep_dict[tag]);
+        OutputModelMap[name].tags.push(keep_dict[tag]);
         addTag(ModelTags, keep_dict[tag]);
       }
-      ModelMap2[name].variants = model && model.variants;
-      ModelMap2[name].extensionsUsed = gltf? gltf.extensionsUsed : [];
+      OutputModelMap[name].variants = model && model.variants;
+      OutputModelMap[name].extensionsUsed = gltf? gltf.extensionsUsed : [];
       if(gltf && gltf.extensionsUsed) {
-        for (const tag of ModelMap2[name].extensionsUsed) {
-          addTag(ModelTags, ext_to_label[tag]);
-          if (tag in ext_to_label) ModelMap2[name].tags.push(ext_to_label[tag]);
+        for (const tag of OutputModelMap[name].extensionsUsed) {
+          if(tag in ext_to_label)
+          {
+            addTag(ModelTags, ext_to_label[tag]);
+            OutputModelMap[name].tags.push(ext_to_label[tag]);
+          }
+          else
+          {
+            console.log(`Warning: Need to add a short name for ${tag}`);
+          }          
         }
       }
       let anim_found =false;
       let morph_found = false;
       if(gltf && gltf.animations) {
         addTag(ModelTags, "Animation");
-        ModelMap2[name].tags.push("Animation");
+        OutputModelMap[name].tags.push("Animation");
         anim_found = true;
       }
       if(gltf && gltf.meshes) {
           for (const mesh of gltf.meshes) {
           if ("weights" in mesh && !anim_found) {
             addTag(ModelTags, "Animation");
-            ModelMap2[name].tags.push("Animation");
+            OutputModelMap[name].tags.push("Animation");
             anim_found = true;
           }
           for (const prim of mesh.primitives) {
             if ("targets" in prim && !morph_found) {
               addTag(ModelTags, "Morphing");
-              ModelMap2[name].tags.push("Morphing");
+              OutputModelMap[name].tags.push("Morphing");
               morph_found = true;
               if (!anim_found) {
                 addTag(ModelTags, "Animation");
-                ModelMap2[name].tags.push("Animation");
+                OutputModelMap[name].tags.push("Animation");
                 anim_found = true;
               }
             }
@@ -151,18 +166,17 @@ await (async () => {
       if(glb_draco) {
         const tag = "Draco";
         addTag(ModelTags, tag);
-        ModelMap2[name].tags.push(tag);
+        OutputModelMap[name].tags.push(tag);
       }
       if(glb_quantized) {
         const tag = "Meshopt";
         addTag(ModelTags, tag);
-        console.log("Hello");
-        ModelMap2[name].tags.push(tag);
+        OutputModelMap[name].tags.push(tag);
       }
       if(glb_ktx) {
         const tag = "KTX";
         addTag(ModelTags, tag);
-        ModelMap2[name].tags.push(tag);
+        OutputModelMap[name].tags.push(tag);
       }
       if(!(gltf && gltf.extensionsUsed) &&
          !glb_ktx &&
@@ -170,43 +184,38 @@ await (async () => {
          !glb_draco) {
         const tag = "Core"; 
         addTag(ModelTags, tag);
-        ModelMap2[name].tags.push(tag);
+        OutputModelMap[name].tags.push(tag);
       }
 
-      ModelMap2[name].downloadModel = glb? `https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/${folderpath}/glTF-Binary/${glb}` : undefined
-      ModelMap2[name].gltfModel = gltf_file? `https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/${folderpath}/glTF/${gltf_file}` : undefined
+      OutputModelMap[name].downloadModel = glb? `https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/${folderpath}/glTF-Binary/${glb}` : undefined
+      OutputModelMap[name].gltfModel = gltf_file? `https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/${folderpath}/glTF/${gltf_file}` : undefined
 
-      for(let variant_name of Object.keys(ModelMap2[name].variants))
+      for(let variant_name of Object.keys(OutputModelMap[name].variants))
       {
-        ModelMap2[name].variants[variant_name] = `https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/${folderpath}/${variant_name}/${ModelMap2[name].variants[variant_name]}`;
+        OutputModelMap[name].variants[variant_name] = `https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/${folderpath}/${variant_name}/${OutputModelMap[name].variants[variant_name]}`;
       }
       
-      const tgt_file = image_directory + '/' + name + "/" + model.screenshot;
-      const tgt_directory = path.dirname(tgt_file);
-      const filename = path.basename(screenshot, path.extname(screenshot));
-      
-      //ModelMap2[name].image = image_directory + '/' + name + "/" + model.screenshot;
-      //ModelMap2[name].thumbnail = tgt_directory + '/' + filename + '.thumb' + '.webp';
-      //ModelMap2[name].thumbnail = `${tgt_directory}/${filename}.thumb.webp`;
-      ModelMap2[name].image = `/images/${name}.webp`;
-      ModelMap2[name].thumbnail = `/images/${name}.webp`;      
+      OutputModelMap[name].image = `/images/${name}.webp`;
+      OutputModelMap[name].thumbnail = `/images/${name}.webp`;      
 
-      ModelMap2[name].camera = {
+      OutputModelMap[name].camera = {
         yaw: (CameraProperties[name] && CameraProperties[name].yaw) ?? 0,
         pitch: (CameraProperties[name] && CameraProperties[name].pitch) ?? 0,
         distance: (CameraProperties[name] && CameraProperties[name].distance) ?? 0,
       }
 
-      ModelMap2[name].keywords = [];
+      OutputModelMap[name].keywords = "";
+      OutputModelMap[name].license = [];
+      OutputModelMap[name].authors = [];
       if(metadata.legal)
       {
-        ModelMap2[name].license = metadata.legal.filter(e => e.icon && e.icon.length > 0).map(e => {return {license: e.license, url: e.licenseUrl, icon: e.icon}});
-        ModelMap2[name].authors = metadata.legal.filter(e => e.icon && e.icon.length > 0).map(e => e.artist);
+        OutputModelMap[name].license = metadata.legal.filter(e => e.icon && e.icon.length > 0).map(e => {return {license: e.license, url: e.licenseUrl, icon: e.icon}});
+        OutputModelMap[name].authors = metadata.legal.filter(e => e.icon && e.icon.length > 0).map(e => e.artist);
       }
-      else
+
+      if(ModelKeywords[name])
       {
-        ModelMap2[name].license = [];
-        ModelMap2[name].authors = [];
+        OutputModelMap[name].keywords = ModelKeywords[name].keywords;
       }
     }   
   }
@@ -219,7 +228,7 @@ for (const tag in ModelTags) {
   TagList.tags.push(tag);
 }
 
-const jsonData = JSON.stringify(ModelMap2, null, 2); // The `null, 2` makes the output pretty-printed
+const jsonData = JSON.stringify(OutputModelMap, null, 2); // The `null, 2` makes the output pretty-printed
 fs.writeFileSync('src/data/model-index.SampleAssets.json', jsonData);
 
 const jsonDataTagList = JSON.stringify(TagList, null, 2); // The `null, 2` makes the output pretty-printed

@@ -122,8 +122,8 @@ export default function LandingPage({models}: LandingPageProps) {
     shouldSort: true,
     ignoreLocation: true,
     threshold: 0.25,
-    // Search in `description` and in `name`
-    keys: ['description', 'name']
+    // Search in `description`, `name` and `keywords`
+    keys: ['description', 'name', 'keywords'],
   }
   const fuse = new Fuse(Object.values(models), options)
 

@@ -31,6 +31,7 @@ export default function ModelCard({name, title, thumbnail}: ModelCardProps) {
               width={512}
               height={512}
               quality={90}
+              unoptimized
               /* Added color: '' because of https://github.com/vercel/next.js/issues/45184 */
               style={{ color: '', width: '100%', height: "auto", maxWidth: "100%", textAlign: "center", cursor: 'pointer', objectFit: 'contain', borderRadius: '16px'}}
               src={`${basePath}${encodeURI(thumbnail)}`}
