@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import Script from 'next/script'
-import { Box, Button, IconButton, Paper, FormControlLabel, Switch, Typography, Select, FormControl, InputLabel, MenuItem } from "@mui/material";
+import { Box, Button, IconButton, Paper, FormControlLabel, Switch, Typography, Select, FormControl, InputLabel, MenuItem, CircularProgress } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 import FullscreenIcon from '@mui/icons-material/Fullscreen';
 import normalizeWheel from 'normalize-wheel';
@@ -192,6 +192,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
   const [extensions, setExtensions] = React.useState(new Map<string, boolean>());
   const [animations, setAnimations] = React.useState<Array<string>>([]);
   const [modelVariants, setModelVariants] = React.useState(src.endsWith(".glb") ? 'glTF-Binary' : 'glTF');
+  const [isModelLoaded, setIsModelLoaded] = React.useState(false);
 
   const canvasRef = React.useRef<HTMLCanvasElement>(null);
   const canvasContainerRef = React.useRef<HTMLDivElement>(null);
@@ -343,7 +344,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
       };
       customGatherStatistics(state).then(res => { statsCallback(res); });
       
-      resourceLoader.loadEnvironment(`${basePath}/Cannon_Exterior.hdr`, {
+      await resourceLoader.loadEnvironment(`${basePath}/Cannon_Exterior.hdr`, {
          lut_ggx_file: `${basePath}/assets/lut_ggx.png`, 
          lut_charlie_file: `${basePath}/assets/lut_charlie.png`,
          lut_sheen_E_file: `${basePath}/assets/lut_sheen_E.png`
@@ -365,6 +366,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
       state.renderingParameters.debugOutput = GltfState.DebugOutput.mr.ROUGHNESS;
       state.renderingParameters.debugOutput = GltfState.DebugOutput.mr.METALLIC;
       state.renderingParameters.debugOutput = debugOutput;
+      setIsModelLoaded(true);
       const update = () =>
       { 
         if(change_variant)
@@ -481,6 +483,9 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
         <Box ref={canvasContainerWrapperRef} sx={{textAlign: "center", margin: "auto", position: 'relative', minHeight: '40vh'}}>
           <canvas ref={canvasRef} onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp} style={{touchAction: 'none', overscrollBehavior: 'contain'}}/>
           <img ref={imgRef} src={imgSrc} style={{display: 'none', backgroundColor: 'transparent', position: 'absolute', left: 0, top: 0, zIndex: 10, objectFit: 'contain', width:"inherit", height:'inherit'}} alt="Asset Preview"/>
+          {!isModelLoaded && <Box sx={{position: 'absolute', left: 0, top: 'calc(50% - 0.5 * 5rem)', width: '100%'}}>
+            <CircularProgress color="primary" size={'5rem'}/>
+          </Box>}
 
           {/* Button in bottom left */}
           <Box position="absolute" bottom={{sm: 20, xs: 10}} left={{sm: 20, xs: 10}} zIndex={10}>
