@@ -137,9 +137,9 @@ export default function ComparePage({name, label, image, tags, description, mode
       {/* Right Content - Suggested */}
       <Box sx={{flex: 1}} mt={{sm: 0, xs: 2}}>
         <Grid className={styles.side} sx={{overflow: "auto", width:'100%'}} height={"80vh"} container spacing={2}>
-          <Box display="flex" mt={1} sx={{width: '100%'}}><Typography variant='h6'>{"Top picks"}</Typography></Box>
+          <Box display="flex" mt={1} sx={{width: '100%'}}><Typography variant='h6' component='h2'>{"Top picks"}</Typography></Box>
           {showcaseModels.map((e,i) => { return <ModelRenderCard key={e.name+""+i} name={e.name} label={e.label} thumbnail={e.thumbnail} />})}
-          <Box display="flex" mt={1} sx={{width: '100%'}}><Typography variant='h6'>{"See Also"}</Typography></Box>
+          <Box display="flex" mt={1} sx={{width: '100%'}}><Typography variant='h6' component='h2'>{"See Also"}</Typography></Box>
           {suggestedModels.map((e,i) => { return <ModelRenderCard key={e.name+""+i} name={e.name} label={e.label} thumbnail={e.thumbnail} />})}
         </Grid>
       </Box>
