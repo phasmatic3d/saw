@@ -489,13 +489,13 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
 
           {/* Button in bottom left */}
           <Box position="absolute" bottom={{sm: 20, xs: 10}} left={{sm: 20, xs: 10}} zIndex={10}>
-            <IconButton color="default" onClick={() => setShowOptions(!showOptions)} sx={{ backgroundColor: '#212121', color: 'white', '&:hover': { backgroundColor: 'gray', }, width: 32, height: 32, borderRadius: '50%', }}>
+            <IconButton aria-label="Visualization options" color="default" onClick={() => setShowOptions(!showOptions)} sx={{ backgroundColor: '#212121', color: 'white', '&:hover': { backgroundColor: 'gray', }, width: 32, height: 32, borderRadius: '50%', }}>
               <MenuIcon />
             </IconButton>
           </Box>
           {/* Button in bottom right */}
           <Box position="absolute" bottom={{sm: 20, xs: 10}} right={{sm: 20, xs: 10}} zIndex={10}>
-            <IconButton color="default" onClick={() => requestFullScreen()} sx={{ backgroundColor: "#212121", color: 'white', '&:hover': { backgroundColor: 'gray', }, width: 32, height: 32, borderRadius: '50%', }}>
+            <IconButton aria-label="fullscreen button" color="default" onClick={() => requestFullScreen()} sx={{ backgroundColor: "#212121", color: 'white', '&:hover': { backgroundColor: 'gray', }, width: 32, height: 32, borderRadius: '50%', }}>
               <FullscreenIcon />
             </IconButton>
           </Box>

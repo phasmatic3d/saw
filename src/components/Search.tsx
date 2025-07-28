@@ -51,7 +51,7 @@ export default function SearchComponent({searchValueChange} : {searchValueChange
                         <InputAdornment position="end"
                             style={{ display: showClearIcon }}
                         >
-                            <IconButton onClick={handleClick}>
+                            <IconButton aria-label="clear search" onClick={handleClick}>
                                 <ClearIcon />
                             </IconButton>
                         </InputAdornment>
