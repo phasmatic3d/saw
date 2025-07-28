@@ -38,6 +38,7 @@ export default function SearchComponent({searchValueChange} : {searchValueChange
             size="small"
             variant="outlined"
             placeholder="Search..."
+            aria-label="search"
             value={value}
             onChange={handleChange}
             slotProps={{
