@@ -14,7 +14,7 @@ const BugReportButton = () => {
           color="primary" 
           href="https://github.com/phasmatic3d/saw/issues"
           target='_blank'
-          role="link"
+          role="navigation"
           sx={{
             position: 'fixed',
             bottom: 24,
