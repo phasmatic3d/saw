@@ -371,11 +371,6 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
       state.userCamera.fitViewToScene(state.gltf, state.sceneIndex);
       state.userCamera.orbitSpeed = Math.max(10.0 / canvas.width, 10.0 / canvas.height);
 
-      state.renderingParameters.debugOutput = GltfState.DebugOutput.generic.OCCLUSION;
-      //state.renderingParameters.debugOutput = GltfState.DebugOutput.generic.NORMAL;
-      state.renderingParameters.debugOutput = GltfState.DebugOutput.mr.BASECOLOR;
-      state.renderingParameters.debugOutput = GltfState.DebugOutput.mr.ROUGHNESS;
-      state.renderingParameters.debugOutput = GltfState.DebugOutput.mr.METALLIC;
       state.renderingParameters.debugOutput = debugOutput;
       setIsModelLoaded(true);
       const update = () =>
