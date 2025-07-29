@@ -174,7 +174,7 @@ const supported_extensions = new Map([
   ["KHR_materials_transmission", true],
   ["KHR_materials_volume", true]
 ]);
-const debugOptions = ['None', "Base Color", "Metallic", "Roughness", 'Occlusion', 'Shading Normal'];
+const debugOptions = ['None', "Base Color", "Metallic", "Roughness", 'Occlusion', 'Shading Normal', 'Wireframe'];
 
 let active_debugOutput = "None";
 let active_animations = [] as number[];
@@ -182,6 +182,7 @@ const active_extensions = new Map<string, boolean>(supported_extensions);
 let active_variant = "glTF-Binary";
 let change_variant = false;
 let current_update_func_id = 0;
+let webgl2_wireframe_extensions : any = null;
 
 export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsCallback, onReady}: LivePreviewSampleRendererProps) {
 
@@ -193,6 +194,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
   const [animations, setAnimations] = React.useState<Array<string>>([]);
   const [modelVariants, setModelVariants] = React.useState(src.endsWith(".glb") ? 'glTF-Binary' : 'glTF');
   const [isModelLoaded, setIsModelLoaded] = React.useState(false);
+  const [hasWireframeExtensions, setHasWireframeExtension] = React.useState(false);
 
   const canvasRef = React.useRef<HTMLCanvasElement>(null);
   const canvasContainerRef = React.useRef<HTMLDivElement>(null);
@@ -238,8 +240,10 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
     if(canvasRef == null || canvasRef.current == null) { return; }
     const canvas = canvasRef.current;
     const webGl2Context = canvas.getContext('webgl2') as WebGL2RenderingContext;
-    //webGl2Context.clearColor(1,0,0,1);
-    //webGl2Context.clear(webGl2Context.COLOR_BUFFER_BIT);
+
+    // Is the wireframe extension supported?
+    webgl2_wireframe_extensions = webGl2Context.getExtension("WEBGL_polygon_mode");
+    setHasWireframeExtension(webgl2_wireframe_extensions !== null);
 
     const load = async () => {
 
@@ -375,7 +379,17 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
           change_variant = false;
         }
         // Rendering Properties
-        state.renderingParameters.debugOutput = active_debugOutput;
+        if(active_debugOutput == 'Wireframe')
+        {
+          webgl2_wireframe_extensions.polygonModeWEBGL(webGl2Context.FRONT_AND_BACK, webgl2_wireframe_extensions.LINE_WEBGL);
+          state.renderingParameters.debugOutput = 'Base Color';
+        }
+        else
+        {
+          if(webgl2_wireframe_extensions)
+            webgl2_wireframe_extensions.polygonModeWEBGL(webGl2Context.FRONT_AND_BACK, webgl2_wireframe_extensions.FILL_WEBGL);
+          state.renderingParameters.debugOutput = active_debugOutput;
+        }
         state.animationIndices = active_animations;
         active_extensions.forEach((value, key) => {
           if (key in state.renderingParameters.enabledExtensions) {
@@ -419,7 +433,6 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
           // Calculate new dimensions while maintaining aspect ratio
           const width = document.fullscreenElement !== null? window.innerWidth : canvasContainer.clientWidth;
           const height = document.fullscreenElement !== null? window.innerHeight : canvasContainer.clientHeight;
-          console.log("Resize", width, height)
 
           if(document.fullscreenElement == null)
           {
@@ -565,7 +578,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
                       disableScrollLock: true, // disables body padding-right
                     }}
                   >
-                    {debugOptions.map((opt) => (
+                    {debugOptions.filter(opt => opt !== 'Wireframe' || (opt === 'Wireframe' && hasWireframeExtensions)).map((opt) => (
                       <MenuItem key={opt} value={opt}>
                         {opt}
                       </MenuItem>
