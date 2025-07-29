@@ -9,11 +9,7 @@
 <br>
 **Q: Which visualization engine does this website use?**
 
-**A:** Each asset is previewed using the Khronos [glTF-Sample-Renderer](https://github.com/KhronosGroup/glTF-Sample-Renderer) using [WebGL 2.0](https://www.khronos.org/webgl/). <br><br>
-
-[//]: <>  (**Q: Which version of the engine was used to render the image?**)
-
-[//]: <>  (**A:** You can find which version of the engine is used by .. <br><br>)
+**A:** Each asset is previewed using the Khronos [glTF-Sample-Renderer](https://github.com/KhronosGroup/glTF-Sample-Renderer) leveraging [WebGL 2.0](https://www.khronos.org/webgl/) for real-time rendering. <br><br>
 
 **Q: Can I upload my own 3D models?**
 

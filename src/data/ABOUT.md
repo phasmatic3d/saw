@@ -23,7 +23,7 @@
 ## Overview 
 <br>
 
-The glTF Sample Asset web site provides a curated collection of glTF models that illustrate one or more features or capabilities of glTF. Each asset is previewed using the Khronos [glTF-Sample-Renderer](https://github.com/KhronosGroup/glTF-Sample-Renderer) using [WebGL 2.0](https://www.khronos.org/webgl/). 
+This SampleAssets website contains high quality examples of glTF content. In particular there is a collection of "Showcase" assets that illustrate how many of the glTF extensions can be used to improve the visual quality of the models. Many of the extensions implement physically based rendering (PBR) techniques which, if implemented correctly in a web browser, ensures visual interoperability (i.e. they look the same) an important feature in particular for 3D commerce where a customer wants the object to look "correct". The SampleAssets website provides a set of convenient content filters to enable you to locate assets of interest. Each asset is previewed using the Khronos [glTF-Sample-Renderer](https://github.com/KhronosGroup/glTF-Sample-Renderer), leveraging [WebGL 2.0](https://www.khronos.org/webgl/) for real-time rendering. 
 <br>
 <br>
 
