@@ -182,7 +182,14 @@ const active_extensions = new Map<string, boolean>(supported_extensions);
 let active_variant = "glTF-Binary";
 let change_variant = false;
 let current_update_func_id = 0;
-let webgl2_wireframe_extensions : any = null;
+let webgl2_wireframe_extensions : WEBGL_polygon_mode | null = null;
+
+interface WEBGL_polygon_mode {
+  LINE_WEBGL: number,
+  FILL_WEBGL: number,
+
+  polygonModeWEBGL: (face: number, mode: number) => void;
+}
 
 export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsCallback, onReady}: LivePreviewSampleRendererProps) {
 
@@ -242,7 +249,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
     const webGl2Context = canvas.getContext('webgl2') as WebGL2RenderingContext;
 
     // Is the wireframe extension supported?
-    webgl2_wireframe_extensions = webGl2Context.getExtension("WEBGL_polygon_mode");
+    webgl2_wireframe_extensions = webGl2Context.getExtension("WEBGL_polygon_mode") as WEBGL_polygon_mode;
     setHasWireframeExtension(webgl2_wireframe_extensions !== null);
 
     const load = async () => {
@@ -381,7 +388,8 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
         // Rendering Properties
         if(active_debugOutput == 'Wireframe')
         {
-          webgl2_wireframe_extensions.polygonModeWEBGL(webGl2Context.FRONT_AND_BACK, webgl2_wireframe_extensions.LINE_WEBGL);
+          if(webgl2_wireframe_extensions)
+            webgl2_wireframe_extensions.polygonModeWEBGL(webGl2Context.FRONT_AND_BACK, webgl2_wireframe_extensions.LINE_WEBGL);
           state.renderingParameters.debugOutput = 'Base Color';
         }
         else
