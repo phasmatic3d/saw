@@ -11,7 +11,7 @@
     "metadata": "node scripts/extract_model_metadata.mjs",
     "generate": "node scripts/render.js",
     "preinstall": "cd ./glTF-Sample-Renderer && npm install && npm run build",
-    "postinstall": "cp ./glTF-Sample-Renderer/dist/libs/*.wasm ./glTF-Sample-Renderer/dist/"
+    "postinstall": "cp ./glTF-Sample-Renderer/dist/libs/*.wasm ./glTF-Sample-Renderer/dist/ && cp ./glTF-Sample-Renderer/dist/libs/* ./public/libs/ && cp ./glTF-Sample-Renderer/dist/libs/* ./public/libs/model/"
   },
   "dependencies": {
     "@emotion/cache": "^11.14.0",
