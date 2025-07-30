@@ -35,7 +35,7 @@
 
     state.sceneIndex = state.gltf.scene === undefined ? 0 : state.gltf.scene;
 
-    await resourceLoader.loadEnvironment("./Cannon_Exterior.hdr", {
+    await resourceLoader.loadEnvironment("https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Environments/low_resolution_hdrs/Cannon_Exterior.hdr", {
          lut_ggx_file: "./assets/lut_ggx.png", 
          lut_charlie_file: "./assets/lut_charlie.png",
          lut_sheen_E_file: "./assets/lut_sheen_E.png"

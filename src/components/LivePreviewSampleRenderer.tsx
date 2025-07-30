@@ -355,7 +355,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
       };
       customGatherStatistics(state).then(res => { statsCallback(res); });
       
-      await resourceLoader.loadEnvironment(`${basePath}/Cannon_Exterior.hdr`, {
+      await resourceLoader.loadEnvironment(`https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Environments/low_resolution_hdrs/Cannon_Exterior.hdr`, {
          lut_ggx_file: `${basePath}/assets/lut_ggx.png`, 
          lut_charlie_file: `${basePath}/assets/lut_charlie.png`,
          lut_sheen_E_file: `${basePath}/assets/lut_sheen_E.png`
